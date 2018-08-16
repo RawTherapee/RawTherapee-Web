@@ -5,9 +5,9 @@ variables:
 
 pages:
     script:
-        - hugo
-        - mkdir .public
-        - cp -R public .public
+        - hugo -d output
+        - mkdir public
+        - cp -R output/* public/
     artifacts:
         paths:
             - .public
