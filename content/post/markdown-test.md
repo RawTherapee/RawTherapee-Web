@@ -26,8 +26,7 @@ date: 2018-08-15T15:09:17-05:00
     *   [Automatic Links](#autolink)
 
 
-**Note:** This document is itself written using Markdown; you
-can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
+**Note:** This document is itself written using Markdown
 
 ----
 
@@ -44,6 +43,10 @@ Markdown's syntax has been influenced by several existing text-to-HTML
 filters -- including [Setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [Textile](http://textism.com/tools/textile/), [reStructuredText](http://docutils.sourceforge.net/rst.html),
 [Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) -- the single biggest source of
 inspiration for Markdown's syntax is the format of plain text email.
+
+[Setext]: http://docutils.sourceforge.net/mirror/setext.html
+[atx]: http://www.aaronsw.com/2002/atx/
+
 
 ## Block Elements
 
@@ -65,7 +68,7 @@ end a line with two or more spaces, then type return.
 
 ### Headers
 
-Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
+Markdown supports two styles of headers, [Setext][] and [atx][].
 
 Optionally, you may "close" atx-style headers. This is purely
 cosmetic -- you can use this if you think it looks better. The
@@ -128,46 +131,54 @@ Quote Level from the Text menu.
 
 Markdown supports ordered (numbered) and unordered (bulleted) lists.
 
-Unordered lists use asterisks, pluses, and hyphens -- interchangably
--- as list markers:
-
 *   Red
 *   Green
 *   Blue
 
+Unordered lists use asterisks, pluses, and hyphens -- interchangably
+-- as list markers:
+
+	*   Red
+	*   Green
+	*   Blue
+
 is equivalent to:
 
-+   Red
-+   Green
-+   Blue
+	+   Red
+	+   Green
+	+   Blue
 
 and:
 
--   Red
--   Green
--   Blue
+	-   Red
+	-   Green
+	-   Blue
 
 Ordered lists use numbers followed by periods:
 
-1.  Bird
-2.  McHale
-3.  Parish
+	1.  Bird
+	2.  McHale
+	3.  Parish
 
 It's important to note that the actual numbers you use to mark the
 list have no effect on the HTML output Markdown produces. The HTML
 Markdown produces from the above list is:
 
+1.  Bird
+2.  McHale
+3.  Parish
+
 If you instead wrote the list in Markdown like this:
 
-1.  Bird
-1.  McHale
-1.  Parish
+	1.  Bird
+	1.  McHale
+	1.  Parish
 
 or even:
 
-3. Bird
-1. McHale
-8. Parish
+	3. Bird
+	1. McHale
+	8. Parish
 
 you'd get the exact same HTML output. The point is, if you want to,
 you can use ordinal numbers in your ordered Markdown lists, so that
@@ -176,19 +187,19 @@ But if you want to be lazy, you don't have to.
 
 To make lists look nice, you can wrap items with hanging indents:
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
+	*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+		viverra nec, fringilla in, laoreet vitae, risus.
+	*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+		Suspendisse id sem consectetuer libero luctus adipiscing.
 
 But if you want to be lazy, you don't have to:
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+	*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+	viverra nec, fringilla in, laoreet vitae, risus.
+	*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+	Suspendisse id sem consectetuer libero luctus adipiscing.
 
 List items may consist of multiple paragraphs. Each subsequent
 paragraph in a list item must be indented by either 4 spaces
@@ -287,9 +298,41 @@ after the link text's closing square bracket. Inside the parentheses,
 put the URL where you want the link to point, along with an *optional*
 title for the link, surrounded in quotes. For example:
 
-This is [an example](http://example.com/) inline link.
+	This is [an example](http://example.com/) inline link.
+
+This is [an example](http://example.com/ "Example Title") inline link.
 
 [This link](http://example.net/) has no title attribute.
+
+
+#### Reference Links
+
+Reference links also use [square brackets] to denote the link text,
+but are followed by another set of [square brackets] with a reference
+that can be defined elsewhere in the document:
+
+	This is [a reference link][reflink].
+
+	[reflink]: http://example.com "Optional Title Text"
+
+This is [a reference link][reflink].
+
+[reflink]: http://example.com "Optional Title Text"
+
+Optionally, you can use an _implicit reference link_ where the link text
+is the same as the reference text:
+
+	This is [implicit][]. Or [another implicit link][].
+
+	[implicit]: https://example.com "Example Text"
+	[another implicit link]: https://pixls.us "pixls.us"
+
+This is [implicit][]. Or [another implicit link][].
+
+[implicit]: https://example.com "Example Text"
+[another implicit link]: https://pixls.us "pixls.us"
+
+
 
 ### Emphasis
 

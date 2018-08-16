@@ -1,4 +1,38 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "RawTherapee"
 theme = "hyde-y"
+
+metaDataFormat = "yaml"
+
+paginate = 10
+paginatePath = "page"
+
+[permalinks]
+    # post = "/:year/:month/:day/:slug/"
+    post = "/:year/:month/:slug/"
+    code = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+#[author]
+#    name = "yourname"
+#    email = "yourname@example.com"
+
+
+[params]
+    # Markdwon ok here?
+    brand = "RawTherapee"
+    topline = "Top line entry"
+    footline = "foot line entry"
+
+    sidebar = "left"
+
+    highlight = "default"
+
+[blackfriday]
+    angledQuotes = true
+    fractions = true
+    plainIDAnchors = true

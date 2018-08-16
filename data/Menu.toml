@@ -1,0 +1,21 @@
+[download]
+    Name = "Download"
+    URL = "/downloads"
+
+[features]
+    Name = "Features"
+    URL = "/features"
+
+[docs]
+    Name = "Documentation"
+    URL = "/documentation"
+
+[posts]
+    Name = "Posts"
+    Title = "Show lsit of posts"
+    URL = "/post"
+
+[tags]
+    Name = "Tags"
+    Title = "Show list of tags"
+    URL = "/tags"
