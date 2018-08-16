@@ -1,6 +1,6 @@
 [01]
     Name = "Download"
-    URL = "/downloads"
+    URL = "downloads"
 
 [02]
     Name = "Features"
@@ -8,17 +8,17 @@
 
 [03]
     Name = "Documentation"
-    URL = "/documentation"
+    URL = "documentation"
 
 [04]
     Name = "Posts"
     Title = "Show a list of posts"
-    URL = "/post"
+    URL = "post"
 
 [05]
     Name = "Tags"
     Title = "Show list of tags"
-    URL = "/tags"
+    URL = "tags"
 
 [09]
     Name = "Meta"
