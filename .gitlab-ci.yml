@@ -6,8 +6,10 @@ variables:
 pages:
     script:
         - hugo
+        - mkdir .public
+        - cp -R public .public
     artifacts:
         paths:
-            - public
+            - .public
     only:
         - master
