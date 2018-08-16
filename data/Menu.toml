@@ -1,26 +1,26 @@
-[download]
+[01]
     Name = "Download"
     URL = "/downloads"
 
-[features]
+[02]
     Name = "Features"
     URL = "/features"
 
-[docs]
+[03]
     Name = "Documentation"
     URL = "/documentation"
 
-[posts]
+[04]
     Name = "Posts"
     Title = "Show a list of posts"
     URL = "/post"
 
-[tags]
+[05]
     Name = "Tags"
     Title = "Show list of tags"
     URL = "/tags"
 
-[zmeta]
+[09]
     Name = "Meta"
     Title = "Meta info on the website"
     URL = "/meta"

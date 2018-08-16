@@ -32,6 +32,16 @@ Todo
 ----
 
 - Remove pages from being parsed in RSS feed.
+- ~~Setup main menu to parse according to order in `data/Menu.toml`~~
+    * This is accomplished by setting the toml tags to a value:
+
+            [01]
+                ...
+
+            [02]
+                ...
+      Check `data/Menu.toml` to see what I mean.
+
 - Style the website (PIZZAZZ!)
 
 
