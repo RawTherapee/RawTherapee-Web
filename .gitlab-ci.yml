@@ -5,9 +5,10 @@ variables:
 
 pages:
     script:
-        - hugo -d output
-        - mkdir public
-        - cp -R output/* public/
+        hugo -b "http://patdavid.gitlab.io/rawtherapee-web/"
+        #- hugo -d output
+        #- mkdir public
+        #- cp -R output/* public/
     artifacts:
         paths:
             - public
