@@ -4,7 +4,7 @@
 
 [02]
     Name = "Features"
-    URL = "/features"
+    URL = "features"
 
 [03]
     Name = "Documentation"
@@ -23,4 +23,4 @@
 [09]
     Name = "Meta"
     Title = "Meta info on the website"
-    URL = "/meta"
+    URL = "meta"
