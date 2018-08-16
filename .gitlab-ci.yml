@@ -10,6 +10,6 @@ pages:
         - cp -R output/* public/
     artifacts:
         paths:
-            - .public
+            - public
     only:
         - master
