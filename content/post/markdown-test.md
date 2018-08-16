@@ -3,6 +3,8 @@ title: "Markdown Test"
 date: 2018-08-15T15:09:17-05:00
 ---
 
+This is a simple reference for the Markdown syntax pulled from <https://github.com/mxstbr/markdown-test-file>.
+
 # Markdown: Syntax
 
 *   [Overview](#overview)

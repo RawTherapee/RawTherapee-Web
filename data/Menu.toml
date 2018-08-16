@@ -12,10 +12,15 @@
 
 [posts]
     Name = "Posts"
-    Title = "Show lsit of posts"
+    Title = "Show a list of posts"
     URL = "/post"
 
 [tags]
     Name = "Tags"
     Title = "Show list of tags"
     URL = "/tags"
+
+[zmeta]
+    Name = "Meta"
+    Title = "Meta info on the website"
+    URL = "/meta"
