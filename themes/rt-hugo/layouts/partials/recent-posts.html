@@ -1,0 +1,24 @@
+<h2>{{ i18n "recentPosts" }}</h2>
+<div>
+    {{ range first 8 (where .Site.Pages "Type" "post") }}
+    <div class="recent-posts">
+        <h3>
+            <a href="{{.RelPermalink}}">
+                {{.Title | markdownify }}
+            </a>
+        </h3>
+        <p>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" title="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format "Mon Jan 2, 2006" }}
+            </time>
+
+            <span>
+                {{ i18n "by" }} {{ .Params.author | default .Site.Params.author }}
+            </span>
+        </p>
+        <!-- <p>
+             {{ .Summary | markdownify }}
+             </p> -->
+    </div>
+    {{ end }}
+</div>

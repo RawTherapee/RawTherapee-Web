@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section>
+    <h1 class="page-title">{{ .Title }}</h1>
+    <ul class="posts">
+        {{ range .Data.Pages -}}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ if not .Date.IsZero }}
+            <time>
+                {{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}}
+            </time>
+            {{end}}
+        </li>
+        {{- end }}
+    </ul>
+</section>
+
+{{ end }}

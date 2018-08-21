@@ -2,6 +2,8 @@
 title: "Features"
 date: 2018-08-16T12:53:47-05:00
 draft: false
+menu: "main"
+weight: 1
 ---
 
 For a complete and up-to-date list of features, see the [RawPedia Features](http://rawpedia.rawtherapee.com/Features) page.

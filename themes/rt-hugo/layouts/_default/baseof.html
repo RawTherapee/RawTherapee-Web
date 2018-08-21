@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+    <head>
+        {{ partial "head-meta.html" . }}
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <main>
+
+            {{ partial "page-header.html" . }}
+
+            {{ block "main" .}}
+            <!-- This is where the page content redners -->
+            {{ end }}
+
+            {{ partial "page-footer.html" . }}
+
+        </main>
+    </body>
+</html>

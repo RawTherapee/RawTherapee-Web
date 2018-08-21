@@ -1,0 +1,50 @@
+{{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
+
+
+<article class="post">
+    <h1 class="post-title">
+        {{ .Title | markdownify }}
+    </h1>
+    <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format $dateFormat }}
+        </time>
+        <div class="post-author">
+            {{ .Params.author | default .Site.Params.author }}
+        </div>
+        <div class="post-tags">
+            {{ partial "tags.html" . }}
+        </div>
+    </div>
+    <div class="post-body">
+        {{ .Content }}
+
+        {{ if .IsTranslated }}
+        <h4>{{ i18n "translations" }}</h4>
+        <ul>
+            {{ range .Translations }}
+            <li><a href="{{ .Permalink }}">
+                {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+            </a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+</article>
+
+<div>
+    {{ with .PrevInSection }}
+    <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+</div>
+
+<aside>
+    {{ partial "related-posts.html" . }}
+</aside>
+
+{{ end }}
