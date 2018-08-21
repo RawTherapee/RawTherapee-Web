@@ -16,7 +16,7 @@ The website is using the [Hugo][] static website generator.
     $ hugo version
     Hugo Static Site Generator v0.46
 
-The base theme we are building off is called [Hyde-Y][].
+~~The base theme we are building off is called [Hyde-Y][].~~ We're building our own theme!
 
 Calling `hugo` from the top of the project directory will cause Hugo to build the site into the `public/` folder.
 
