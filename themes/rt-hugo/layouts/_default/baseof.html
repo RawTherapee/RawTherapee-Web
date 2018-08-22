@@ -12,9 +12,11 @@
 
             {{ partial "page-header.html" . }}
 
+	    <div class="main container-fluid p-0">
             {{ block "main" .}}
             <!-- This is where the page content redners -->
             {{ end }}
+	    </div>
 
             {{ partial "page-footer.html" . }}
 
