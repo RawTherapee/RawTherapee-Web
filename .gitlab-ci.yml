@@ -1,7 +1,7 @@
 image: monachus/hugo
 
-variables:
-    GIT_SUBMODULE_STRATEGY: recursive
+#variables:
+#    GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
     script:

@@ -8,3 +8,8 @@ Note: As of this writing (2018-08-22), Hugo from the repos on Ubuntu 18.04 is a 
 On these systems, better to use the snap:
 
     sudo snap install hugo
+
+
+## GitLab Pages
+
+GitLab runs a CI service that builds all commits against the master branch, and publishes them here: http://patdavid.gitlab.io/rawtherapee-web/.
