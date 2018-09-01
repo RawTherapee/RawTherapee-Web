@@ -1,6 +1,9 @@
 backend:
     name: git-gateway
     branch: master
+	repo: patdavid/rawtherapee-web
+	auth_type: implicit
+	app_id: 432b6279ef666b33f3766ccec2caeae8eb137de52638c30275ade1b4fd67112d
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 collections:
