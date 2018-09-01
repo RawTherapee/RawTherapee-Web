@@ -1,9 +1,9 @@
 backend:
     name: git-gateway
     branch: master
-	repo: patdavid/rawtherapee-web
-	auth_type: implicit
-	app_id: 432b6279ef666b33f3766ccec2caeae8eb137de52638c30275ade1b4fd67112d
+    repo: patdavid/rawtherapee-web
+    auth_type: implicit
+    app_id: 432b6279ef666b33f3766ccec2caeae8eb137de52638c30275ade1b4fd67112d
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 collections:
@@ -13,10 +13,9 @@ collections:
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
       fields:
-		  - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-		  - {label: "Title", name: "title", widget: "string"}
-		  - {label: "Publish Date", name: "date", widget: "datetime"}
-		  - {label: "Featured Image", name: "thumbnail", widget: "image"}
-		  - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-		  - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Featured Image", name: "thumbnail", widget: "image"}
+        - {label: "Body", name: "body", widget: "markdown"}
 
