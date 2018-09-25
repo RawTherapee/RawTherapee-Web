@@ -5,3 +5,15 @@ body {
 .page, .post {
     margin-top: 5rem;
 }
+
+@media(min-width: 992px) {
+
+    nav.fixed-top {
+        flex-direction: column;
+        bottom: 0;
+        right: initial;
+    }
+    div.main.container {
+        width: initial;
+    }
+}
