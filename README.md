@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.com/patdavid/rawtherapee-web/badges/master/pipeline.svg)](https://gitlab.com/patdavid/rawtherapee-web/commits/master)
+
 # The RawTherapee.com website
 
 This is the repository for the new RawTherapee.com website.
