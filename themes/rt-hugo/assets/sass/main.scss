@@ -8,12 +8,29 @@ body {
 
 @media(min-width: 992px) {
 
+    body {
+        margin: 0;
+    }
     nav.fixed-top {
         flex-direction: column;
         bottom: 0;
         right: initial;
+        position: initial;
+    }
+    #navbarSupportedContent {
+        display: block !important;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
     }
     div.main.container {
         width: initial;
+        flex-basis: 66%;
+    }
+    .row {
+        margin: 0;
+    }
+    footer {
+        display: none;
     }
 }
