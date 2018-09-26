@@ -6,8 +6,8 @@ image: yitsushi/hugo-extended-builder
 
 pages:
     script:
-        hugo version
-        hugo -b 'http://patdavid.gitlab.io/rawtherapee-web/'
+        - hugo version
+        - hugo -b 'http://patdavid.gitlab.io/rawtherapee-web/'
         #- hugo -d output
         #- mkdir public
         #- cp -R output/* public/
