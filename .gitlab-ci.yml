@@ -1,10 +1,12 @@
-image: monachus/hugo
+#image: monachus/hugo
+image: yitsushi/hugo-extended-builder
 
 #variables:
 #    GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
     script:
+        hugo version
         hugo -b 'http://patdavid.gitlab.io/rawtherapee-web/'
         #- hugo -d output
         #- mkdir public
