@@ -8,7 +8,7 @@ image: mashehu/hugo-extended-npm
 pages:
     script:
         - hugo version
-        - hugo -b 'http://patdavid.gitlab.io/rawtherapee-web/'
+        - hugo -b 'https://patdavid.gitlab.io/rawtherapee-web/'
         #- hugo -d output
         #- mkdir public
         #- cp -R output/* public/
