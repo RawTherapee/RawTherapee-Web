@@ -1,5 +1,6 @@
 #image: monachus/hugo
-image: yitsushi/hugo-extended-builder
+#image: yitsushi/hugo-extended-builder
+image: mashehu/hugo-extended-npm
 
 #variables:
 #    GIT_SUBMODULE_STRATEGY: recursive
