@@ -1,16 +1,31 @@
+/* These are customizations for the RawTherapee site.
+    Check with someone before hacking.
+*/
+
+
 body {
     margin: 1rem;
 }
 
 .page, .post, .homepage {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
+/* Desktop sizes, navbar on left */
 @media(min-width: 992px) {
+
+    /* Scale font size at the root <html> element
+    /* so we can scale any other rem's being used 
+     */
+
+    html {
+        font-size: 110%;
+    }
 
     body {
         margin: 0;
     }
+
     nav.fixed-top {
         flex-direction: column;
         bottom: 0;
@@ -18,20 +33,28 @@ body {
         padding-top: 2rem;
         /* position: initial; */
     }
+
     #navbarSupportedContent {
         display: block !important;
     }
+    
     .navbar-expand-lg .navbar-nav {
         flex-direction: column;
     }
+
+    .page, .post, .homepage {
+        max-width: 40rem;
+        margin-top: 2rem;
+    }
+
     div.main.container {
         width: initial;
         flex-basis: 66%;
+        padding-left: 4rem;
     }
+
     .row {
         margin: 0;
     }
-//   footer {
-//        display: none;
-//  }
+
 }
