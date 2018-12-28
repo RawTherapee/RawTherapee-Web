@@ -1,0 +1,32 @@
+{{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
+
+
+<div class="homepage">
+    <b>BEFORE CONTENT</b>
+
+    {{ .Content }}
+
+    <b>AFTER CONTENT</b>
+
+    <b>BEFORE TRANSLATED</b>
+    {{ if .IsTranslated }}
+    <h4>{{ i18n "translations" }}</h4>
+    <ul>
+        {{ range .Translations }}
+        <li><a href="{{ .Permalink }}">
+            {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+        </a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</div>
+
+    <b>BEFORE RECENT POSTS</b>
+<div>
+    {{ partial "recent-posts.html" . }}
+</div>
+    <b>AFTER RECENT POSTS</b>
+
+{{ end }}
