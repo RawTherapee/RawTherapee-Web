@@ -1,26 +1,48 @@
 {{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
-{{ define "main" }}
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
+<!doctype html>
+<html lang="{{ .Lang }}">
+    <head>
+        {{ partial "head-meta.html" . }}
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-<div class="homepage">
+        <main class='dm-flex row'>
 
-    {{ .Content }}
+            {{ partial "page-header.html" . }}
 
-    {{ if .IsTranslated }}
-    <h4>{{ i18n "translations" }}</h4>
-    <ul>
-        {{ range .Translations }}
-        <li><a href="{{ .Permalink }}">
-            {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
-        </a></li>
-        {{ end }}
-    </ul>
-    {{ end }}
-</div>
+	    <div class="main container home">
 
-<div>
-    {{ partial "recent-posts.html" . }}
-</div>
+            <div class="homepage">
 
-{{ end }}
+                {{ .Content }}
+
+                <section>
+                    <h3>Add a section here!</h3>
+                </section>
+
+                {{ if .IsTranslated }}
+                <h4>{{ i18n "translations" }}</h4>
+                <ul>
+                    {{ range .Translations }}
+                    <li><a href="{{ .Permalink }}">
+                        {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+                    </a></li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </div>
+
+            {{ partial "page-footer.html" . }}
+	    </div>
+        
+        </main>
+
+	{{ partial "javascript.html" . }}
+
+    </body>
+</html>
