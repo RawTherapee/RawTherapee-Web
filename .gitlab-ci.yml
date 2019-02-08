@@ -1,6 +1,8 @@
 #image: monachus/hugo
 #image: yitsushi/hugo-extended-builder
-image: mashehu/hugo-extended-npm
+#image: mashehu/hugo-extended-npm
+image: image: registry.opensuse.org/home/darix/apps/containers-15.0/opensuse-hugo:latest
+
 
 #variables:
 #    GIT_SUBMODULE_STRATEGY: recursive
