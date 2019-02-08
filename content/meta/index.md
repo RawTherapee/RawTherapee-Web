@@ -8,17 +8,22 @@ weight: 10
 
 This is a meta file for the new rawtherapee.com website.
 
+The repository is currently located at: https://gitlab.com/patdavid/rawtherapee-web.
+
+
+
 Build
 =====
 
 The website is using the [Hugo][] static website generator.
 
     $ hugo version
-    Hugo Static Site Generator v0.46
+    Hugo Static Site Generator v0.54.0/extended
 
 ~~The base theme we are building off is called [Hyde-Y][].~~ We're building our own theme!
 
 Calling `hugo` from the top of the project directory will cause Hugo to build the site into the `public/` folder.
+
 
 
 Build + Serve
