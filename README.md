@@ -14,13 +14,13 @@ On these systems, better to use the snap:
 
 ## GitLab Pages
 
-GitLab runs a CI service that builds all commits against the master branch, and publishes them here: http://patdavid.gitlab.io/rawtherapee-web/.
+GitLab runs a CI service that builds all commits against the master branch, and publishes them here: https://patdavid.gitlab.io/rawtherapee-web/.
 
 
 ## Netlify
 
 We've also integrated [Netlify][] into the site as a CMS/post-editor while still mainting a GitLab based back-end.
-If you have push permissions on the repo, you can access the editor at `/admin` (so while we're testing here on gitlab pages, it would be: http://patdavid.gitlab.io/rawtherapee-web/admin
+If you have push permissions on the repo, you can access the editor at `/admin` (so while we're testing here on gitlab pages, it would be: https://patdavid.gitlab.io/rawtherapee-web/admin
 
 
 [Netlify]: https://www.netlify.com/
