@@ -1,0 +1,39 @@
+{{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
+
+
+<article class="page">
+    <h1>
+        {{ .Title | markdownify }}
+    </h1>
+
+    {{ .Content }}
+    <!-- This is Pat David doing something stupid... -->
+    <ul class="posts">
+        {{ range .Data.Pages -}}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ if not .Date.IsZero }}
+            <time>
+                {{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}}
+            </time>
+            {{end}}
+        </li>
+        {{- end }}
+    </ul>
+    <!-- END stupid things -->
+
+    {{ if .IsTranslated }}
+    <h4>{{ i18n "translations" }}</h4>
+    <ul>
+        {{ range .Translations }}
+        <li><a href="{{ .Permalink }}">
+            {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+        </a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</article>
+
+{{ end }}
