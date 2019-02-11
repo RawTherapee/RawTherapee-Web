@@ -37,6 +37,30 @@ Which will build the site and fire up a web server `http://localhost:1313`.
 The `-D` option tells Hugo to build any draft files as well.
 
 
+Content
+-------
+
+The directory structure will change how the site builds out and which layouts get used.
+Pat prefers to be able to mimic directory structure on-disk as page navigation (excepting blog posts).
+
+So pages might look like this:
+
+```
+.
+└─ content
+   ├── about.md
+   ├── features.md
+   └── meta
+       ├── _index.md
+       └── design.md
+```
+
+The use of an `_index.md` file under a directoy triggers Hugo to treat it as a "section".
+This also means that it uses the section template/layout (defaulting to `{theme}/layouts/_default/section.html`.
+
+If you don't want to hack at the `section.html` layout, then you can explicitly set the layout in the yaml of a page file `layout: single` for instance (this would use the `single.html` layout from the same location listed above).
+
+
 Design Approach
 ---------------
 
