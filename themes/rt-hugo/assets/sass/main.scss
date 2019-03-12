@@ -57,4 +57,32 @@ body {
         margin: 0;
     }
 
+    /* 
+    /* This is for the home page only...
+     */
+
+    .main.container.home {
+        flex-basis: initial;
+        max-width: 100vw;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .homepage {
+        max-width: 100vw;
+        padding-left: 10rem;
+    }
+
+    .homepage section {
+        padding: 0 1rem;
+    }
+
 }
+
+/* This keeps screenshots on the homepage to
+/* a reasonable width
+*/
+.homepage .screenimage img {
+    max-width: 100%;
+}
+    
