@@ -26,35 +26,36 @@ body {
         margin: 0;
     }
 
-    nav.fixed-top {
-        flex-direction: column;
-        bottom: 0;
-        right: initial;
-        padding-top: 2rem;
-        /* position: initial; */
-    }
+    /* nav.fixed-top {
+    /*     flex-direction: column;
+    /*     bottom: 0;
+    /*     right: initial;
+    /*     padding-top: 2rem;
+    /*     /* position: initial; */
+    /* }
 
-    #navbarSupportedContent {
-        display: block !important;
-    }
-    
-    .navbar-expand-lg .navbar-nav {
-        flex-direction: column;
-    }
+    /* #navbarSupportedContent {
+    /*     display: block !important;
+    /* }
+    /* 
+    /* .navbar-expand-lg .navbar-nav {
+    /*     flex-direction: column;
+    /* }
 
-    .page, .post, .homepage {
-        max-width: 40rem;
-        margin-top: 2rem;
-    }
+    /* .page, .post, .homepage {
+    /*     max-width: 40rem;
+    /*     margin-top: 2rem;
+    /* }
 
-    div.main.container {
-        width: initial;
-        flex-basis: 66%;
-        padding-left: 4rem;
-    }
+    /* div.main.container {
+    /*     width: initial;
+    /*     flex-basis: 66%;
+    /*     padding-left: 4rem;
+    /* }
 
-    .row {
-        margin: 0;
-    }
+    /* .row {
+    /*     margin: 0;
+    /* }
+    */
 
 }

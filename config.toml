@@ -28,7 +28,7 @@ paginatePath = "page"
     topline = "Top line entry"
     footline = "foot line entry"
 
-    sidebar = "left"
+    #sidebar = "left"
 
     highlight = "default"
 
