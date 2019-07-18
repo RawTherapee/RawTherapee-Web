@@ -2,5 +2,10 @@ public/
 .directory
 resources/
 hugo.exe
+
+# Ignore theme asset building errata
+# Mostly for SASS compiling and node
+
 themes/rt-hugo/assets/node_modules
+themes/rt-hugo/assets/yarn.lock
 themes/rt-hugo/assets/package-lock.json
