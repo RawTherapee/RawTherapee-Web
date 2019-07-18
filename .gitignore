@@ -2,3 +2,4 @@ public/
 .directory
 resources/
 hugo.exe
+themes/rt-hugo/assets/node_modules

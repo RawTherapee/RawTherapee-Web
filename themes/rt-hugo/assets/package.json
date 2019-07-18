@@ -1,0 +1,10 @@
+{
+  "name": "rawtherapee-theme",
+  "version": "1.0.0",
+  "description": "RawTherapee's website assets",
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.1.3"
+  }
+}

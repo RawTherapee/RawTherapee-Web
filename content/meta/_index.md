@@ -15,7 +15,14 @@ The repository is currently located at: https://gitlab.com/patdavid/rawtherapee-
 Build
 =====
 
-The website is using the [Hugo][] static website generator.
+The website is using the [Hugo][] static website generator with yarn (or npm if you must) to manage dependencies.
+
+From the project root:
+
+	cd themes/rt-hugo/assets
+	yarn install
+
+This should pull down the necessary dependencies, which consists of bootstrap 4 at the time of writing. It is important to use the `yarn` command in the `assets` directory, or else the SASS won't compile.
 
     $ hugo version
     Hugo Static Site Generator v0.54.0/extended

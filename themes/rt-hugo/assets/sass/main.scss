@@ -1,3 +1,5 @@
+@import 'bootstrap';
+
 /* These are customizations for the RawTherapee site.
     Check with someone before hacking.
 */
@@ -50,7 +52,7 @@ body {
 @media(min-width: 992px) {
 
     /* Scale font size at the root <html> element
-    /* so we can scale any other rem's being used 
+    /* so we can scale any other rem's being used
      */
 
     html {
@@ -72,7 +74,7 @@ body {
     /* #navbarSupportedContent {
     /*     display: block !important;
     /* }
-    /* 
+    /*
     /* .navbar-expand-lg .navbar-nav {
     /*     flex-direction: column;
     /* }
