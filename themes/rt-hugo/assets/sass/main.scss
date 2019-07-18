@@ -1,9 +1,47 @@
-@import 'bootstrap';
-
+/* ------------------------------------------------- */
 /* These are customizations for the RawTherapee site.
-    Check with someone before hacking.
+/* Check with someone before hacking.
+/* Usually patdavid or mica
+/* ------------------------------------------------- */
+
+/* Bootstrap sass variable hacking has to happen
+    before importing bootstrap itself
 */
 
+
+/* Overriding default bootstrap dark theme color */
+$theme-colors: (
+    "dark": #222222
+);
+
+
+
+@import 'bootstrap';
+
+
+/* --------------------------------------- */
+/* Normal CSS customization goes down here */
+/* --------------------------------------- */
+
+/* Fonts */
+/* ----- */
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('/fonts/leaguespartan-bold.eot');
+    src: url('/fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/leaguespartan-bold.woff2') format('woff2'),
+         url('/fonts/leaguespartan-bold.woff') format('woff'),
+         url('/fonts/leaguespartan-bold.ttf') format('truetype'),
+         url('/fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+/* Other custom stuff */
 
 body {
     margin: 1rem;
@@ -11,6 +49,11 @@ body {
 
 .page, .post, .homepage {
     margin-top: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+#mainNav {
+    font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* Main page temporary styling

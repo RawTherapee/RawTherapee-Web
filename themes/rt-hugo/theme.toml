@@ -19,3 +19,5 @@ min_version = "0.36"
   name = ""
   homepage = ""
   repo = ""
+
+#staticDir = ["static"]
