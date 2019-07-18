@@ -3,3 +3,4 @@ public/
 resources/
 hugo.exe
 themes/rt-hugo/assets/node_modules
+themes/rt-hugo/assets/package-lock.json
