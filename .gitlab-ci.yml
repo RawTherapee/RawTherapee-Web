@@ -1,7 +1,7 @@
 #image: monachus/hugo
 #image: yitsushi/hugo-extended-builder
 #image: mashehu/hugo-extended-npm
-image: yaegashi/hugo/hugo_extended
+image: monachus/hugo
 
 #This is for @darix Hugo:
 #image: registry.opensuse.org/home/darix/apps/containers-15.0/opensuse-hugo:latest
