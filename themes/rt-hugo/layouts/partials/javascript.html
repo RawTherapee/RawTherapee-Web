@@ -10,7 +10,7 @@
 {{ $popper := resources.Get "/node_modules/popper.js/dist/popper.js" }}
 
 {{ $javascript := slice $popper | resources.Concat "/js/popper.js" }}
-<script src="{{ $javascript.Permalink }}"></script>
+<script src="{{ $javascript.Permalink }}" type="module"></script>
 
 {{ $bootstrap := resources.Get "/node_modules/bootstrap/dist/js/bootstrap.js" }}
 
