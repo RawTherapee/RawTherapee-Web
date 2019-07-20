@@ -1,5 +1,4 @@
-#baseURL = "http://example.org/"
-baseURL = "https://patdavid.gitlab.io/rawtherapee-web/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "RawTherapee"
 theme = "rt-hugo"
