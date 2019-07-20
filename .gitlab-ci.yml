@@ -12,6 +12,7 @@ image: mashehu/hugo-extended-npm
 pages:
     script:
         - hugo version
+        - cd themes/rt-hugo/assets; npm install
         - hugo -b 'https://patdavid.gitlab.io/rawtherapee-web/'
         #- hugo -d output
         #- mkdir public
