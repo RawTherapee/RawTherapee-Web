@@ -14,6 +14,7 @@ pages:
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
         - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
+        - ls public
         #- hugo -d output
         #- mkdir public
         #- cp -R output/* public/
