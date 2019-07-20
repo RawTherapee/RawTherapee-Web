@@ -1,10 +1,9 @@
 #image: monachus/hugo
 #image: yitsushi/hugo-extended-builder
 #image: mashehu/hugo-extended-npm
-image: monachus/hugo
-
-#This is for @darix Hugo:
-#image: registry.opensuse.org/home/darix/apps/containers-15.0/opensuse-hugo:latest
+#
+# @darix Hugo (extended) + Node
+image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
 
 
 #variables:
