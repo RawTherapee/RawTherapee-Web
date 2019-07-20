@@ -2,7 +2,6 @@
 title: "Meta"
 date: 2018-08-16T13:11:37-05:00
 draft: false
-menu: "main"
 weight: 10
 ---
 
