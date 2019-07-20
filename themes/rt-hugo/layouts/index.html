@@ -2,7 +2,11 @@
 {{ define "main" }}
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
-<div class="main home">
+<div class="homepage">
+
+    <div class="main home">
+
+    {{ partial "recent-release.html" . }}
 
     {{ .Content }}
 
@@ -16,5 +20,6 @@
         {{ end }}
     </ul>
     {{ end }}
+    </div>
 </div>
 {{ end }}
