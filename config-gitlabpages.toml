@@ -1,0 +1,39 @@
+baseURL = "https://patdavid.gitlab.io/rawtherapee-web/"
+languageCode = "en-us"
+title = "RawTherapee"
+theme = "rt-hugo"
+
+metaDataFormat = "yaml"
+
+paginate = 10
+paginatePath = "page"
+
+[permalinks]
+    # post = "/:year/:month/:day/:slug/"
+    post = "/:year/:month/:slug/"
+    code = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+#[author]
+#    name = "yourname"
+#    email = "yourname@example.com"
+
+
+[params]
+    # Markdwon ok here?
+    brand = "RawTherapee"
+    topline = "Top line entry"
+    footline = "foot line entry"
+
+    #sidebar = "left"
+
+    highlight = "default"
+
+[blackfriday]
+    angledQuotes = true
+    fractions = true
+    plainIDAnchors = true
+
