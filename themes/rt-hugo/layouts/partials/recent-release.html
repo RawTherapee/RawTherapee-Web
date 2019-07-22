@@ -4,7 +4,9 @@
 
             <h2>RawTherapee is a Free cross-platform raw image processing program</h2>
 
-            {{ range first 1 (where .Pages "Type" "release") }}
+            {{ range first 1 (where .Site.RegularPages "Type" "release") }}
+                <div>Download RawTherapee version {{ .Params.version }} released on  {{ .Date.Format "January 2, 2006" }}</div>
+            {{/*
 
             <div class='dl-buttons'>
                 <div>Download RawTherapee version {{ .Params.version }} released on  {{ .Date.Format "January 2, 2006" }}</div>
@@ -30,8 +32,9 @@
                 </a>
                 <a class="btn btn-outline-info dl-btn" href="{{ printf "%s" $.Params.source_code }}" role="button">Source Code</a>
             </div>
-            {{ end }}
 
+            */}}
+            {{ end }}
 
         </div>
     </div>
