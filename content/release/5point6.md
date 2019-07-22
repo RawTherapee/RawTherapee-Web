@@ -1,7 +1,7 @@
 ---
 title: "RawTherapee version 5.6"
 date: 2019-07-20T14:55:31-07:00
-draft: true
+draft: false
 version: "5.6"
 linux_binary: "https://rawtherapee.com/releases_head/linux/RawTherapee-releases-5.6-20190420.AppImage"
 windows_binary: "https://rawtherapee.com/releases_head/windows/RawTherapee_5.6_WinVista_64.zip"
