@@ -1,8 +1,8 @@
 - id: copyright
-  translation: "Copyright 2018"
-
+  translation: "Copyright"
+- id: copyrightEntity
+  translation: "The RawTherapee Team"
 - id: relatedPosts
   translation: "Related Posts"
-
 - id: recentPosts
   translation: "Recent Posts"
