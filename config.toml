@@ -9,7 +9,6 @@ paginate = 10
 paginatePath = "page"
 
 [permalinks]
-    # post = "/:year/:month/:day/:slug/"
     post = "/:year/:month/:slug/"
     code = "/:slug/"
 
