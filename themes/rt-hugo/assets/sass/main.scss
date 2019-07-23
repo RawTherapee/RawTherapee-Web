@@ -14,32 +14,15 @@ $theme-colors: (
     "dark": #222222
 );
 
-
-
 @import 'bootstrap';
 
+/* Our custom SASS imports */
+@import 'partials/homepage';
+@import 'partials/typography';
 
 /* --------------------------------------- */
 /* Normal CSS customization goes down here */
 /* --------------------------------------- */
-
-/* Fonts */
-/* ----- */
-
-@font-face {
-    font-family: 'League Spartan';
-    src: url('fonts/leaguespartan-bold.eot');
-    src: url('fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/leaguespartan-bold.woff2') format('woff2'),
-         url('fonts/leaguespartan-bold.woff') format('woff'),
-         url('fonts/leaguespartan-bold.ttf') format('truetype'),
-         url('fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-
 
 /* Other custom stuff */
 
@@ -51,52 +34,11 @@ body {
     margin-top: 4rem;
 }
 
-h1, h2, h3, h4, h5, h6,
-#mainNav {
-    font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-/* Main page temporary styling
-*/
-
-.homepage section {
-    margin-top: 3rem;
-}
-
-/* Download Buttons */
-.dl-buttons {
-    margin-top: 2rem;
-}
-.dl-btn {
-    text-align: left;
-    width: 170px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    height: 3.5rem;
-}
-.dl-btn svg {
-    float: left;
-    height: 2.5rem;
-    margin-right: 0.5rem;
-}
-.dl-type {
-    color: orange;
-    font-size: 0.8rem;
-    display: flex;
-    margin-bottom: -0.2rem;
-}
-.dl-os {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-
-/* Desktop sizes, navbar on left */
 @media(min-width: 992px) {
 
     /* Scale font size at the root <html> element
     /* so we can scale any other rem's being used
-     */
+   */
 
     html {
         font-size: 110%;
@@ -105,37 +47,4 @@ h1, h2, h3, h4, h5, h6,
     body {
         margin: 0;
     }
-
-    /* nav.fixed-top {
-    /*     flex-direction: column;
-    /*     bottom: 0;
-    /*     right: initial;
-    /*     padding-top: 2rem;
-    /*     /* position: initial; */
-    /* }
-
-    /* #navbarSupportedContent {
-    /*     display: block !important;
-    /* }
-    /*
-    /* .navbar-expand-lg .navbar-nav {
-    /*     flex-direction: column;
-    /* }
-
-    /* .page, .post, .homepage {
-    /*     max-width: 40rem;
-    /*     margin-top: 2rem;
-    /* }
-
-    /* div.main.container {
-    /*     width: initial;
-    /*     flex-basis: 66%;
-    /*     padding-left: 4rem;
-    /* }
-
-    /* .row {
-    /*     margin: 0;
-    /* }
-    */
-
 }
