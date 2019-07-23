@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<section class="post-list">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- range .Data.Pages.GroupByDate "2006" }}
+    <div>
+        <div class="post-year">{{ .Key }}</div>
+
+        <ul class="post-list">
+            {{- range .Pages }}
+            <li class="list-item">
+                <a href="{{.Permalink}}">
+                    <span class="post-title">{{.Title}}</span>
+
+                </a>
+		<span>&bullet;</span>
+                <span class="post-day">{{ if .Site.Params.dateformShort }}{{ .Date.Format .Site.Params.dateformShort }}{{ else }}{{ .Date.Format "January 2"}}{{ end }}</span>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    {{- end }}
+</section>
+
+{{ end }}
