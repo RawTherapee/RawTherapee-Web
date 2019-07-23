@@ -34,15 +34,20 @@ body {
     margin-top: 4rem;
 }
 
+
+/* Home page */
+/* --------- */
+
+/* Download buttons on homepage */
 .dl-btn {
     background-color: var(--dark);
 }
 
+
 @media(min-width: 992px) {
 
-    /* Scale font size at the root <html> element
-    /* so we can scale any other rem's being used
-   */
+    /* Scale font size at the root <html> element */
+    /* so we can scale any other rem's being used */
 
     html {
         font-size: 110%;
@@ -51,4 +56,10 @@ body {
     body {
         margin: 0;
     }
+
+    /* Home Page */
+    #intro {
+        margin-top: 8rem;
+    }
+
 }
