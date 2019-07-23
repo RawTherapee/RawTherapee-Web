@@ -34,6 +34,10 @@ body {
     margin-top: 4rem;
 }
 
+.dl-btn {
+    background-color: var(--dark);
+}
+
 @media(min-width: 992px) {
 
     /* Scale font size at the root <html> element
