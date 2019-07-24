@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<section class="post-list">
+<section class="post-list container">
     <h1 class="post-title">{{ .Title }}</h1>
     {{- range .Data.Pages.GroupByDate "2006" }}
     <div>
