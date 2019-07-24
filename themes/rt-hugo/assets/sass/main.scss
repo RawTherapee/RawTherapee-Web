@@ -35,15 +35,6 @@ body {
 }
 
 
-/* Home page */
-/* --------- */
-
-/* Download buttons on homepage */
-.dl-btn {
-    background-color: var(--dark);
-}
-
-
 @media(min-width: 992px) {
 
     /* Scale font size at the root <html> element */
@@ -60,6 +51,9 @@ body {
     /* Home Page */
     #intro {
         margin-top: 8rem;
+    }
+    section.info {
+        margin: 8rem 0;
     }
 
 }
