@@ -3,7 +3,7 @@
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
 
-<article class="page">
+<article class="page container">
     <h1>
         {{ .Title | markdownify }}
     </h1>
