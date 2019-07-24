@@ -2,7 +2,42 @@
     margin-top: 3rem;
 }
 
+/* Color Wheel Background */
+#wheel-1 {
+    position: absolute;
+    width: 25vw;
+    overflow: hidden;
+    right: 0;
+}
+#wheel-1 img {
+    width: 50vw;
+}
+#wheel-2 {
+    position: absolute;
+    width: 20vw;
+    overflow: hidden;
+    left: 0;
+    top: 30vh;
+}
+#wheel-2 img {
+    width: 40vw;
+    margin-left: -30vw;
+}
+#wheel-3 {
+    position: absolute;
+    width: 5vw;
+    overflow: hidden;
+    right: 0;
+    top: 72vh;
+    z-index: 2;
+}
+#wheel-3 img {
+    width: 25vw;
+}
+
+
 /* Download Buttons */
+/* ---------------- */
 .dl-buttons {
     margin-top: 2rem;
 }
