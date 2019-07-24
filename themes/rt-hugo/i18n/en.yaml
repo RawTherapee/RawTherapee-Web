@@ -1,3 +1,23 @@
+- id: slogan
+  translation: "RawTherapee is a Free cross-platform raw image processing program"
+- id: indexDownloadText
+  translation: "Download RawTherapee version"
+- id: releasedOn
+  translation: "released on"
+- id: releaseNotes
+  translation: "Release notes"
+- id: linux
+  translation: "Linux"
+- id: appImage
+  translation: "AppImage"
+- id: 64bit
+  translation: "64-bit"
+- id: windows
+  translation: "Windows"
+- id: mac
+  translation: "macOS"
+- id: sourceCode
+  translation: "Source Code"
 - id: copyright
   translation: "Copyright"
 - id: copyrightEntity
