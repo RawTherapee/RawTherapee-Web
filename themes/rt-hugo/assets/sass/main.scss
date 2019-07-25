@@ -14,6 +14,17 @@ $theme-colors: (
     "dark": #222222
 );
 
+/* This nest+loop adds a bigger margin for all
+/* headings when they follow p, code, ul, ol */
+.post-body {
+    @for $i from 1 through 6 {
+        p + h#{$i}, code + h#{$i},
+        ul + h#{$i}, ol + h#{$i} {
+            margin-top: 2rem;
+        }
+    }
+}
+
 @import 'bootstrap';
 
 /* Our custom SASS imports */
@@ -41,6 +52,22 @@ pre {
     padding: 0.3rem 0.5rem;
 }
 
+blockquote {
+    border-left: solid 2px gray;
+    padding-left: 0.5rem;
+}
+
+
+/* Formatting for blog post metadata */
+/* --------------------------------- */
+.post-meta {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    margin-top: -0.5rem;
+}
+.post-tags {
+    font-size: small;
+}
 
 @media(min-width: 992px) {
 
