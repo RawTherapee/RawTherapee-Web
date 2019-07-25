@@ -1,4 +1,4 @@
-<h4>{{ i18n "relatedPosts" }}</h4>
+<strong>{{ i18n "relatedPosts" }}</strong>
 
 <ul>
     {{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
