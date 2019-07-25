@@ -2,24 +2,29 @@
 {{ define "main" }}
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
+{{/* This template is used for releases (and other things?) */}}
 
 <article class="page container">
-    <h1>
-        {{ .Title | markdownify }}
-    </h1>
+    <div class='row justify-content-center'>
+        <div class='col-lg-10'>
+            <h1>
+                {{ .Title | markdownify }}
+            </h1>
 
-    {{ .Content }}
+            {{ .Content }}
 
-    {{ if .IsTranslated }}
-    <h4>{{ i18n "translations" }}</h4>
-    <ul>
-        {{ range .Translations }}
-        <li><a href="{{ .Permalink }}">
-            {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
-        </a></li>
-        {{ end }}
-    </ul>
-    {{ end }}
+            {{ if .IsTranslated }}
+            <h4>{{ i18n "translations" }}</h4>
+            <ul>
+                {{ range .Translations }}
+                <li><a href="{{ .Permalink }}">
+                        {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+                </a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
 </article>
 
 {{ end }}
