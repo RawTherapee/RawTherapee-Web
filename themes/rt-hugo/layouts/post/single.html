@@ -40,17 +40,19 @@
     </div>
 </article>
 
-<div>
-    {{ with .PrevInSection }}
-    <a class="post-previous" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}
-    {{ with .NextInSection }}
-    <a class="post-next" href="{{.Permalink}}"> {{.Title}}</a>
-    {{ end }}
-</div>
+<div class="container">
+    <div>
+        {{ with .PrevInSection }}
+        <a class="post-previous" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a class="post-next" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
 
-<aside>
-    {{ partial "related-posts.html" . }}
-</aside>
+    <aside>
+        {{ partial "related-posts.html" . }}
+    </aside>
+</div>
 
 {{ end }}
