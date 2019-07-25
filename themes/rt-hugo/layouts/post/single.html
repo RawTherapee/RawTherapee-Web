@@ -20,7 +20,9 @@
                     {{ .Params.author | default .Site.Params.author }}
                 </span>
                 <div class="post-tags">
+                    {{ if .Params.tags }}
                     Filed under: {{ partial "tags.html" . }}
+                    {{ end }}
                 </div>
             </div>
             <div class="post-body">
@@ -43,7 +45,7 @@
 </article>
 
 
-<div class="container mt-lg-4">
+<div class="container mt-lg-5">
     {{/*
     <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -58,7 +60,7 @@
     */}}
 
     <div class="row justify-content-center">
-        <div class="col-lg-10 border-top border-secondary pt-lg-3">
+        <div class="col-lg-10 border-top border-secondary pt-4">
             <aside>
                 {{ partial "related-posts.html" . }}
             </aside>
