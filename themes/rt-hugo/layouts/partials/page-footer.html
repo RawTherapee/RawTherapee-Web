@@ -1,7 +1,47 @@
-<footer>
+<footer class="mt-5 mx-n3 mb-n3 mx-lg-0 py-5">
   <div class="container">
-      <div class="row">
-	  &copy; {{ i18n "copyright" }} {{ now.Format "2006" }} {{ i18n "copyrightEntity" }}
+      <div class="row ">
+
+          <div class='col-lg-4'>
+          <a class="navbar-brand" href="{{ .Site.BaseURL}}" rel="home" title="{{ .Site.Title }}">
+              {{/* {{ .Site.Title | safeHTML }}  */}}
+              <img src="{{ .Site.BaseURL }}/images/rt-logo-white.svg">
+          </a>
+          </div>
+
+          <div class="col-md-8 d-flex flex-column flex-md-row align-self-center justify-content-end">
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.main }}
+                  <span class="footer-nav-link pt-3 pt-lg-0 px-2">
+                      <a class="" href="{{.URL}}">
+                          {{ .Pre }}
+                          <span>{{ .Name }}</span>
+                      </a>
+                  </span>
+                  {{end}}
+          </div>
     </div>
+
+    <div class="row justify-content-end">
+        <div class="col-lg-6 mt-2 d-flex flex-column flex-md-row align-self-center justify-content-end">
+            <a href="https://discuss.pixls.us/c/software/rawtherapee" class='pt-3 pt-lg-0 px-2'>Forum</a>
+            <a href="https://rawpedia.rawtherapee.com" class='pt-3 pt-lg-0 px-2'>Documentation</a>
+            <a href="https://github.com/Beep6581/RawTherapee" class='pt-3 pt-lg-0 px-2'>Code</a>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-6 mt-5">
+            <div class='mb-2 text-secondary'>
+                &copy; {{ i18n "copyright" }} {{ now.Format "2006" }} {{ i18n "copyrightEntity" }}
+            </div>
+            <span class='pixls-love border-top border-secondary d-inline-block'>
+                <a href="https://pixls.us">PIXLS.US</a> <span class="heart">♡</span>'s 
+                RawTherapee
+            </span>
+        </div>
+    </div>
+
   </div>
 </footer>

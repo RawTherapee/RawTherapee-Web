@@ -37,6 +37,12 @@ $theme-colors: (
 
 /* Other custom stuff */
 
+/* This make sure the footer is pushed down
+    even if the page content is short */
+.main {
+    min-height: 55vh;
+}
+
 body {
     margin: 1rem;
 }
@@ -56,6 +62,22 @@ blockquote {
     border-left: solid 2px gray;
     padding-left: 0.5rem;
 }
+
+/* Footer Styling */
+/* -------------- */
+footer {
+    background-color: black;
+}
+
+.pixls-love {
+    font-size: 0.9rem;
+}
+.heart {
+    color: red;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+
 
 
 /* Formatting for blog post metadata */
@@ -81,6 +103,7 @@ blockquote {
     body {
         margin: 0;
     }
+
 
     /* Home Page */
     section.info {
