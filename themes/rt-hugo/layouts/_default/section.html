@@ -4,36 +4,40 @@
 
 
 <article class="page container">
-    <h1>
-        {{ .Title | markdownify }}
-    </h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h1>
+                {{ .Title | markdownify }}
+            </h1>
 
-    {{ .Content }}
-    <!-- This is Pat David doing something stupid... -->
-    <ul class="posts">
-        {{ range .Data.Pages -}}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ if not .Date.IsZero }}
-            <time>
-                {{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}}
-            </time>
-            {{end}}
-        </li>
-        {{- end }}
-    </ul>
-    <!-- END stupid things -->
+            {{ .Content }}
+            <!-- This is Pat David doing something stupid... -->
+            <ul class="posts">
+                {{ range .Data.Pages -}}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ if not .Date.IsZero }}
+                    <time>
+                        {{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}}
+                    </time>
+                    {{end}}
+                </li>
+                {{- end }}
+            </ul>
+            <!-- END stupid things -->
 
-    {{ if .IsTranslated }}
-    <h4>{{ i18n "translations" }}</h4>
-    <ul>
-        {{ range .Translations }}
-        <li><a href="{{ .Permalink }}">
-            {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
-        </a></li>
-        {{ end }}
-    </ul>
-    {{ end }}
+            {{ if .IsTranslated }}
+            <h4>{{ i18n "translations" }}</h4>
+            <ul>
+                {{ range .Translations }}
+                <li><a href="{{ .Permalink }}">
+                        {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
+                </a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
 </article>
 
 {{ end }}
