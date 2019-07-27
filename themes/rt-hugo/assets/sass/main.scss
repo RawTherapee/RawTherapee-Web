@@ -25,6 +25,18 @@ $theme-colors: (
     }
 }
 
+/* This gives room above internal anchors
+/* So they aren't hidden under navbar */
+@for $i from 1 through 6 {
+    h#{$i}[id]::before {
+        display: block;
+        height: 4rem;
+        margin-top: -4rem;
+        visibility: hidden;
+        content: "";
+    }
+}
+
 @import 'bootstrap';
 
 /* Our custom SASS imports */
