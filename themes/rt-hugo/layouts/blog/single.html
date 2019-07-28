@@ -26,7 +26,8 @@
                 </div>
             </div>
             <div class="post-body">
-                {{ .Content }}
+                {{ partial "header-links.html" .Content }}
+                {{/* {{ .Content }} */}}
 
                 {{ if .IsTranslated }}
                 <h4>{{ i18n "translations" }}</h4>

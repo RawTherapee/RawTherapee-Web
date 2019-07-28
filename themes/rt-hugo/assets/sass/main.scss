@@ -35,6 +35,9 @@ $theme-colors: (
         visibility: hidden;
         content: "";
     }
+    h#{$i}:hover .header-link {
+        visibility: visible;
+    }
 }
 
 @import 'bootstrap';
@@ -102,6 +105,13 @@ footer {
 .post-tags {
     font-size: small;
 }
+
+/* Header anchors */
+/* -------------- */
+.header-link {
+    visibility: hidden;
+}
+
 
 @media(min-width: 992px) {
 
