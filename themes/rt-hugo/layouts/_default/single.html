@@ -11,7 +11,8 @@
                 {{ .Title | markdownify }}
             </h1>
 
-            {{ .Content }}
+            {{ partial "header-links.html" .Content }}
+            {{/* {{ .Content }} */}}
 
             {{ if .IsTranslated }}
             <h4>{{ i18n "translations" }}</h4>
