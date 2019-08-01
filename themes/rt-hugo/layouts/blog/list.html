@@ -6,24 +6,32 @@
             <h1 class="page-title">{{ .Title }}</h1>
             {{- range .Data.Pages.GroupByDate "2006" }}
             <div>
-                <h3 class="post-year">{{ .Key }}</h3>
+                <h3 class="post-year border-bottom border-secondary">{{ .Key }}</h3>
 
-                <ul class="posts">
-                    {{- range .Pages }}
-                    <li class="list-item">
-                        <a href="{{ .Permalink }}" class='font-weight-bold'>{{ .Title }}</a>
-                        {{ if not .Date.IsZero }}
-                        <time class="text-muted" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-                            <small>
-                                ({{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}})
-                            </small>
-                        </time>
-                        {{ end }}
-                        <br>
-                        {{/* {{ .Summary | safeHTML }} */}}
-                    </li>
+                {{- range .Pages }}
+                <h4 class='mt-4 mb-n1'>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h4>
+
+                {{ if not .Date.IsZero }}
+                <time class="text-muted mb-1 d-block" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    <small>
+                        ({{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}})
+                    </small>
+                </time>
+                {{ end }}
+
+                <p>
+                    {{ .Summary | safeHTML }}
+                    {{ if .Truncated }}
+                    <br>
+                    <span>
+                        (<a href="{{ .Permalink }}">Read more…</a>)
+                    </span>
                     {{- end }}
-                </ul>
+                </p>
+
+                {{- end }}
 
             </div>
             {{- end }}
