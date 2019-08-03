@@ -8,11 +8,16 @@
     before importing bootstrap itself
 */
 
-
 /* Overriding default bootstrap dark theme color */
+/* Link/Colors should be checked against
+/* Web Content Accessibility Guidelines:
+/* https://webaim.org/resources/linkcontrastchecker/
+/* https://webaim.org/resources/contrastchecker/ */
 $theme-colors: (
+    "primary": #1A88FF,
     "dark": #222222
 );
+
 
 /* This nest+loop adds a bigger margin for all
 /* headings when they follow p, code, ul, ol */
