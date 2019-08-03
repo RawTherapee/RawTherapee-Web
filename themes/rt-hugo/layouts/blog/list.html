@@ -14,9 +14,13 @@
                 </h4>
 
                 {{ if not .Date.IsZero }}
-                <time class="text-muted mb-1 d-block" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                <time class="font-italic mb-1 d-block" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
                     <small>
-                        ({{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}})
+                        {{- .Date.Format (.Site.Params.dateform | default "02 Jan 2006") }}
+                        {{ with .Params.author }}
+                            by
+                            {{ . -}}
+                        {{ end }}
                     </small>
                 </time>
                 {{ end }}
