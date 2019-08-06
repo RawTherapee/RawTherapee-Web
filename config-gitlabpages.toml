@@ -11,6 +11,7 @@ paginatePath = "page"
 [permalinks]
     # post = "/:year/:month/:day/:slug/"
     post = "/:year/:month/:slug/"
+    news = "/:year/:month/:slug/"
     code = "/:slug/"
 
 [taxonomies]
