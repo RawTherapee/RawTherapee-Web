@@ -18,6 +18,18 @@
         </div>
         */}}
 
+        <section>
+            <div>Test</div>
+            {{ with .Site.GetPage "/homepage-sections" }}
+            {{ range .Resources.Match "*" }}
+            <h3>Umm... {{ .Title }}</h3>
+            <p>{{ .Content }}</p>
+            Ouch.
+            {{ end }}
+            {{ end }}
+            <div>Test2?</div>
+        </section>
+
     {{ partial "recent-release.html" . }}
 
     {{ .Content }}
