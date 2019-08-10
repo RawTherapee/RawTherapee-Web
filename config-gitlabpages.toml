@@ -53,7 +53,7 @@ paginatePath = "page"
     highlight = "default"
 
 [blackfriday]
-    angledQuotes = true
+    angledQuotes = false
     fractions = true
     plainIDAnchors = true
 
