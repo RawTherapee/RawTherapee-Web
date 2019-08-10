@@ -22,6 +22,25 @@ paginatePath = "page"
 #    name = "yourname"
 #    email = "yourname@example.com"
 
+[menu]
+    [[menu.secondary]]
+    identifier = "forum"
+    name        = "Forum"
+    url         = "https://discuss.pixls.us/c/software/rawtherapee"
+    weight      = 1
+
+    [[menu.secondary]]
+    identifier  = "documentation"
+    name        = "Documentation"
+    url         = "https://rawpedia.rawtherapee.com"
+    weight      = 2
+
+    [[menu.secondary]]
+    identifier  = "code"
+    name        = "Code"
+    url         = "https://github.com/Beep6581/RawTherapee"
+    weight      = 3
+
 
 [params]
     # Markdwon ok here?

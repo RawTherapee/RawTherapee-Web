@@ -22,11 +22,21 @@
           </div>
     </div>
 
+    {{/*
     <div class="row justify-content-lg-end">
         <div class="col-lg-6 mt-lg-2 d-flex flex-column flex-md-row align-self-lg-center justify-content-lg-end">
             <a href="https://discuss.pixls.us/c/software/rawtherapee" class='pt-3 pt-lg-0 px-2'>Forum</a>
             <a href="https://rawpedia.rawtherapee.com" class='pt-3 pt-lg-0 px-2'>Documentation</a>
             <a href="https://github.com/Beep6581/RawTherapee" class='pt-3 pt-lg-0 px-2'>Code</a>
+        </div>
+    </div>
+    */}}
+
+    <div class="row justify-content-lg-end">
+        <div class="col-lg-6 mt-lg-2 d-flex flex-column flex-md-row align-self-lg-center justify-content-lg-end">
+            {{ range .Site.Menus.secondary }}
+            <a href="{{ .URL }}" class='pt-3 pt-lg-0 px-2'>{{ .Pre }}{{ .Name }}</a>
+            {{ end }}
         </div>
     </div>
 
