@@ -1,0 +1,14 @@
+---
+title: "We are looking for Mac builders"
+date: Aug 19 2012 11:19
+author: dualon
+Tags:
+- Community
+---
+
+
+<div id="article_show_text">We are looking for Mac builders.<br><br>RawTherapee is a cross-platform raw development tool, but due to the lack of Mac builders our latest release on this platform is 4.0.6 (compared to the <a href="http://code.google.com/p/rawtherapee/issues/detail?id=1419">currently planned 4.1</a>).<br><br>Requirements:<br><ul><li>minimal experience in cmake and compiling C++ source code on Macintosh platform</li><li>regular availability (e.g. willing to follow the project and build prior to releases)</li><li>access to multiple versions of Mac OS X is a plus, but not a must have<br></li></ul><br>No special skills or knowledge is needed beyond that. It is OK if you are not familiar with RawTherapee's build background: we will give you all the neccessary information if needed.<br>You don't have to do anything special, just announce your intention in <a href="http://code.google.com/p/rawtherapee/issues/detail?id=1526">Issue 1526</a>!<br></div>
+
+<a name="comments"></a>
+</div>
+

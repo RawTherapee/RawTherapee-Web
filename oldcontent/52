@@ -1,0 +1,30 @@
+---
+title: "Get The Latest Releases"
+date: Oct 16 2010 12:09
+author: DrSlony
+Tags:
+- Deprecated Content
+- Nightly Builds
+---
+
+
+<div id="article_show_text"><p>The latest official release is alpha1 from January. A lot has changed since then. The "<a href="http://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often</a>"  model is planned to be followed to satisfy you with new builds and to  appreciate and show the efforts of the developers. Therefore some new  builds are provided to play with until the bugs (program errors) are  ironed out and the next "official" release can be published.</p>
+<p>The latest releases are available in this directory and are updated regularly: <br /><a href="http://www.rawtherapee.com/releases_head/">http://www.rawtherapee.com/releases_head/</a></p>
+<p>The current builds<a name="lead_end"></a> from this directory:</p>
+<ul><li><a href="http://www.rawtherapee.com/releases_head/rawtherapee_win32_std_2010-10-15_release-3.0-a1+292-4e6cdd61de02.7z">Windows 32 bit</a> (.7z - you may need <a href="http://www.7-zip.org/">7zip</a>)</li>
+<li><a href="http://www.rawtherapee.com/releases_head/rawtherapee_win64_corei7sse42_2010-09-17_release-3.0-a1+276-d78bce58e762.7z">Windows 64 bit + SSE support</a> (.7z)</li>
+<li><a href="http://www.rawtherapee.com/releases_head/rawtherapee_osx105_2010-10-06_release-3.0-a1+278-09f6415272e0.dmg">Mac OS X 10.5 (32 bit)</a> (.dmg)</li>
+<li><a href="http://www.rawtherapee.com/releases_head/rawtherapee_linux32_2010-10-14_release-3.0-a1+289-48d4cef8f1c5.tar.bz2">Linux 32 bit</a> (.tar.bz2)</li>
+<li><a href="http://www.rawtherapee.com/releases_head/rawtherapee_linux64_2010-10-15_release-3.0-a1+293-8e7ead3a466b.tar.bz2">Linux 64 bit</a> (.tar.bz2)</li>
+</ul><p>The source code is also available as always, you can <a href="http://code.google.com/p/rawtherapee/wiki/MercurialHowto">check out via Mercurial</a>.</p>
+<p>Please note that:</p>
+<ul><li>the recent builds are compiled from the head (the main repository of RawTherapee, see above the source code),</li>
+<li>usually are stable enough to work with but not suggested for production use,</li>
+<li>let you check the "bleeding edge" development of RawTherapee and therefore may include some bugs.</li>
+</ul><p>The known bugs are <a href="http://code.google.com/p/rawtherapee/issues/list?can=2&amp;q=&amp;sort=-id&amp;colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary">listed here</a>.</p>
+<p>Bugs can be reported via the Google Code Issue Tracker (please check for duplicates before you file an issue):  <br /><a href="http://code.google.com/p/rawtherapee/">RawTherapee Google Code Home</a> -&gt; <a href="http://code.google.com/p/rawtherapee/issues/list">Issues</a> -&gt; New Issue on the upper left side.</p>
+<p>Please feel free to use the <a href="../forum/">forum</a> in case of further questions, the topic of the latest builds <a href="http://www.rawtherapee.com/forum/viewtopic.php?t=2101">can be found here</a>.</p></div>
+
+<a name="comments"></a>
+</div>
+

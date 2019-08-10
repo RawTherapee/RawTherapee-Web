@@ -1,0 +1,32 @@
+---
+title: "RawTherapee V2.3 released"
+date: Feb 12 2008 09:45
+author: dualon
+Tags:
+- RT 2.3
+---
+
+
+<div id="article_show_text"><p>We are proud to present RawTherapee version 2.3!<br /><br />Changelog:</p>
+<ul><li> Image resizing tool</li>
+<li> Vignetting correction tool</li>
+<li> Local contrast enhancement tool</li>
+<li> Auto Crop and Fill option in the rotation tool</li>
+<li> Multi-language support (already included in package: English, German, Hungarian, Latvian, Spanish, Italian, Dutch, Swedish, Russian, Polish, Czech, Slovak)</li>
+<li> Channel mixer</li>
+<li> Deconvolution based sharpening</li>
+<li> VNG-4 interpolation of dcraw to reduce maze on Olympus raw images</li>
+<li> Selectable guide lines when cropping</li>
+<li> Enhanced auto and spot white balance</li>
+<li>Support for new cameras (DCRaw 8.82/1.398)</li>
+<li> Windows Vista support</li>
+</ul><p>Besides the new release of<a name="lead_end"></a> the RawTherapee there are two more surprises:</p>
+<ul><li> A beautiful new web-page is up and running! It's made by Bytec with user-oriented solutions and supportive areas in mind. The new site helps to overview, download, and learn RawTherapee in a centralized, efficient way. News are provided via <a href="http://www.rawtherapee.com/rss.php">RSS</a> feed, and there is a tool to <a href="http://www.rawtherapee.com/RAW_Compare/">compare</a> RawTherapee with many other converters. We hope you'll enjoy the new "headquarters", please feel free to feedback us in the forums!</li>
+<li> A development team is introduced, the members are Gábor, Bytec, Dualon, Keenonkites and Klonk.<br /></li>
+</ul><p>The multi-language support of v2.3 lets you to contribute in translation. For instructions or other questions check the <a href="?mitem=4">FAQ section</a>.</p>
+<p>For feature requests, bug reports, unanswered questions or for just a discussion about RawTherapee use our <a href="http://www.rawtherapee.com/forum/index.php">forum</a>.</p>
+<p>Most importantly: have a good time with RawTherapee 2.3!<br /><br />Gábor</p></div>
+
+<a name="comments"></a>
+</div>
+

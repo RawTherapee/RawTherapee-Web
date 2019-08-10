@@ -1,0 +1,33 @@
+---
+title: "Documentation for Raw Therapee v2.4"
+date: Oct 27 2009 08:40
+author: dualon
+Tags:
+- Deprecated Content
+- Documentation
+- Downloads
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p>If you want to understand how to work with Raw Therapee even better, we recommend to read the users manual. You can download it in PDF format:</p>
+<ul><li><a title="English translation of the Manual" href="http://www.rawtherapee.com/data/RawTherapeeManual_2.4.pdf">Users Manual for RT v2.4 (english)</a>, last change: 2009-09-04</li>
+<li><a title="French translation of the Manual" href="http://www.rawtherapee.com/data/RAWTherapeeManuel_2.4_fr.pdf">Manuel pour RT v2.4 (french)</a>, last change: 2009-09-20, write errors corrected </li>
+<li><a title="German translation of the Manual" href="http://www.rawtherapee.com/data/RawTherapeeHandbuch_2.4.pdf">Benutzerhandbuch für RT v2.4.1 (german)</a>, last change: 2009-10-21</li>
+<li><a title="Italian translation of the manual" href="http://www.rawtherapee.com/data/RawTherapeeManual_2.4_it.pdf">Manuale dell'utente di RT 2.4 (italian)</a>, last change 2009-02-08</li>
+<li><a title="Japanese Translation of the Users Manual" href="http://www.rawtherapee.com/data/RawTherapeeManual_2.4_jp.pdf">Japanese Users Manual for RT v.2.4 (japanese)</a>, new: 2009-07-27</li>
+<li><a title="Italian translation of the manual" href="http://www.rawtherapee.com/data/RawTherapeeManual_2.4.1_nl.pdf">Handleiding RT 2.4 (netherlands)</a>, last change 2009-09-04, updated for 2.4.1</li>
+</ul><p>Here are some additonal<a name="lead_end"></a> informations:</p>
+<ul><li><a title="English translation of the internal Workflow Diagram" href="http://www.rawtherapee.com/data/RT-Internal-Workflow_2.4.pdf">Internal Workflow of RT v2.4 (english)</a></li>
+<li><a title="French translation of the internal Workflow Diagram" href="http://www.rawtherapee.com/data/RT-Flux%20de%20travail%20Interne_2.4_fr.pdf">Flux de travail Interne de RT v2.4 (french)</a></li>
+<li><a title="German translation of the internal Workflow Diagram" href="http://www.rawtherapee.com/data/RT-Interner-Arbeitsablauf_2.4.pdf">Interner Arbeitsablauf von RT v2.4 (german)</a>, last change: 2009-02-06</li>
+<li><a title="Italian translation of the internal Workflow Diagram" href="http://www.rawtherapee.com/data/RT-Internal-Workflow_2.4_it.pdf">Modalità operativa interna di RT 2.4 (italian)</a></li>
+</ul><p>For those who want to translate the english manual into their own language, here the OpenOffice source of the manual and the internal workflow (Changes from previous version have been tracked):</p>
+<ul><li> <a href="http://www.rawtherapee.com/data/090904-RawTherapeeManual_2.4.odt">Users Manual for RT v2.4 (english - OpenOffice)</a>, last change: 2009-09-04 </li>
+<li> <a href="http://www.rawtherapee.com/data/081021-RT-Internal-Workflow_2.4.odg">Internal Workflow for RT v2.4 (english - OpenOffice)</a>, last change: 2008-10-21</li>
+</ul><p>Please check before you start with a new translation in the <a title="Localisation Section of the RawTherapee Forum" href="http://www.rawtherapee.com/forum/viewforum.php?f=4">Localisation Forum</a> if someone else already started with the same language and post there if you start to translate something.</p>
+<p>If you have translated the manual to a new language, please send the result to localisation at rawtherapee dot com. This way it can be provided here for public download.</p></div>
+
+<a name="comments"></a>
+</div>
+

@@ -1,0 +1,87 @@
+---
+title: "RawTherapee 4.0.7 released"
+date: March 09 2012 22:59
+author: DrSlony
+Tags:
+- Downloads
+- Versions
+---
+
+
+<div id="article_show_text"><p>RawTherapee 4.0.7 was released on the 1st of February 2012, after two
+  months of development since the release of the previous 4.0.6 version. It
+  features new tools, supports more cameras, and has numerous speed and
+  stability improvements.</p>
+
+  <p>Get it from the <a href="downloads">Downloads</a>
+  section or using your operating system's package manager, or read more about
+  the changes, below.</p>
+
+  <p><a name="lead_end"></a><br /></p>
+
+  <h1>New features</h1><div><ul><li>New RGB curves</li><li>New white balance presets for specific spectra</li><li>New preview modes: red, green, blue, luminosity and Focus Mask (see which areas are in focus)</li><li>New Export Panel with Fast Export Options</li><li>DCRAW updated to 9.12 with added support added for these cameras:<br />Canon PowerShot S100<br />Fujifilm X10<br />Leica V-Lux 3<br />Nikon 1<br />Panasonic DMC-FZ4<br />Panasonic DMC-GX1<br />Samsung NX<br />Samsung NX200<br />Sony NEX-7</li><li>Enhanced color matrices and RT-specific input ICC profiles for the following cameras:<br />Canon EOS 5D<br />Canon PowerShot G10<br />Nikon D3100</li><li>Additional crop ratios</li><li>Additional output ICC profiles</li><li>1-click neutral setting for exposure values</li><li>Exposure Compensation thumbnail caption and filter option in the file browser metadata filter</li><li>Automatic display of the RELEASE_NOTES.txt file on the first run after a RawTherapee upgrade (e.g. 4.0.6 &gt; 4.0.7)</li></ul></div>
+  
+
+  <div>
+    <br />
+  </div>
+
+  <h1>Caveats</h1>
+  <div>
+    <ul>      <li>Memory requirements<br />
+      Please read the blog entry on <a href="blog/maximizing-memory-efficiency">maximizing memory efficiency</a></li>
+    </ul>
+    <ul>      <li>Differences between the preview and the output image<br />
+      The color-managed preview in RawTherapee is (and has always been) based
+      on image data in the Working Space profile. Although the actual preview
+      is rendered using a monitor profile (or sRGB profile, if the monitor
+      profile is not specified), it does not reflect the Output Profile &amp;
+      Output Gamma settings. This can lead to a slightly different output
+      rendering when Working Space profile and Output Space profiles are not
+      the same. A workaround is to set them to the same values to ensure the
+      preview accurately reflects the final rendered output.</li>
+    </ul>
+    <ul>      <li>For generic use in an sRGB workflow when the output target is
+      web-based image display, it is recommended to use the default values of
+      the Color/ICM toolset (Working Profile = sRGB, Output Profile =
+      RT_sRGB).</li>
+    </ul>
+    <ul>      <li>Future releases of RawTherapee are planned to support a more
+      comprehensive color-managed preview that will allow proofing with
+      accurate visualization of the final output render based not only on the
+      working space and monitor profiles, but also on the user-selected Output
+      Profile and Output Gamma.</li>
+    </ul>
+    <ul>      <li>Auto Levels behavior has changed<br />
+      The new algorithm drives the following parameters:</li>
+
+      <li>
+        
+          Exposure compensation,</li>
+
+          <li>Highlight recovery amount &amp; threshold,</li>
+
+          <li>Black level &amp; shadow compression,</li>
+
+          <li>RGB brightness,</li>
+
+          <li>RGB contrast.</li>
+        </ul>      
+    
+
+    <ul>      <li>The profiles supplied with RawTherapee were changed to be compatible
+      with the new Auto Levels logic, as in older profiles RGB contrast and
+      brightness were preset to a fixed value. Old Tuned-# profiles have been
+      removed.</li>
+    </ul>
+    <ul>      <li>The new Exposure Compensation tag in thumbnail captions and in the
+      file browser filter requires clearing of Rawtherapee's thumbnail cache
+      (see Preferences &gt; File Browser). If the thumbnail cache is not
+      cleared, exposure compensation values will not be displayed in captions
+      or recognized in filtering <b>for previously browsed images
+      only</b>.</li>
+    </ul>  </div></div>
+
+<a name="comments"></a>
+</div>
+

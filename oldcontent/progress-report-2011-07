@@ -1,0 +1,54 @@
+---
+title: "Progress report for July 2011"
+date: Aug 03 2011 02:01
+author: DrSlony
+Tags:
+- Versions
+---
+
+
+<div id="article_show_text">The following changelog details a list of items that have been fixed and/or implemented in the development branch of RawTherapee from the 19th of June till the 31st of July, 2011:<a name="lead_end"></a><div><br /></div>
+<div> 
+<ul><li>Fixed issue when using false color suppression on very overexposed photos where whites turned grey.</li>
+<li>Threading improved.</li>
+<li>Case-insensitive "find" toolbar in file browser to search by filename. Ability to display said toolbar in two rows.</li>
+<li>Stability improvements.</li>
+<li>Fixed numerous bugs that made RawTherapee freeze for short periods of time.</li>
+<li>The file browser context menu has been rearranged into groups, customizable through the preferences panel.</li>
+<li>RawTherapee color themes fixed to work well in Ubuntu 11.04 (GTK3).</li>
+<li>Fixed error where large positive Exposure Compensation values along with large negative Black values caused light regions to turn black.</li>
+<li>Translation updates: French, German, Catalan, Czech, Russian, </li>
+<li>New highlight reconstruction algorithm, faster and better than the old one.</li>
+<li>File browser filters: (Not) Saved, (Not) Edited.</li>
+<li>The Amaze demosaicing algorithm no longer produces artifacts in white areas.</li>
+<li>Windows: mute button for RawTherapee sound notifications, and RT automatically appears  in the Windows Mixer.</li>
+<li>Further floating point conversions.</li>
+<li>Compiler warnings suppressed.</li>
+<li>Executable renamed from "rt" to "rawtherapee".</li>
+<li>JPEG images in the CMYK color model are ignored by RT.</li>
+<li>New sharpening methods: Gradient Sharpening (border), and Microcontrast (texture). Both available under Detail &gt; Clarity and Sharpening.</li>
+<li>Curve histograms no longer show garbage when opening a raw file.</li>
+<li>Extended support in various filters for partial profile paste.</li>
+<li>New CMAKE "<a href="http://code.google.com/p/rawtherapee/issues/detail?id=184#c48" title="Google Code issue 184 - CMAKE BUNDLE option">BUNDLE</a>" option, -DBUNDLE=ON</li>
+<li>Selecting an aspect ratio in the crop panel automatically enables "use fixed ratio".</li>
+<li>Removed RAWZOR.</li>
+<li>Various icons replaced.</li>
+<li>PP3 sidecar files were unnecessarily triggering RawTherapee directory monitoring events which caused RT to occasionally freeze.</li>
+<li>RT was using the "fast" demosaicing algorithm even when another algorithm was selected as the default one in your PP3 profile. It would only refresh the preview to your chosen demosaicing algorithm when you used certain tools that forced the preview to get re-rendered. This should now be fixed.</li>
+<li>Change of mouse cursor from an open hand to a crosshair.</li>
+<li>Windows: fixed sorting of disks in "Places", should now be sorted A-Z.</li>
+<li>Windows: Automatic language detection.</li>
+<li>Fixed cropping to work properly once more from thumbnail level in the File Browser tab.</li>
+<li>Batch queue context menu fixed to not disappear.</li>
+<li>New default PP3 profiles (Neutral, default(ISO), BW, Tuned, Natural, Punchy).</li>
+<li>Update to <a href="http://www.cybercom.net/~dcoffin/dcraw/" title="Dave Coffin's dcraw">dcraw</a>-9.10</li>
+<li>Fixed bug where thumnails would appear too dark when "Highlight Recovery" was enabled.</li>
+<li>Fixed a bug where the file extension was not appended when saving the image directly, bypassing the queue.</li>
+<li>Prevent RT from crashing when encountering a corrupt raw file.</li>
+<li>Fixed articfacts when using exposure saturation on dark noisy Canon images.</li>
+<li>Fixed RL Deconvolution from causing artifacts to appear when using certain slider values (e.g. 5 iterations) or a negative lightness channel.</li>
+<li>RawTherapee tagged 4.0.0 (no we haven't released RawTherapee 4.0 yet, this is a development version, but we decided to call it 4.0 as so much has changed from 3.0.0).</li></ul><br /></div><div>As always, you can find nightly development builds of RawTherapee in our <a href="http://rawtherapee.com/downloads" title="RawTherapee Downloads section">downloads section</a>, along with the latest stable version, 3.0.</div></div>
+
+<a name="comments"></a>
+</div>
+

@@ -1,0 +1,83 @@
+---
+title: "RawTherapee 5.1 released"
+date: May 15 2017 22:06
+author: DrSlony
+---
+
+
+<div id="article_show_text"><div>We entered the woods in the dead of night, we followed the scream of the owls, they led us to a fireside, we stood in a circle, our beards hung low and we chanted, and we hummed, and we swayed to and fro, and we concluded that we are unquestionably thrilled to release <nobr>RawTherapee 5.1!</nobr></div>
+<div><br></div>
+
+<div style="text-align: justify; width: 552px; height: 346px; margin-left: auto; margin-right: auto;"><img src="/images/logos/rt_splash_5.1.png"></div>
+<div><br></div>
+
+<div><a name="lead_end"></a></div>
+<div><br></div>
+
+<div>RawTherapee provides you with a selection of powerful tools with which you can practice the art of developing raw photos. Be sure to read <a href="http://rawpedia.rawtherapee.com/">RawPedia</a> to understand how each tool works so that you may make the most of it. A great place to start is the "<a href="http://rawpedia.pixls.us/Getting_Started">Getting Started</a>" article. Click on "<a href="http://rawpedia.rawtherapee.com/Main_Page">Main page</a>" in the top-left corner when you have finished reading that article to see all other articles.</div>
+<div><br></div>
+<div>If you found a problem, don't keep it to yourself. Find out <a href="http://rawpedia.pixls.us/How_to_write_useful_bug_reports">how to write useful bug reports</a> to get the problem fixed.</div>
+<div><br></div>
+<div>Talk with other users and developers in our shared <a href="https://discuss.pixls.us/c/software/rawtherapee">forum</a>. You can also have a live chat using <a href="http://rawpedia.rawtherapee.com/IRC">IRC</a> - no installation necessary.</div>
+<div><br></div>
+<div>Stay informed by following us on <a href="https://plus.google.com/+rawtherapee/">Google+</a></div>
+<div><br></div>
+<h1>Download</h1><ul>    <li>Windows installers and macOS builds are available from our <a href="downloads">Downloads</a> page.</li>
+    <li>Linux users can get RawTherapee from their package managers.</li>
+    <li>Compiling yourself? Grab a no-git-required <a href="http://rawtherapee.com/shared/source/">tarball</a> or <code>git checkout 5.1</code>, then read the <a href="http://rawpedia.rawtherapee.com/Main_Page#Compiling">Compiling</a> section in RawPedia.</li>
+</ul><div><br></div>
+<h1>News Relevant to Photographers</h1><div>RawTherapee 5.1 supports most raw formats, including some unusual ones like those from cameras using Foveon and X-Trans sensors. If you're wondering whether it supports your camera's raw format, first download RawTherapee 5.1 and try for yourself. If a raw format is not supported it will either not open, or the preview in the Editor tab will appear black, white, or have a strong color cast - usually magenta. In that case, read "<a href="http://rawpedia.rawtherapee.com/Adding_Support_for_New_Raw_Formats">Adding Support for New Raw Formats</a>" in RawPedia.</div><div><br></div>
+<h2>In order to use RawTherapee efficiently you should know that:</h2><ul>    <li>You can scroll all panels using the mouse scroll-wheel.</li>
+    <li>You can right-click on a tool's name to automatically expand it while collapsing all others.</li>
+    <li>To change slider values or drop-down list items with the mouse scroll-wheel, hold the Shift key. This is so that you can safely scroll the panels without accidentally changing a slider or other tool setting.</li>
+    <li>All curves support the Shift and Ctrl keys while dragging a point. Shift+drag makes the point snap to meaningful axes (top, bottom, diagonal, other), while Ctrl+drag makes your mouse movement super-fine for precise point positioning.</li>
+    <li>There are many keyboard shortcuts which make working with RawTherapee much faster and give you greater control. Make sure you familiarize yourself with them on RawPedia's <a href="http://rawpedia.rawtherapee.com/Keyboard_Shortcuts">Keyboard Shortcuts</a> page!</li>
+</ul><h2>New Features</h2><ul>    <li>Pentax Pixel Shift support, to automatically combine sub-images from a Pentax Pixel Shift raw file into one high quality image, with support for automatic motion detection and masking.</li>
+    <li>Support for processing any sub-image from raw formats which support multiple images. Currently up to 4 sub-images supported.</li>
+    <li>Dynamic Profile Creator to automatically generate per-image custom processing profiles by merging existing processing profiles based on image metadata (Exif).</li>
+    <li>New command-line executable "rawtherapee-cli(.exe)" to reduce startup time for command-line operations.</li>
+    <li>HaldCLUT paths are now relative to the HaldCLUT folder as set in Preferences. This enables you to share PP3 files easier.</li>
+    <li>Auto White Balance now has a Temperature Bias, letting you make the automatic temperature warmer or cooler.</li>
+    <li>LCP correction works for raw and non-raw files.</li>
+    <li>LCP distortion correction support for fisheye lenses.</li>
+    <li>Certain tools are now hidden or disabled if the loaded image does not support them, e.g. the tools in the Raw tab are disabled when working with a non-raw file.</li>
+    <li>Improved fit-to-window zoom functionality of the main preview in the Editor tab.</li>
+    <li>New Fast Export option to downscale the image before processing, to increase speed.</li>
+    <li>Custom crop ratio.</li>
+    <li>Automatic monitor profile detection also in Linux.</li>
+    <li>Lens information support added for Panasonic cameras.</li>
+    <li>Support for lossy DNG files.</li>
+    <li>Support for compressed Fujifilm Bayer raw files.</li>
+    <li>Support for compressed X-Trans raw files.</li>
+    <li>Support for Sigma sd Quattro DNG raw files.</li>
+    <li>Added DCP profiles for accurate color for:
+        <ul>            <li>FUJIFILM X100S
+            </li><li>LG Mobile LG-H815 (LG G4)
+            </li><li>NIKON D300
+            </li><li>NIKON D300
+            </li><li>NIKON D5600
+            </li><li>NIKON D80
+            </li><li>NIKON D810
+            </li><li>OLYMPUS E-M1MarkII
+            </li><li>Panasonic DMC-GX85
+        </li></ul></li>
+</ul><div><br></div>
+<h1>News Relevant to Package Maintainers</h1><ul>    <li>No significant changes since 5.0-r1.</li>
+    <li>GTK2 is not supported. 5.0-r1 was the last GTK2 release.</li>
+    <li>Branches "master" and "gtk3" are dead, do not use them.</li>
+    <li>RawTherapee 5 requires GCC-4.9 or higher, or Clang.</li>
+    <li>Do not use <code>-ffast-math</code>, it will not make RawTherapee faster but will introduce artifacts.</li>
+    <li>Use <code>-O3</code>, it will make RawTherapee faster with no known side-effects.</li>
+    <li>For stable releases use <code>-DCACHE_NAME_SUFFIX=""</code></li>
+    <li>For development builds and release-candidates use <code>-DCACHE_NAME_SUFFIX="5-dev"</code></li>
+</ul><div><br></div>
+<h1>News Relevant to Developers</h1><ul>    <li>Announce and discuss your plans in GitHub before starting work.</li>
+    <li>Keep branches small so that completed and working features can be merged into the "dev" branch often, and so that they can be abandoned if they head in the wrong direction.</li>
+    <li>Use C++11</li>
+    <li>Code must be run through astyle.</li>
+</ul><div><br></div>
+<div>Complete revision history available on <a href="https://github.com/Beep6581/RawTherapee/commits/5.1">GitHub</a>.</div></div>
+
+<a name="comments"></a>
+</div>
+

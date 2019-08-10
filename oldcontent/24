@@ -1,0 +1,35 @@
+---
+title: "Development snapshot: Download RT v2.4m1"
+date: Apr 23 2008 12:05
+author: dualon
+Tags:
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p><span style="font-weight: bold;">Explanation about 'Development snapshot' Releases:</span></p>
+<div style="margin-left: 40px;">This release is not a final product, it is something between a 'Developer Snapshot', a 'Milestone Release', a 'Beta Version' and a 'Release Candidate'. Therefore it could contain features that are not yet completely implemented and could also contain some more bugs as a STABLE release.</div>
+<div style="margin-left: 40px;">The idea behind this Releases is to give users a first idea about the features and get first feedback from the users about still existing bugs in the product.<br /></div>
+<div style="margin-left: 40px;"><br /></div>
+<p><span style="font-weight: bold;">Requirements</span><a name="lead_end"></a><span style="font-weight: bold;">:</span></p>
+<ul><li>a fast processor with SSE support is recommended (but not required) </li>
+<li>at least 512 MB of RAM. </li>
+<li>Windows version: Windows 2000, XP or Vista (32bit) is required</li>
+<li>for the linux version: gtk+ 2.12 series required</li>
+</ul><p><span style="font-weight: bold;">Download:</span></p>
+<p> </p>
+<table>
+<tr>
+<td>Windows version (SSE support)</td><td><a href="http://www.rawtherapee.com/rawtherapee24m1.exe">rawtherapee24m1.exe</a></td></tr>
+<tr>
+<td>Tgz archive for linux with glibc 2.4</td><td><a href="http://www.rawtherapee.com/rawtherapee24m1.tgz">rawtherapee24m1.tgz</a></td></tr>
+
+</table><p><span style="font-weight: bold;">Price:</span></p>
+<div style="margin-left: 40px;">You can decide how much you pay for RawTherapee.<br /> It can be downloaded and evaluated for free. If you are satisfied with it and you can afford an $5 payment, the author kindly asks you to make a donation to support the further development. Please click on one of the donation buttons on the right side and make PayPal payment.<br /></div>
+<p><span style="font-weight: bold;">Feedback:</span></p>
+<div style="margin-left: 40px;">If you found a bug or have nice ideas, please visit our <a title="RawTherapee Forum" href="http://rawtherapee.com/forum/">forum</a> to discuss them with other users and the author.</div>
+<p><span style="font-weight: bold;">Disclaimer:</span><br /> <br /> THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></div>
+
+<a name="comments"></a>
+</div>
+

@@ -1,0 +1,32 @@
+---
+title: "Beta Version released: 2.4beta2"
+date: Nov 12 2008 13:31
+author: dualon
+Tags:
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p>Based on the bug reports of the users many annoying bugs have been discovered and fixed. There are still some more, but we think it's time to make beta 2 available for the public.</p>
+<p>Bug fixes compared to beta1 are:</p>
+<ul><li>multiple thumbnails for the same image bug fixed</li>
+<li>color propagation is back! However the luminance method is used instead in the file browser.</li>
+<li>proper rights for the "converted" folder under linux</li>
+<li>history panel cannot be resized after hide/restore fixed</li>
+<li>send to editor now does not freeze if the app path in invalid</li>
+<li>duplicate list of extensions in the preferences fixed (you have to delete your old options file!)</li>
+<li>tiff and rw2 extensions added to the default list of extensions</li>
+<li>color values under the mouse pointer are now correct</li>
+<li>directory browser now does not forget its width</li>
+<li>linear dng/canon sraw is now supported</li>
+<li>IPTC data in nef files is now detected/parsed</li>
+<li>several bugs fixed corresponding to the multiple selection in the file browser</li>
+</ul><p>Known<a name="lead_end"></a> issues (Several users have it but I can not reproduce them, please test it and post report to the forum if you found a reproducible scenario for these bugs):</p>
+<ul><li>some people reported crash when save/save-as is pressed</li>
+<li>the preview zoom does not work properly (e.g. fit zoom) </li>
+<li>still no solution on the library dependency problems under older linux distributions </li>
+</ul></div>
+
+<a name="comments"></a>
+</div>
+

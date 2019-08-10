@@ -1,0 +1,79 @@
+---
+title: "RawTherapee 5.4 Released"
+date: March 20 2018 13:34
+author: DrSlony
+---
+
+
+<div id="article_show_text"><div>RawTherapee 5.4 has been released!</div>
+<div><br></div>
+<div style="text-align: justify; width: 552px; height: 346px; margin-left: auto; margin-right: auto;"><img src="/images/logos/rt_splash_5.4.png"></div>
+<div><br></div>
+
+<div><a name="lead_end"></a></div>
+<div><br></div>
+
+<div>RawTherapee provides you with a selection of powerful tools with which you can practise the art of developing raw photos. Be sure to read <a href="http://rawpedia.rawtherapee.com/">RawPedia</a> to understand how each tool works so that you may make the most of it. A great place to start is the "<a href="http://rawpedia.pixls.us/Getting_Started">Getting Started</a>" article. Click on "<a href="http://rawpedia.rawtherapee.com/Main_Page">Main page</a>" in the top-left corner when you have finished reading that article to see all other articles.</div>
+<div><br></div>
+<div>If you find a problem, don't keep it to yourself. Find out <a href="http://rawpedia.pixls.us/How_to_write_useful_bug_reports">how to write useful bug reports</a> to get the problem fixed.</div>
+<div><br></div>
+<div>Talk with other users and developers in our shared <a href="https://discuss.pixls.us/c/software/rawtherapee">forum</a>. You can also have a live chat using <a href="http://rawpedia.rawtherapee.com/IRC">IRC</a> - no installation necessary.</div>
+<div><br></div>
+<div>Stay informed by following us on <a href="https://plus.google.com/+rawtherapee/">Google+</a></div>
+<div><br></div>
+<h1>Download</h1><ul>    <li>A Windows installer is available from our <a href="downloads">Downloads</a> page.</li>
+    <li>A macOS disk image is available from our <a href="downloads">Downloads</a> page.</li>
+    <li>Linux users can get RawTherapee from their package managers, or get the AppImage from our <a href="downloads">Downloads</a> page.</li>
+    <li>Compiling yourself? Grab a no-git-required <a href="http://rawtherapee.com/shared/source/">tarball</a> or <code>git checkout 5.4</code>, then read the <a href="http://rawpedia.rawtherapee.com/Main_Page#Compiling">Compiling</a> section in RawPedia.</li>
+</ul><div><br></div>
+<h1>News Relevant to Photographers</h1><div>RawTherapee supports most raw formats, including Pentax and Sony Pixel Shift, Canon Dual-Pixel, and those from Foveon and X-Trans sensors. If you're wondering whether it supports your camera's raw format, first download RawTherapee and try for yourself. If a raw format is not supported it will either not open, or the preview in the Editor tab will appear black, white, or have a strong color cast - usually magenta. In that case, read the "<a href="http://rawpedia.rawtherapee.com/Adding_Support_for_New_Raw_Formats">Adding Support for New Raw Formats</a>" RawPedia article.</div>
+<div><br></div>
+<h2>In order to use RawTherapee efficiently you should know that:</h2><ul>    <li>You can scroll all panels using the mouse scroll-wheel.</li>
+    <li>You can right-click on a tool's name to automatically expand it while collapsing all others.</li>
+    <li>To change slider values or drop-down list items with the mouse scroll-wheel, hold the Shift key. This is so that you can safely scroll the panels without accidentally changing a slider or other tool setting.</li>
+    <li>All curves support the Shift and Ctrl keys while dragging a point. Shift+drag makes the point snap to a meaningful axis (top, bottom, diagonal, other), while Ctrl+drag makes your mouse movement super-fine for precise point positioning.</li>
+    <li>There are many keyboard shortcuts which make working with RawTherapee much faster and give you greater control. Make sure you familiarize yourself with them on RawPedia's "<a href="http://rawpedia.rawtherapee.com/Keyboard_Shortcuts">Keyboard Shortcuts</a>" page!</li>
+</ul>
+<h2>Screenshots</h2><p>See screenshots of RawTherapee 5.4 on our <a href="http://rawtherapee.com/blog/screenshots">Screenshots</a> page.
+
+</p><h2>New Features since 5.3:</h2><ul>    <li>New default processing profiles, now the default look for raw photos closely matches the out-of-camera look with regard to tones and includes lens distortion and vignetting correction.
+    </li><li>New histogram matching tool, to have RawTherapee automatically adjust the image for you to match the out-of-camera look with a single click of a button.
+    </li><li>New HDR Tone Mapping tool to compress the light in scenes with a high dynamic range, allowing you to show details in both shadows and highlights in a realistic way.
+    </li><li>New Local Contrast tool to boost clarity using a simple interface.
+    </li><li>New color toning method L*a*b* Color Correction Grid.
+    </li><li>New RCD demosaicing algorithm to minimize artifacts even with artificial lighting and strong chromatic aberration.
+    </li><li>New thumbnail overlay icons in the File Browser and Filmstrip to help you distinguish normal images from HDR and Pixel Shift ones.
+    </li><li>Added support for showing out-of-gamut areas based on the output profile.
+    </li><li>Added support for reading and writing metadata and ICC profiles to and from PNG images.
+    </li><li>Added support for processing Sony Pixel Shift ARQ raw files - make sure that the ARQ extension is enabled in Preferences &gt; File Browser &gt; Parsed Extensions.
+    </li><li>Create Sony ARQ raw files using https://github.com/agriggio/make_arq
+    </li><li>Added support for saving 32-bit floating-point TIFFs clamped to [0;1].
+    </li><li>Added profiled chromatic aberration correction support using Lensfun.
+    </li><li>More tools now have an on/off switch.
+    </li><li>The user interface is cleaner, with all power-house tools moved into a new "Advanced" tab to prevent slider-shock to newcomers.
+    </li><li>The Metadata tab now lets you choose whether you want to copy metadata unchanged, edit metadata or strip metadata when saving images. Now you can also make metadata changes in batch mode.
+    </li><li>The choice of whether the main histogram should display information using the working profile or the output profile is now available from the Editor tab's top toolbar.
+    </li><li>The Crop tool's aspect ratio now defaults to that of the image, and RawTherapee automatically zooms-to-fit the crop once it's placed.
+    </li><li>RGB input-type ICC profiles can now be used as output profiles.
+    </li><li>The saved reference image for profiling (created from within the Color Management tool) now contains metadata.
+    </li><li>PNG and compressed TIFF images make use of better compression.
+    </li><li>Shortcut key changes: Zoom-to-fit the crop using "f", fit the whole image using "Alt+f".
+</li></ul><p>There were several hundred commits optimizing processing speed and memory usage as well as bug fixes and code refactoring, though the details of these are too arcane to list here. The effort involved thousands of developer-hours.</p>
+<p>RawTherapee and other open-source projects require access to sample raw files from various camera makes and models in order to support those raw formats correctly. You can help by submitting raw files to RPU: <a href="https://raw.pixls.us/">https://raw.pixls.us/</a></p>
+<div><br></div>
+<h1>News Relevant to Package Maintainers</h1><p>No changes since 5.3.</p>
+<ul>    <li>To get the source code, either clone from git or use the tarball from <a href="http://rawtherapee.com/shared/source/">http://rawtherapee.com/shared/source/</a> . Do not use the auto-generated GitHub release tarballs.</li>
+    <li>Requires GTK+ version &gt;=3.16, though &gt;=3.22 is recommended.</li>
+    <li>RawTherapee 5 requires GCC-4.9 or higher, or Clang.</li>
+    <li>Do not use <code>-ffast-math</code>, it will not make RawTherapee faster but will introduce artifacts.</li>
+    <li>Use <code>-O3</code>, it will make RawTherapee faster with no known side-effects.</li>
+    <li>For stable releases use <code>-DCACHE_NAME_SUFFIX=""</code></li>
+    <li>For development builds and release-candidates use <code>-DCACHE_NAME_SUFFIX="5-dev"</code></li>
+</ul><div><br></div>
+<h1>News Relevant to Developers</h1><p>See <a href="https://github.com/Beep6581/RawTherapee/blob/dev/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<div><br></div>
+<div>Complete revision history available on <a href="https://github.com/Beep6581/RawTherapee/commits/5.4">GitHub</a>.</div></div>
+
+<a name="comments"></a>
+</div>
+

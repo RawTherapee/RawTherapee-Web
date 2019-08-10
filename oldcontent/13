@@ -1,0 +1,30 @@
+---
+title: "Raw Therapee 1.1 preview release 2"
+date: Sept 21 2006 00:00
+author: dualon
+Tags:
+- RT 1.1
+---
+
+
+<div id="article_show_text">The second preview of Raw Ttherapee 1.1 has been released. It has new
+features like cropping, rotating and lens distortion correction, and
+many bugs fixed.<br />
+<br />
+Thank you for the many-many excellent ideas you sent me by email.
+Please don't stop, send me feature requests and bug reports to the
+following email address: gabor at rawtherapee dot com. I read all the
+mails, although it happens that I don't have time to
+reply to everybody.<br />
+<br />
+I recently realized that the exif handling library I use (exiv2) has a
+GPL license (I tought it is LGPL), so I had write an own exif library.
+It should work fine, although it does not copy the Makernote from the
+raw files to the jpg files, and also
+parsing the .crw files are not supported yet.<br />
+So what is missing from the final 1.1 version? The most important is
+the Fuji support (maybe D1X support, too), and fixing the bugs you find.</div>
+
+<a name="comments"></a>
+</div>
+

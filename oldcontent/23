@@ -1,0 +1,61 @@
+---
+title: "New Language pack: new language files and preparations for 3.0"
+date: Feb 27 2010 17:15
+author: DrSlony
+Tags:
+- RT 3.0
+---
+
+
+<div id="article_show_text"><p>Please be informed about the new language pack available for  RawTherapee 3.0 alpha1 and earlier (This language packs are also usable  on other RT 2.4 version and RT 2.3). There are a few strings in it  regarding 3.0alpha1 (but not all strings are translatable yet).</p>
+<p>The  following things changed since<a name="lead_end"></a> the last language pack:</p>
+<ul><li>new language: Brasilian Portuguese</li>
+<li>updated languages: latvian, english, russian</li>
+<li>added new available strings to all files (not all available yet) </li>
+</ul><p>Many thanks to all contributors for their efforts.</p>
+<ul><li>Please download a Windows installer <a title="Windows Installer" href="http://www.rawtherapee.com/data/RT30a1-langPack-20100227.exe">here</a> </li>
+<li>Please download a tgz archive for Linux or Windows <a title="TGZ  Archive" href="http://www.rawtherapee.com/data/RT30a1-langPack-20100227.tgz">here</a></li>
+<li>you can download the new files also from the release/languages  directory from the <a title="Google Code Repository" href="http://code.google.com/p/rawtherapee/source/browse/trunk">repository</a> </li>
+</ul><p>The last 10 added languages in chronological order are:</p>
+<ul><li>Brasilian Portuguese 27.02.2010</li>
+<li>Catalan 18.10.2009</li>
+<li>Norwegian 12.02.2009</li>
+<li>British English 19.01.2009</li>
+<li>Traditional Chinese 18.08.2008</li>
+<li>Suomi 18.08.2008</li>
+<li>Finnish 26.06.2008</li>
+<li>Dansk 24.06.2008</li>
+<li>Greek 22.05.2008</li>
+<li>Euskara 03.03.2008</li>
+<li>Turkish 02.03.2008</li>
+</ul><p>Here the complete list of available languages in alphabetical order:</p>
+<ul><li>Catalan</li>
+<li>Chinese Simplified &amp; Traditional</li>
+<li>Czech</li>
+<li>Dansk (Danish)</li>
+<li>Deutsch (German)</li>
+<li>English (US)</li>
+<li>English (UK)</li>
+<li>Espanol (Spanish)</li>
+<li>Euskara (Basque)</li>
+<li>Francais (French)</li>
+<li>Greek</li>
+<li>Hebrew</li>
+<li>Italian</li>
+<li>Japanese</li>
+<li>Latvian</li>
+<li>Magyar (Hungarian)</li>
+<li>Nederlands (Dutch)</li>
+<li>Norwegian (Norsk)</li>
+<li>Polish</li>
+<li>Portuguese (Brasilian)</li>
+<li>Russian</li>
+<li>Slovak</li>
+<li>Suomi (Finnish)</li>
+<li>Swedish</li>
+<li>Turkish</li>
+</ul><p>The RT DevTeam</p></div>
+
+<a name="comments"></a>
+</div>
+

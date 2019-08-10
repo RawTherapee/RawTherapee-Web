@@ -1,0 +1,26 @@
+---
+title: "Release of RT V2.4 beta 4 + Happy Christmas!"
+date: Dec 24 2008 22:59
+author: dualon
+Tags:
+- Nightly Builds
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p>The RawTherapee DevTeam wants to wish everyone a happy Christmas!</p>
+<p>Lots of bugfixes have been made so we released the 4th beta version.</p>
+<p>Bugs fixed:</p>
+<ul><li>crash on save-as (a new progress indicator dialog has also been introduced)</li>
+<li>ISO is now recognized in rw2 files</li>
+<li>autoexp with clipping=0 is working</li>
+<li>fixed the permanent delete &amp; empty trash crash when the image in editor is deleted </li>
+<li>detail window label when zooming</li>
+<li>better jpeg error handling</li>
+<li>Canon 1Ds tiffs and Kodak dcr files are supported again</li>
+<li>new naming scheme for pp2 files (the old one is kept for loading only for compatibility)</li>
+</ul><p>Our team rests now for a few days, but the development is continued soon.</p></div>
+
+<a name="comments"></a>
+</div>
+

@@ -1,0 +1,18 @@
+---
+title: "A quick note on the word "raw" and LittleCMS version 2"
+date: June 23 2011 23:07
+author: DrSlony
+Tags:
+- Downloads
+- Nightly Builds
+- Versions
+- RT 3.0
+- RT 3.1
+---
+
+
+<div id="article_show_text">I would like to point two unrelated things out:<ol><li>The word "raw" is a plain word. It is not an acronym or an initialism. As such, the usual noun <a href="http://en.wikipedia.org/wiki/Capitalization" title="Wikipedia article on capitalization">capitalization</a> rules apply. Writing <i>RAW</i> is incorrect. If starting a sentence, capitalize the first letter, leave the other two in lowercase. If in the middle of a sentence, all letters should be lowercase.</li><li>The unstable RawTherapee-3.1 builds require <a href="http://www.littlecms.com/download.html" title="LittleCMS download page">LittleCMS</a> version 2. Ubuntu users should see the guide in the forum on <a href="http://www.rawtherapee.com/forum/viewtopic.php?t=2879" title="How to install LCMS2 in Ubuntu">how to install LCMS2 in Ubuntu</a>. RawTherapee-3.0 builds require LittleCMS version 1.</li></ol></div>
+
+<a name="comments"></a>
+</div>
+

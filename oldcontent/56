@@ -1,0 +1,27 @@
+---
+title: "Feature Freeze - 3.0 branch"
+date: Nov 28 2010 13:55
+author: dualon
+Tags:
+- RT 3.0
+---
+
+
+<div id="article_show_text"><p>We are happy to announce the feature freeze of RawTherapee 3.0!</p>
+<p>A <a href="http://en.wikipedia.org/wiki/Freeze_%28software_engineering%29">feature freeze</a> is a point in the development process when no more new features are  accepted for the current branch. In accordance with the RT 3.0 Roadmap  the project arrived to this point.</p>
+<p>Branching</p>
+<p>We would like to call<a name="lead_end"></a> the attention - especially of the developers - to the changes in the <a href="http://code.google.com/p/rawtherapee/source/list">source tree</a>:</p>
+<ul><li>'3.0_branch' is the new branch for the upcoming stable release; accepts only bug fixes and GUI enhancements. Please do not push new features here!</li>
+<li>'default' is the continuation of the main branch; new  features can be pushed here, although the efforts should be focused on  the bugfixes now.</li>
+</ul><p>The fixes from the 3.0_branch will be introduced later to the  default branch, but noone is restricted in any way to do it regularly  and/or per wish.</p>
+<p>Testing</p>
+<p>Everyone is invited to test and <a href="http://code.google.com/p/rawtherapee/issues/entry">report bugs</a>, please check the <a href="http://code.google.com/p/rawtherapee/issues/list?can=2&amp;q=&amp;sort=-id&amp;colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary">list of known issues</a>.  The latest builds are available from the /releases_head directory as  always (will be updated with the current 3.0_branch very soon):</p>
+<p><a href="http://www.rawtherapee.com/releases_head/">http://www.rawtherapee.com/releases_head/</a></p>
+<p>Please note that these are alpha builds! Use them on your own risk.</p>
+<p>Have fun with testing and bug hunting - help us to release the stable version as soon as possible!</p>
+<p>--</p>
+<p>dualon</p></div>
+
+<a name="comments"></a>
+</div>
+

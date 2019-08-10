@@ -1,0 +1,21 @@
+---
+title: "RawTherapee 4.0.12 released"
+date: Jan 07 2014 14:59
+author: DrSlony
+Tags:
+- Downloads
+- Versions
+---
+
+
+<div id="article_show_text"><h1>RawTherapee 4.0.12 is out!</h1>  <p>Develop your New Year's shots with RawTherapee version 4.0.12! There are many new tools to discover and a whole bunch of speed improvements and bug fixes. There are also changes for builders and package maintainers, so be sure to read the article!</p><p>Builds should be ready within a day or two. Once they are, get them from the <a href="downloads">Downloads</a> section or using your
+  operating system's package manager.</p><p>We now host our own source code tarballs, get them from&nbsp;<a href="http://rawtherapee.com/shared/source/" target="_blank" title="rawtherapee source code repository">rawtherapee.com/shared/source</a></p><p>Read below to find out more about what's new.</p>
+  <div></div>
+  <a name="lead_end"></a><br>
+  <h1>New features</h1><ul><li>Graduated Filter</li><li>Post-crop Vignette Filter</li><li>Powerful Black-and-White tool</li><li>New curves:</li><ul><li>Luminance according to hue (LH)</li><li>Chromaticity according to hue (CH)&nbsp;</li><li>Hue according to hue (HH)</li><li>Chromaticity according to luminance (CL)</li></ul><li>Contrast by Detail Levels tool (wavelet decompose) now has 5 levels</li><li>Auto Levels improved</li><li>Image dimensions added to (i) info</li><li>White Balance slider non-linear for easier control of low and high values</li><li>Noise Reduction tool allows targetting of specific colors (e.g. remove yellow blotches)</li><li>Pre-demosaic automatic removal of chromatic aberration improved</li><li>New output queue template variables %s(0-9)</li><li>New File Browser shortcuts, revision of existing shortcuts (refer to RawPedia)</li><li>New Custom Profile Builder parameters</li><li>Bundled and user profiles in separate submenus</li><li>camconst.json for immediate addition or correction of raw file format support</li><ul><li>White and black levels</li><li>Color matrix</li><li>Crop coordinates</li></ul><li>dcraw 9.19</li><li>The main histogram now shows color levels using the Output Profile</li><li>Enhanced lens info and filter possibilities for manual Nikon lenses</li><li>Added support for</li><ul><li>Kodak DCS 760 and 760s</li><li>Various medium-format backs</li></ul><li>New DCP profiles for</li><ul><li>Canon PowerShot S110</li><li>Fujifilm FinePix S9500</li><li>Pentax K-5</li><li>Pentax K-5 II</li><li>Pentax K-r</li></ul><li>Support for Capture One ICC profiles</li><li>All Bundled Processing Profiles (PP3) revised</li></ul>+ Very significant speed improvements and bug fixes.<div><br></div><div>Refer to&nbsp;<a href="http://rawpedia.rawtherapee.com/" target="_blank" title="RawPedia, the RawTherapee wiki">RawPedia</a>, the RawTherapee wiki, for information about these tools and how to use them.</div><div><br></div><div>
+  <h1>Caveats</h1><ul><li>Ctrl+q / Ctrl+b<br>As of this version, Ctrl+q is used to (q)uit RawTherapee and Ctrl+b is used to send the currently open image in the Editor tab to the (b)atch Queue. In the past Ctrl+q was used to send the image to the Batch Queue, but Ctrl+q is a widely used shortcut to close the application, so we adopted that convention.</li><li>Memory requirements<br>Please read http://rawtherapee.com/blog/maximizing-memory-efficiency</li><li>RawTherapee 4.0.12 should be considered a release candidate for version 4.1. That will be our first officially stable version, and we will release it later this month if no major issues are found with 4.0.12.</li><li>For people compiling RawTherapee<br>Build-time requirements:</li><ul><li>GCC-4.7 or newer is recommended as older versions in some cases can lead to artifacts.</li><li>GTK+ &gt;=2.24.18 is recommended, as the FileChooserButton in older versions of GTK+ is buggy (issue 1852).</li></ul><li>For package maintainers:<br>The RawTherapee Manual will not be bundled with further RawTherapee releases. All documentation is now entered into&nbsp;<a href="http://rawpedia.rawtherapee.com/" target="_blank" title="RawPedia, the RawTherapee wiki">RawPedia</a>, the RawTherapee wiki. RawTherapee installers and build scripts should link to RawPedia, not to the obsolete PDF manual.</li>
+  </ul></div></div>
+
+<a name="comments"></a>
+</div>
+

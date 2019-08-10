@@ -1,0 +1,14 @@
+---
+title: "Maximizing memory efficiency"
+date: Aug 14 2011 01:21
+author: DrSlony
+Tags:
+- Documentation
+---
+
+
+<div id="article_show_text"><div>RawTherapee is a modern program, and as such should be run on modern hardware. This is especially true if you use high resolution raw files. It features some memory-intensive filters, which means you need to be aware of a few things in order to avoid having memory issues. These issues, which usually manifest in program crashes, are most evident if you use a 32 bit version of Windows, although they apply to other operating systems as well, and may become evident if you have 2GB of RAM or less. <a name="lead_end"></a>4GB of RAM is recommended. This is not to say that that is the minimum amount of RAM required for a stable experience, as there are people who regularly use RawTherapee on machines with just 2GB of RAM without any negative side-effects, but you should be aware of the implications.</div><div><br></div><div>Take these points into account, especially if you have less than 4GB of RAM and are on a 32 bit operating system:</div><div><ul><li>As a general rule, you should avoid having folders with too many raw photos in them as each photo takes up memory when displayed in RawTherapee's File Browser tab. Try not to have more than 100 photos per folder.</li><li>RawTherapee uses more RAM while you are using the File Browser tab, so avoid opening that tab while you are processing photos.</li><li>Use 4-Gigabyte Tuning in Windows. See <a href="http://msdn.microsoft.com/en-us/library/bb613473%28VS.85%29.aspx" title="4-Gigabyte Tuning">this page</a> for an explanation of what 4-Gigabyte Tuning is, and find out how to do it in Windows XP, Vista and 7 by reading <a href="http://avatechsupport.blogspot.com/2008/03/how-to-set-3gb-startup-switch-in.html" title="How to perform 4-Gigabyte Tuning in Windows XP, Vista and 7.">this guide</a>.</li><li>Close other programs while working in RawTherapee.</li><li>Close the Image Editor tab when you're done editing to free up memory.</li><li>Turn off "auto-start" in the batch queue. Only add photos to the batch queue once you are done editing all of them, and then start it. Use the batch queue, do not use the immediate save button.</li><li>Change to a directory with few or no photos in it before starting the batch queue.</li><li>The most memory-intensive tools are Tone Mapping, Contrast by Detail Levels and Highlight Reconstruction using Color Propagation, so you might need to avoid using them if your machine and operating system are not up to standard.</li></ul></div></div>
+
+<a name="comments"></a>
+</div>
+

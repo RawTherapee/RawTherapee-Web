@@ -1,0 +1,25 @@
+---
+title: "RawTherapee.com v3 - The New Homepage!"
+date: May 15 2011 15:35
+author: dualon
+Tags:
+- Community
+- Management
+- Website
+---
+
+
+<div id="article_show_text">Welcome to the new homepage of RawTherapee!<br /><br />Rawtherapee.com has evolved from a few simple pages through a basic dynamic site to the current, advanced homepage. This new site was carefully planned and designed to be a real home of RawTherapee.<br /><br />
+
+<div align="center">
+<a href="./images/misc/rthp_v1.png" class="faderWindow"><img src="./images/misc/rthp_v1-177x.png" alt="RawTherapee.com v2" /></a>
+<a href="./images/misc/rthp_v2.png" class="faderWindow"><img src="./images/misc/rthp_v2-177x.png" alt="RawTherapee.com v2" /></a>
+<a href="./images/misc/rthp_v3.png" class="faderWindow"><img src="./images/misc/rthp_v3-177x.png" alt="RawTherapee.com v3" /></a>
+<br />Versions of the homepage from the beginning</div>
+
+<br />Most of the changes are under the hood, but you may have already noticed <a href="./blog">the blog</a> and hopefully will soon discover the new, powerful <a href="./downloads">download center</a> as well.<br />The new site provides a much more efficient<a name="lead_end"></a> environment for multiple administrators. It helps the <a href="./blog/list/6">OSMC</a> to inform you better and to provide regular updates and downloads.<br /><br />The previous articles are all transfered to our new database, but there are many contents to be uploaded and many small glitches to be ironed out (the site is a 'public beta').<br />If you find a bug or have a good idea, please post it in the <a href="http://code.google.com/p/rawtherapee/issues/list">issue tracker</a> with the label 'Website'. Please feel free to join the discussion about the new homepage in the appropriate <a href="http://rawtherapee.com/forum/viewtopic.php?t=2876">forum topic</a>. All the feedbacks are highly appreciated.<br /><br />I'm honored to be the designer and creator of the new site. More than 22.000 lines of code work as the heart of the custom content management system which is a robust, high 
+performance, flexible and extensible framework for our future plans. I'm grateful to all who helped me with advices, especially to DrSlony, Hombre and paul.matthijsse.<br /><br />The journey is just about to start. Welcome to the new homepage!<br /></div>
+
+<a name="comments"></a>
+</div>
+

@@ -1,0 +1,26 @@
+---
+title: "Beta Version released: 2.4beta3"
+date: Dec 08 2008 16:03
+author: dualon
+Tags:
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p>Thanks to the detailed bug reports several bugs have been fixed.</p>
+<p>Bug fixes compared to beta2 are:</p>
+<ul><li>dcraw updated to version 8.89 </li>
+<li>improvements in internalization </li>
+<li>an exif saving problem in jpeg output </li>
+<li>corrupted saving of large tiff files </li>
+<li>problems with preview zoom when images of the same size are opened </li>
+<li>corrupt output color profile in the saved images</li>
+<li>incorrect permissions for the "converted" directory under linux</li>
+<li>auto and spot wb for sRaw and linear dng fixed </li>
+</ul><p>Known issues:</p>
+<ul><li>still no solution on the library dependency problems under older linux distributions</li>
+</ul></div>
+
+<a name="comments"></a>
+</div>
+

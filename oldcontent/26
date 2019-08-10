@@ -1,0 +1,24 @@
+---
+title: "Status report of RawTherapee 2.4 milestone 2"
+date: Jul 16 2008 19:32
+author: dualon
+Tags:
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p>One important goal of the RT DevTeam is to inform you about what's going on behind the scenes. This time we can't offer any downloads, but some information about the progression. Please let us emphasize: no downloads this time, "only" great news!<br />Milestones are "development snapshots", parts of longer and greater improvements. However, the second milestone<a name="lead_end"></a> towards RawTherapee 2.4 offers so much that it's development lasts longer then originally planned.<br /><br />The brief - and incomprehensive - list of features, changes, fixes:</p>
+<ul><li>Caching of thumbnails: The file browser is faster than ever, gives an excellent user experience.</li>
+<li>Ranking in file browser: 1 star... 2 star... up to 5, happy time. Rank your files and browse them by these ranks.</li>
+<li>Filter by EXIF: Search and filter your images by their EXIF data. Various fields can be set to narrow the list of hits.</li>
+<li>Move to trash / delete permanently / rename functionality in file browser: Basic file operations are requested a lot, so here they come!</li>
+<li>File monitoring: RawTherapee watches you... if files are deleted/renamed in the file system, RT synchronises them with its database.</li>
+<li>Separating the core and the GUI: Sometimes it happens that big changes can't even be noticed. This one won't show you itself, but will influence the future a lot.</li>
+<li>Fixes: Several bugfixes (for example: spot WB, 16 bit TIFF output, etc...).</li>
+</ul><p>As you may noticed the file browser has improved spectacularly, while the core+GUI separation needs a lot of time without producing any visible changes. To release the second milestone all the major and minor changes has to be polished and tested.<br /><br />The main goal of final 2.4 stable is batch conversion. All the current improvements are aiming that final goal, but please remember: batch conversion comes only with final 2.4 release when every code requirement is fulfilled.<br /><br />Meanwhile, for milestone 2 it's impossible to promise any release date, but it is under heavy <br />development and... well, and works, looks and feels better then ever!</p>
+<p>dualon,</p>
+<p>RT DevTeam</p></div>
+
+<a name="comments"></a>
+</div>
+

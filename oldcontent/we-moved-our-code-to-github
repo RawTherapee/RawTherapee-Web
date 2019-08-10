@@ -1,0 +1,14 @@
+---
+title: "We moved our code to GitHub"
+date: Aug 11 2015 16:31
+author: DrSlony
+Tags:
+- Management
+---
+
+
+<div id="article_show_text">As of today, we have stopped using Google Code as our source code host and issue tracker, and now use GitHub.<div><a href="https://github.com/Beep6581/RawTherapee" target="_blank" title="">https://github.com/Beep6581/RawTherapee</a></div><div><br></div><div>Package maintainers please take notice and update your sources.</div><div>The&nbsp;<a href="http://rawpedia.rawtherapee.com/Linux" target="_blank" title="">buildRT</a>&nbsp;script for Linux will be updated within the next few days.</div><div>Issue discussions are being moved right now, and will be done within a few hours.</div></div>
+
+<a name="comments"></a>
+</div>
+

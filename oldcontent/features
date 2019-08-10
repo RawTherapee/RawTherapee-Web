@@ -1,0 +1,28 @@
+---
+title: "Features"
+date: Aug 08 2013 22:05
+author: dualon
+Tags:
+- Documentation
+- Website
+- RT 4.0
+---
+
+
+<div id="article_show_text"><p>For a complete and up-to-date list of features, see the&nbsp;<a href="http://rawpedia.rawtherapee.com/Features" target="_blank" title="">RawPedia Features</a>&nbsp;page.</p><h1>High Image Quality</h1><ul><li><b>96-bit</b>&nbsp;(floating point) processing engine.</li><li>Non-destructive editing.<br></li><li>Get the <b>most details and least artifacts</b> from your raw photos thanks to modern and traditional demosaicing algorithms: AMaZE, DCB, AHD, EAHD, HPHD, IGV, LMMSE, VNG4, Mono and Fast.</li><li><b>Advanced color handling</b> from white balance to HSV (Hue-Saturation-Value) curves, color toning and color management including wide-gamut and soft-proofing support.</li><li>Powerful <b>CIE Color Appearance Model 2002</b> (CIECAM02) module.<br></li><li><b>Enhanced exposure and tonality tools</b>: tone and Lab curves, highlights and shadows tools, tone mapping (HDR-like effect), etc.</li>
+<li>Multiple <b>denoising methods</b>: luminance, chrominance (both rewritten in 2012), impulse (for salt and pepper noise) noise reduction.</li>
+<li>Several tools to <b>enhance details</b>: unsharp mask, RL deconvolution, contrast by detail levels.</li>
+</ul>
+<h1>Efficiency</h1><ul><li>Multi-threaded algorithms for <b>high performance</b> (RawTherapee can utilize modern processor features, like SSE).</li>
+<li><b>Quick thumbnails</b> load lightning fast and are replaced later with <b>live thumbnails</b>.</li><li><b>Batch processing:</b> convert all the developed images at once without loading the processor while you work.</li><li><b>Copy/paste editing parameters</b> from one file to many other. Partially copying and/or pasting is also possible.<b><br></b></li><li>Basic tools immediately at your hands.</li>
+<li><b>Parallel editing</b> of multiple images in separate editor tabs, and/or all at once from the file browser.</li><li>An optional <b>secondary display</b> can be used.</li>
+</ul>
+<h1>Versatility</h1><ul><li><b>Wide variety of supported cameras</b>: almost all DSLRs and even some medium format bodies are supported.</li><li>Can load most&nbsp;<b>raw files</b> including&nbsp;16-, 24- and 32-bit raw&nbsp;<b>HDR DNG</b>&nbsp;images,&nbsp;as well as standard <b>JPEG</b>, <b>PNG</b>&nbsp;(8- and 16-bit) and&nbsp;<b>TIFF&nbsp;</b>(8-, 16- and 32-bit logluv) images.</li><li>Can save JPEG, PNG (8- and 16-bit) and TIFF (8- and 16-bit) images.</li><li>Advanced control over the algorithms with <b>many fine-tuning parameters and curves</b>.<br></li><li>Can <b>send to GIMP or the editing tool of your choice</b> in one click (16-bit TIFF file).<br></li><li><b>Command line</b> usage besides the normal graphical interface.<b><br></b></li><li><b>Various layouts</b>: multiple tabs, single tab with filmstrip, vertical 
+tab with filmstrip, dual monitor.</li></ul>
+<h1>Freedom for Free</h1><ul><li>RawTherapee is <b>free and open source</b> software, meaning you can <b>use it free of charge, wherever you like on whatever hardware you like</b>, as long as you abide by the copyleft GPLv3 license. Download the <a href="https://github.com/Beep6581/RawTherapee">source code</a>, modify it, feel free to do what comes to mind. We believe in open software.</li><li>It is <b>cross-platform</b> - you can use it on Linux, macOS or Windows.</li>
+<li><b>International:</b> it is available in 25 languages!</li>
+</ul></div>
+
+<a name="comments"></a>
+</div>
+

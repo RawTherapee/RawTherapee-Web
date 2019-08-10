@@ -1,0 +1,25 @@
+---
+title: "RawTherapee V2.4 Release Candidate"
+date: Jan 29 2009 14:34
+author: dualon
+Tags:
+- Nightly Builds
+- RT 2.4
+---
+
+
+<div id="article_show_text"><p>The following fixes/additions have been made since the last beta:</p>
+<ul><li>crash on closing the progress dialog fixed</li>
+<li>confusion when pp2 files of both the old and new naming convention found</li>
+<li>less tall "Preferences" dialog to fit the small screen of netbooks</li>
+<li>a new option in the "Save As" dialog: put to the head of the queue</li>
+<li>fixed non-working image saving when path contains international characters </li>
+<li>much fewer maze artifacts for Olympus raw files with hphd and ahd demosaicing methods</li>
+<li>more keyboard shortcuts (see the popup menu in the file browser)</li>
+<li>dcraw updated to 8.90/1.417</li>
+<li>updated rawzor support (now for 64 bit linux version, too)</li>
+</ul><p>And one more<a name="lead_end"></a> important news: I managed to compile RT on Mac OSX (no X11 is required). The problem is that I do not know this operation system very well so I have to find out how to create an installer, or how to deploy the application on MAC. If you are an experienced osx developer please contact me, I need some help.</p></div>
+
+<a name="comments"></a>
+</div>
+

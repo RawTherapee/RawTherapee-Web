@@ -1,0 +1,77 @@
+---
+title: "RawTherapee 4.0.9 released"
+date: June 04 2012 19:50
+author: DrSlony
+Tags:
+- Downloads
+- Versions
+---
+
+
+<div id="article_show_text"><p>RawTherapee 4.0.9 is out!</p>
+    <p>Builds should be ready within a day or two. Once they are, get them from the <a href="downloads">Downloads</a> section or using your
+      operating system's package manager (source code tarball available from our
+      <a href="http://code.google.com/p/rawtherapee/downloads/list" title="Link to our Google Code download page for the source code">Google
+        Code</a> page).</p><p>Read below to find out more about what's new.</p>
+    <div> <a href="/images/screenshots/rt409_lago_di_braies.jpg"><img src="/images/screenshots/thumbs/rt409_lago_di_braies_702.jpg" alt="Screenshot of RawTherapee-4.0.9" class="c1" height="382" width="702"></a> </div><a name="lead_end"></a><br><h1>New features</h1>      <ul>        <li>Support for Adobe LCP lens correction profiles </li>
+        <li>Program plugger for Windows, to automatically find and be able to
+          open right-clicked photos with popular photography programs.</li>
+        <li>Support of dual illuminant DCP profiles</li>
+        <li>Support for new cameras in addition to those already supported by
+          dcraw:</li>
+        <ul>          <li>Nikon D800</li>
+          <li>Canon EOS 5D Mark III</li>
+        </ul>        <li>New camera DCP profiles:</li>
+        <ul>          <li>Nikon D5100</li>
+          <li>Nikon D7000</li>
+        </ul>      </ul>      In addition to these new features, as usual there were numerous
+        bug-fixes, and speed and stability improvements.
+    
+    <div> <br>
+    </div>
+    Work is well underway on a number of other features, among them
+      improved <a href="http://rawtherapee.com/forum/viewtopic.php?f=1&amp;t=3793#p27341" target="_blank" title="">noise reduction</a>, XMP and Lua support. In
+      addition to that we're plugging memory leaks and working towards making RT
+      run faster and use less memory. Stay tuned!
+    <div> <br></div>
+    
+    <h1>Caveats</h1>    
+      <ul>        <li>Default raw and non-raw processing profiles have changed. If you
+          have used any version of RawTherapee older than 4.0.9, you must go to
+          Preferences &gt; Image Processing and select new default image
+          processing parameters. It is recommended that you use "Default" for
+          raw files and "Neutral" for image files.</li>
+        <li>Risk of PP3 data loss - beware when running multiple RT versions<br>
+          RawTherapee cleans up obsolete or invalid tags from active PP3 files.
+          The tag cleanup process is run in three situations:<br>
+          <ol>            <li>When you affect the PP3 file in any way, e.g. by tagging a
+              photo,</li>
+            <li>When you select another folder in the File Browser tab,</li>
+            <li>When you exit RawTherapee (equivalent to leaving the open
+              album).</li>
+          </ol>          This means that a more recent version of RawTherapee will delete
+          obsolete tags which may have been used by an older version, and vice
+          versa - if you use an old version of RawTherapee to browse photos
+          edited with a newer version, it will delete the tags introduced in the
+          new version. This issue is being worked on and future versions of
+          RawTherapee will support XMP sidecar files with concurrent embedded
+          profile versions.<br>
+          http://code.google.com/p/rawtherapee/issues/detail?id=1335</li>
+        <li>Memory requirements<br>
+          Please read the blog entry on <a href="http://rawtherapee.com/blog/maximizing-memory-efficiency">maximizing
+            memory efficiency</a></li>
+        <li>Differences between the preview and the output image<br>
+          The color-managed preview in RawTherapee is (and has always been)
+          based on image data in the Working Space profile. Although the actual
+          preview is rendered using a monitor profile (or sRGB profile, if the
+          monitor profile is not specified), it does not reflect the Output
+          Profile &amp; Output Gamma settings. This can lead to a slightly
+          different output rendering when Working Space profile and Output Space
+          profiles are not the same. A workaround is to set them to the same
+          values to ensure the preview accurately reflects the final rendered
+          output.</li>
+      </ul></div>
+
+<a name="comments"></a>
+</div>
+

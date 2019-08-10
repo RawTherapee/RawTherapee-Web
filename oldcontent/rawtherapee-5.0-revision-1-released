@@ -1,0 +1,12 @@
+---
+title: "RawTherapee 5.0 Revision 1 Released!"
+date: Feb 02 2017 22:49
+author: DrSlony
+---
+
+
+<div id="article_show_text">We just released RawTherapee 5.0-r1 which is a revision to the previous release. It addresses some issues which came to light after we made the 5.0 release. Functionally the program is the same -there are no new features - but a few bugs are fixed and we recommend all users upgrade.<div><br></div><div>The fixes include a correction to the version number used by RawTherapee which is stored in the sidecar files and used by the installer (now the installer will not force an overwrite of your previous installation), it adds back a missing theme when using GTK+ &lt;=3.18, prevents a freeze in the File Browser in Windows, and fixes a compilation problem when using GCC 7.</div><div><br></div><div>RawTherapee 5.0 builds have been removed from the Downloads page and 5.0-r1 builds will appear within a day or two.</div><div><br></div><div>The source code is available from git by checking out the tags <a href="https://github.com/Beep6581/RawTherapee/releases/tag/5.0-r1-gtk2">5.0-r1-gtk2</a> or <a href="https://github.com/Beep6581/RawTherapee/releases/tag/5.0-r1-gtk3">5.0-r1-gtk3</a>, or in the form of a <a href="http://rawtherapee.com/shared/source/">tarball</a>.</div></div>
+
+<a name="comments"></a>
+</div>
+

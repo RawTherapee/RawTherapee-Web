@@ -1,0 +1,31 @@
+---
+title: "Download RT v3.0 alpha 1"
+date: Jan 04 2010 22:05
+author: dualon
+Tags:
+- RT 3.0
+---
+
+
+<div id="article_show_text"><p><span style="font-weight: bold;">Requirements:</span></p>
+<ul><li>a fast processor with SSE support is recommended (but not required) </li>
+<li>at least 512 MB of RAM. </li>
+<li>Minimum recommended screen resolution 1024x768</li>
+<li>Windows version: Windows 2000, XP or Vista (32bit) is required</li>
+<li>For the linux version: gtk+ 2.12, gtkmm 2.14 series required</li>
+</ul><p><a name="lead_end"></a><span style="font-weight: bold;">Download:</span></p>
+<ul><li>Windows version can be downloaded <a href="http://www.rawtherapee.com/rawtherapee30a1.exe">here</a> (SSE support). </li>
+<li>Linux version: <a href="http://www.rawtherapee.com/rawtherapee30a1.tgz">rawtherapee30a1.tgz</a> (SSE support), 64-bit version: <a href="http://www.rawtherapee.com/rawtherapee30a1_64.tgz">rawtherapee30a1_64.tgz</a></li>
+<li>Source code: <a href="http://www.rawtherapee.com/rawtherapee30src.tgz">rawtherapee30src.tgz</a> </li>
+</ul><p>The SVN and issue tracker is maintained by Google code <a href="http://code.google.com/p/rawtherapee/">here</a>.</p>
+<p><span style="font-weight: bold;"></span></p>
+<p>Note that the pp2 files created by the older versions are not compatible with this alpha version. To avoid crashes please delete the old .pp2 files in the directories where you enter with this alpha version. The options and cache files will not be mixed up since they are stored in a different directory (named RawTherapeeAlpha).</p>
+<p><span style="font-weight: bold;"></span></p>
+<p><span style="font-weight: bold;">Feedback:</span></p>
+<p>Please note that this is an alpha version. It is neither feature complete nor bug free. If you have nice ideas, please visit our <a href="http://rawtherapee.com/forum/">forum</a> to discuss them with other users and the author. The bugs are maintained at the google code <a href="http://code.google.com/p/rawtherapee/">page</a> of the project.</p>
+<p><span style="font-weight: bold;"></span></p>
+<p><span style="font-weight: bold;">Disclaimer:</span><br /> <br /> THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></div>
+
+<a name="comments"></a>
+</div>
+
