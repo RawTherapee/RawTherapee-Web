@@ -5,7 +5,7 @@
         <div class="col-lg-10">
             <h1 class="page-title">{{ .Title }}</h1>
             {{- range .Data.Pages.GroupByDate "2006" }}
-            <div>
+            <div class="mt-5">
                 <h3 class="post-year border-bottom border-secondary">{{ .Key }}</h3>
 
                 {{- range .Pages }}
