@@ -7,6 +7,12 @@ Tags:
 - Stable Releases
 - Versions
 - RT 3.0
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 ![RawTherapee 3.0 logo](rt_logo_30_192.png)

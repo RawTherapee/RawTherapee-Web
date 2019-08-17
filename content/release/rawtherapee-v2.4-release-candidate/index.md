@@ -5,6 +5,12 @@ author: dualon
 Tags:
 - Nightly Builds
 - RT 2.4
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -29,4 +35,3 @@ compile RT on Mac OSX (no X11 is required). The problem is that I do not
 know this operation system very well so I have to find out how to create
 an installer, or how to deploy the application on MAC. If you are an
 experienced osx developer please contact me, I need some help.
-

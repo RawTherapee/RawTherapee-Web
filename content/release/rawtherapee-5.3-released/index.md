@@ -2,6 +2,12 @@
 title: "RawTherapee 5.3 Released"
 date: 2017-09-30T22:05:00+00:00
 author: DrSlony
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -138,4 +144,3 @@ Changes since 5.2:
 
 Complete revision history available on
 [GitHub](https://github.com/Beep6581/RawTherapee/commits/5.3).
-

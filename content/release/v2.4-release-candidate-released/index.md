@@ -5,6 +5,12 @@ author: dualon
 Tags:
 - Nightly Builds
 - RT 2.4
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -38,8 +44,8 @@ report bugs back to the RT DevTeam.
     (SSE support), 64-bit version:
     [rawtherapee24rc\_64.tgz](http://www.rawtherapee.com/rawtherapee24rc_64.tgz)
 
-**Disclaimer:** 
-  
+**Disclaimer:**
+
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
 IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
 TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
@@ -51,4 +57,3 @@ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
 LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-

@@ -2,6 +2,12 @@
 title: "RawTherapee 5.5 Released"
 date: 2018-12-17T17:01:00+00:00
 author: DrSlony
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -216,7 +222,7 @@ Changes since 5.4:
   - Optional codesigning commands have been added to the CMakeLists.txt
     and macosx\_bundle.sh scripts. If you wish to codesign the built
     packages (.app and .dmg), add your details to your CMake command
-    flags:  
+    flags:
     `-DCODESIGNID:STRING="Developer ID Application: Firstname Lastname
     (xxx)"`
 
@@ -244,4 +250,3 @@ See
 
 Complete revision history available on
 [GitHub](https://github.com/Beep6581/RawTherapee/commits/5.5).
-

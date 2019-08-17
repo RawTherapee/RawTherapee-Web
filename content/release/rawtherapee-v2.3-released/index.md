@@ -4,11 +4,17 @@ date: 2008-02-12T09:45:00+00:00
 author: dualon
 Tags:
 - RT 2.3
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
-We are proud to present RawTherapee version 2.3\!  
-  
+We are proud to present RawTherapee version 2.3\!
+
 Changelog:
 
   - Image resizing tool
@@ -38,7 +44,7 @@ there are two more surprises:
     with many other converters. We hope you'll enjoy the new
     "headquarters", please feel free to feedback us in the forums\!
   - A development team is introduced, the members are Gábor, Bytec,
-    Dualon, Keenonkites and Klonk.  
+    Dualon, Keenonkites and Klonk.
 
 The multi-language support of v2.3 lets you to contribute in
 translation. For instructions or other questions check the [FAQ
@@ -48,7 +54,6 @@ For feature requests, bug reports, unanswered questions or for just a
 discussion about RawTherapee use our
 [forum](http://www.rawtherapee.com/forum/index.php).
 
-Most importantly: have a good time with RawTherapee 2.3\!  
-  
-Gábor
+Most importantly: have a good time with RawTherapee 2.3\!
 
+Gábor

@@ -5,6 +5,12 @@ author: dualon
 Tags:
 - Nightly Builds
 - RT 2.4
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -15,4 +21,3 @@ candidate:
   - gtk/gtkmm update in the win32 version
   - fixed installer/uninstaller
   - fixed several small bugs
-

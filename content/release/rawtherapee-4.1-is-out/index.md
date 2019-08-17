@@ -4,6 +4,12 @@ date: 2014-05-21T14:31:00+00:00
 author: DrSlony
 Tags:
 - Versions
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -17,7 +23,7 @@ and how better to develop your raw photos than with RawTherapee
 YES\! It's been a long journey since the last version we officially
 called *stable*, version 3.1. A few years have passed, many new tools
 and features have been added, a million little bugs were squashed, and
-now it has arrived\!  
+now it has arrived\!
 
 
 {{< figure src="rt_splash_4.1.png" >}}
@@ -33,7 +39,7 @@ it on your distribution's bug tracker (search the internet for
 "*distro* bug tracker" where *distro* is the name of your
 distribution).
 
-Source code\*: [http://rawtherapee.com/shared/source/rawtherapee-4.1.tar.xz](http://rawtherapee.com/shared/source/rawtherapee-4.1.tar.xz "RawTherapee 4.1 source code tarball") \[7.3MB\]  
+Source code\*: [http://rawtherapee.com/shared/source/rawtherapee-4.1.tar.xz](http://rawtherapee.com/shared/source/rawtherapee-4.1.tar.xz "RawTherapee 4.1 source code tarball") \[7.3MB\]
 \* If you're a photographer/user, then get a build on our download page.
 The source code is not executable.
 
@@ -58,7 +64,7 @@ In order to use RawTherapee efficiently you should know that:
     Shortcuts](http://rawpedia.rawtherapee.com/Keyboard_Shortcuts)
     page\!
 
-  
+
 
 # New features
 
@@ -132,43 +138,42 @@ since 4.0.12
   - Sony SLT-A99/Sony SLT-A99V
 
 Refer to the [RawPedia](http://rawpedia.rawtherapee.com/ "RawPedia") for
-information about these tools and how to use them  
-  
+information about these tools and how to use them
+
 
 # Documentation
 
 [Documentation](http://rawtherapee.com/blog/documentation "RawTherapee Documentation")
-start point.  
+start point.
 [RawPedia](http://rawpedia.rawtherapee.com/ "RawPedia"), where
-everything is explained.  
-  
+everything is explained.
+
 
 # Reporting bugs
 
 Find out [how to write useful bug
 reports](http://rawpedia.rawtherapee.com/How_to_write_useful_bug_reports "How to write useful bug reports")
-here.  
-  
+here.
+
 
 # Live chat with users and developers
 
-Network: freenode  
-Server: chat.freenode.net  
-Channel \#rawtherapee  
+Network: freenode
+Server: chat.freenode.net
+Channel \#rawtherapee
 Use [freenode
 webchat](http://webchat.freenode.net/?randomnick=1&channels=rawtherapee&prompt=1 "webchat")
-to chat without installing anything.  
+to chat without installing anything.
 [IRC guide on
-RawPedia](http://rawpedia.rawtherapee.com/IRC "RawPedia - IRC Guide").  
-  
+RawPedia](http://rawpedia.rawtherapee.com/IRC "RawPedia - IRC Guide").
+
 
 # Social networks
 
-[Google+](http://plus.google.com/106783532637761598368 "RawTherapee on Google+")  
-  
+[Google+](http://plus.google.com/106783532637761598368 "RawTherapee on Google+")
+
 
 # Revision history
 
-The complete changelog is available at:  
+The complete changelog is available at:
 [https://code.google.com/p/rawtherapee/source/list](https://code.google.com/p/rawtherapee/source/list "RawTherapee changelog on Google Code")
-

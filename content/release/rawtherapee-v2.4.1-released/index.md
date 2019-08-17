@@ -4,6 +4,12 @@ date: 2009-09-03T08:45:00+00:00
 author: dualon
 Tags:
 - RT 2.4
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -14,4 +20,3 @@ Changelog:
   - dcraw 8.97/1.428
   - Updated translations
   - Many bugs fixed
-

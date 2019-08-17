@@ -5,6 +5,12 @@ author: DrSlony
 Tags:
 - Downloads
 - Versions
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -55,10 +61,10 @@ working towards making RT run faster and use less memory. Stay tuned\!
 # Caveats
 
 
-  - Memory requirements  
+  - Memory requirements
     Please read the blog entry on [maximizing memory
     efficiency](blog/maximizing-memory-efficiency)
-  - Differences between the preview and the output image  
+  - Differences between the preview and the output image
     The color-managed preview in RawTherapee is (and has always been)
     based on image data in the Working Space profile. Although the
     actual preview is rendered using a monitor profile (or sRGB profile,
@@ -77,5 +83,3 @@ working towards making RT run faster and use less memory. Stay tuned\!
     accurate visualization of the final output render based not only on
     the working space and monitor profiles, but also on the
     user-selected Output Profile and Output Gamma.
-
-

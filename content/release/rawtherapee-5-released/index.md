@@ -2,6 +2,12 @@
 title: "RawTherapee 5 Released!"
 date: 2017-01-22T19:46:00+00:00
 author: DrSlony
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -161,4 +167,3 @@ in RawPedia.
 
 Complete revision history available on
 [GitHub](https://github.com/Beep6581/RawTherapee/commits/).
-

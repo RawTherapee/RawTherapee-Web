@@ -4,6 +4,12 @@ date: 2009-07-21T14:37:00+00:00
 author: dualon
 Tags:
 - RT 2.4
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -31,10 +37,9 @@ Changelog (from v2.3):
   - "Send to Editor" feature (Gimp, Photoshop, custom editor)
 
 The long delay in the recent months was partially caused by the lack
-of time devoted to bug fixing and by the solution of a critical bug in 
+of time devoted to bug fixing and by the solution of a critical bug in
 shadow & highlight enhancement method.
 
 Development did not stop at this point. The first alpha versions of v2.5
 are going to appear in a month with a rearranged (and netbook-aware) GUI
 and much enhanced batch processing.
-

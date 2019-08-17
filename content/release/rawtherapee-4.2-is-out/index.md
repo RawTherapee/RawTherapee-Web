@@ -4,6 +4,12 @@ date: 2014-10-24T21:52:00+00:00
 author: DrSlony
 Tags:
 - Versions
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -62,7 +68,7 @@ understand how each tool works to make the most of it.
     Shortcuts](http://rawpedia.rawtherapee.com/Keyboard_Shortcuts)
     page\!
 
-  
+
 
 ## New features
 
@@ -125,43 +131,42 @@ information about these tools and how to use them.
 RawTherapee-4.2 includes many speed and memory usage optimizations
 (refer to the full changelog for detailed information). As such, users
 of 32-bit operating systems may now find that they can enjoy more
-stability while using the most memory intensive tools.  
-  
+stability while using the most memory intensive tools.
+
 
 ## Documentation
 
 [Documentation](http://rawtherapee.com/blog/documentation "RawTherapee Documentation")
-start point.  
+start point.
 [RawPedia](http://rawpedia.rawtherapee.com/ "RawPedia"), where
-everything is explained.  
-  
+everything is explained.
+
 
 ## Reporting bugs
 
 Find out [how to write useful bug
 reports](http://rawpedia.rawtherapee.com/How_to_write_useful_bug_reports "How to write useful bug reports")
-here.  
-  
+here.
+
 
 ## Live chat with users and developers
 
-Network: freenode  
-Server: chat.freenode.net  
-Channel \#rawtherapee  
+Network: freenode
+Server: chat.freenode.net
+Channel \#rawtherapee
 Use [freenode
 webchat](http://webchat.freenode.net/?randomnick=1&channels=rawtherapee&prompt=1 "webchat")
-to chat without installing anything.  
+to chat without installing anything.
 [IRC guide on
-RawPedia](http://rawpedia.rawtherapee.com/IRC "RawPedia - IRC Guide").  
-  
+RawPedia](http://rawpedia.rawtherapee.com/IRC "RawPedia - IRC Guide").
+
 
 ## Social networks
 
-[Google+](http://plus.google.com/106783532637761598368 "RawTherapee on Google+")  
-  
+[Google+](http://plus.google.com/106783532637761598368 "RawTherapee on Google+")
+
 
 ## Revision history
 
-The complete changelog is available at:  
+The complete changelog is available at:
 [https://code.google.com/p/rawtherapee/source/list](https://code.google.com/p/rawtherapee/source/list "RawTherapee changelog on Google Code")
-

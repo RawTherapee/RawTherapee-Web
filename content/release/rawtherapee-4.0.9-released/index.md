@@ -5,6 +5,12 @@ author: DrSlony
 Tags:
 - Downloads
 - Versions
+draft: false
+version: ""
+linux_binary: ""
+windows_binary: ""
+mac_binary: ""
+source_code: ""
 ---
 
 
@@ -49,9 +55,9 @@ working towards making RT run faster and use less memory. Stay tuned\!
     to Preferences \> Image Processing and select new default image
     processing parameters. It is recommended that you use "Default" for
     raw files and "Neutral" for image files.
-  - Risk of PP3 data loss - beware when running multiple RT versions  
+  - Risk of PP3 data loss - beware when running multiple RT versions
     RawTherapee cleans up obsolete or invalid tags from active PP3
-    files. The tag cleanup process is run in three situations:  
+    files. The tag cleanup process is run in three situations:
     1.  When you affect the PP3 file in any way, e.g. by tagging a
         photo,
     2.  When you select another folder in the File Browser tab,
@@ -63,12 +69,12 @@ working towards making RT run faster and use less memory. Stay tuned\!
     edited with a newer version, it will delete the tags introduced in
     the new version. This issue is being worked on and future versions
     of RawTherapee will support XMP sidecar files with concurrent
-    embedded profile versions.  
+    embedded profile versions.
     http://code.google.com/p/rawtherapee/issues/detail?id=1335
-  - Memory requirements  
+  - Memory requirements
     Please read the blog entry on [maximizing memory
     efficiency](http://rawtherapee.com/blog/maximizing-memory-efficiency)
-  - Differences between the preview and the output image  
+  - Differences between the preview and the output image
     The color-managed preview in RawTherapee is (and has always been)
     based on image data in the Working Space profile. Although the
     actual preview is rendered using a monitor profile (or sRGB profile,
@@ -78,4 +84,3 @@ working towards making RT run faster and use less memory. Stay tuned\!
     Space profiles are not the same. A workaround is to set them to the
     same values to ensure the preview accurately reflects the final
     rendered output.
-
