@@ -3,7 +3,7 @@
 <section class="page container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <h1 class="page-title">{{ .Title }}</h1>
+            <h1 class="page-title mb-n4">{{ .Title }}</h1>
             {{- range .Data.Pages.GroupByDate "2006" }}
             <div class="mt-5">
                 <h3 class="post-year border-bottom border-secondary">{{ .Key }}</h3>
