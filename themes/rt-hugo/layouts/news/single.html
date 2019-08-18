@@ -6,7 +6,7 @@
 
 <article class="post container">
     <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col-lg-8">
 
             <h1 class="post-title">
                 {{ .Title | markdownify }}
@@ -51,7 +51,7 @@
 <div class="container mt-lg-5">
     {{/*
     <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col-lg-8">
             {{ with .PrevInSection }}
             <a class="post-previous" href="{{.Permalink}}"> {{.Title}}</a>
             {{ end }}
@@ -63,7 +63,7 @@
     */}}
 
     <div class="row justify-content-center">
-        <div class="col-lg-10 border-top border-secondary pt-4">
+        <div class="col-lg-8 border-top border-secondary pt-4">
             <aside>
                 {{ partial "related-posts.html" . }}
             </aside>

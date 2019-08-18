@@ -5,10 +5,14 @@
 
 <article class="page container">
     <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col-lg-8">
             <h1>
                 {{ .Title | markdownify }}
             </h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
 
             <div class='dl-buttons text-center mb-4'>
                 <div>{{ i18n "indexDownloadText" . }} {{ .Params.version }} {{ i18n "releasedOn" . }}  {{ .Date.Format "January 2, 2006" }}.
@@ -37,7 +41,11 @@
                 <a class="btn btn-outline-info dl-btn" href="{{ .Params.source_code }}" role="button">{{ i18n "sourceCode" . }}</a>
             </div>
 
+        </div>
 
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
             {{ partial "header-links.html" .Content }}
 
             {{ if .IsTranslated }}
@@ -51,6 +59,7 @@
             </ul>
             {{ end }}
         </div>
+
     </div>
 </article>
 
