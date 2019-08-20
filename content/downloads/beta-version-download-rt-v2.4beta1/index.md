@@ -12,8 +12,6 @@ mac_binary: ""
 source_code: ""
 ---
 
-
-
 **Explanation about 'Beta' Releases:**
 
 This release is not a final product, it contains all the features that
