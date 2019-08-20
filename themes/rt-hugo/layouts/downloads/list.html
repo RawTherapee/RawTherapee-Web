@@ -4,7 +4,7 @@
     <h1 class="page-title">{{ .Title }}</h1>
 
     <div class="recent-release">
-	{{ range first 1 (where .Pages "Type" "download") }}
+	{{ range first 1 (where .Pages "Type" "downloads") }}
 
         <div class='dl-buttons' style="text-align: center;">
             <div>{{ i18n "indexDownloadText" . }} {{ .Params.version }} {{ i18n "releasedOn" . }}  {{ .Date.Format "January 2, 2006" }}.
@@ -32,12 +32,11 @@
             </a>
             <a class="btn btn-outline-info dl-btn" href="{{ .Params.source_code }}" role="button">{{ i18n "sourceCode" . }}</a>
         </div>
+        {{ end }}
 
 	<div class="summary">
 	    {{ .Content }}
 	</div>
-
-        {{ end }}
     </div>
 
     <h2>Previous Releases</h2>
