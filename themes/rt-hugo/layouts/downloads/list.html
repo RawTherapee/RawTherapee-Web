@@ -4,7 +4,7 @@
     <h1 class="page-title">{{ .Title }}</h1>
 
     <div class="recent-release">
-	{{ range first 1 (where .Pages "Type" "release") }}
+	{{ range first 1 (where .Pages "Type" "download") }}
 
         <div class='dl-buttons' style="text-align: center;">
             <div>{{ i18n "indexDownloadText" . }} {{ .Params.version }} {{ i18n "releasedOn" . }}  {{ .Date.Format "January 2, 2006" }}.

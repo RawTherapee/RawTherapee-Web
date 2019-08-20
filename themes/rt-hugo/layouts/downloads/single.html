@@ -6,7 +6,7 @@
             <h1 class="page-title">{{ .Title }}</h1>
 
             <div class="recent-release">
-            {{ range first 1 (where .Site.RegularPages "Type" "release") }}
+            {{ range first 1 (where .Site.RegularPages "Type" "download") }}
 
                     <div>{{ i18n "indexDownloadText" . }} {{ .Params.version }} {{ i18n "releasedOn" . }}  {{ .Date.Format "January 2, 2006" }}.
                         <small class='text-nowrap'>(<a href="{{ .Permalink }}">{{ .Params.version }} {{ i18n "releaseNotes" . }}</a>)</small>
@@ -42,7 +42,7 @@
 
             <h2>Previous Releases</h2>
             <ul class="posts">
-                {{ range (where .Site.RegularPages "Type" "release") }}
+                {{ range (where .Site.RegularPages "Type" "download") }}
                 <li>
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                     {{ if not .Date.IsZero }}
