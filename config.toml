@@ -56,3 +56,5 @@ paginatePath = "page"
     fractions = true
     plainIDAnchors = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
