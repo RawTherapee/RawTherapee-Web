@@ -5,8 +5,8 @@ author: DrSlony
 draft: false
 version: ""
 linux_binary: ""
-windows_binary: ""
-mac_binary: ""
+windows_binary: "https://rawtherapee.com/releases_head/windows/RawTherapee_5.1_WinVista_64.zip"
+mac_binary: "https://rawtherapee.com/releases_head/mac/RawTherapee_OSX_10.9_64_5.1.zip"
 source_code: ""
 ---
 

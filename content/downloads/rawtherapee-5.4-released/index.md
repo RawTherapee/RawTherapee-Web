@@ -4,9 +4,9 @@ date: 2018-03-20T13:34:00+00:00
 author: DrSlony
 draft: false
 version: ""
-linux_binary: ""
-windows_binary: ""
-mac_binary: ""
+linux_binary: "https://rawtherapee.com/releases_head/linux/RawTherapee-releases-5.4.AppImage"
+windows_binary: "https://rawtherapee.com/releases_head/windows/RawTherapee_5.4_WinVista_64.zip"
+mac_binary: "https://rawtherapee.com/releases_head/mac/RawTherapee_OSX_10.9_64_5.4.zip"
 source_code: ""
 ---
 
