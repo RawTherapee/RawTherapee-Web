@@ -169,9 +169,19 @@
              li.classList.add('mb-2');
 		 var ahref = document.createElement('a');
 		 ahref.href = result.href;
-		 //ahref.text = "» " + result.title;
 		 ahref.text = result.title;
+
+         // This adds the date after the post title
+         var adate = document.createElement('small');
+         adate.classList.add('text-secondary');
+         var postDate = new Date( result.date );
+         adate.innerText = " ("+ postDate.getFullYear()+"-"+ ('0'+postDate.getMonth()).slice(-2) +"-"+ ('0'+postDate.getDay()).slice(-2) +")";
+
 		 li.append(ahref);
+
+         // Comment out below to remove date from result string
+         li.append(adate);
+
 		 $results.appendChild(li);
 	     });
 	 }
