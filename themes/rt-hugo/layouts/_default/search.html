@@ -73,7 +73,7 @@
     setInputPlaceholder.placeholder = "Enter search terms";
     setInputPlaceholder.removeAttribute("name");
     setSearchForm.removeChild( document.getElementById('searchsite') );
-    setSearchForm.action = "#";
+    setSearchForm.action = "doSearch(); return false;";
 
 	 var lunrIndex,
 	     $results,
@@ -136,6 +136,7 @@
 
 		 var results = search(fuzzyQuery);
 		 renderResults(results);
+        return false;
     }
 
 	 // Nothing crazy here, just hook up a event handler on the input field
