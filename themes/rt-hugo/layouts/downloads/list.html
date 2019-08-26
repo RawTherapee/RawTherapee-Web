@@ -1,10 +1,14 @@
 {{ define "main" }}
 
 <section class="page container">
-    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="page-title">{{ .Title }}</h1>
+        </div>
+    </div>
 
     <div class="recent-release">
-	{{ range first 1 (where .Pages "Type" "downloads") }}
+	{{ range first 1 (where .Site.RegularPages "Type" "downloads") }}
         <div class='dl-buttons' style="text-align: center;">
             <div>{{ i18n "indexDownloadText" . }} {{ .Params.version }} {{ i18n "releasedOn" . }}  {{ .Date.Format "January 2, 2006" }}.
                 <small class='text-nowrap'>(<a href="{{ .Permalink }}">{{ i18n "releaseNotes" . }}</a>)</small>
@@ -38,25 +42,29 @@
 	    {{ end }}
         </div>
         {{ end }} <!-- end range first -->
-
-	<div class="summary">
-	    {{ .Content }}
-	</div>
     </div>
 
-    <h2>Previous Releases</h2>
-    <ul class="posts">
-        {{ range .Data.Pages -}}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ if not .Date.IsZero }}
-            <time>
-                {{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}}
-            </time>
-            {{end}}
-        </li>
-        {{- end }}
-    </ul>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="summary">
+                {{ .Content }}
+            </div>
+
+            <h2>Previous Releases</h2>
+            <ul class="posts">
+                {{ range .Data.Pages -}}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ if not .Date.IsZero }}
+                    <time>
+                        {{- .Date.Format (.Site.Params.dateform | default "Jan 02, 2006") -}}
+                    </time>
+                    {{end}}
+                </li>
+                {{- end }}
+            </ul>
+        </div>
+    </div>
 </section>
 
 {{ end }}

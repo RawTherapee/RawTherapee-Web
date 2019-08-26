@@ -6,7 +6,7 @@
             {{ i18n "slogan" . }}
             </h2>
 
-            {{ range first 1 (where .Pages "Type" "downloads") }}
+            {{ range first 1 (where .Site.RegularPages "Type" "downloads") }}
 
             <div class='dl-buttons text-center'>
                 <div>{{ i18n "indexDownloadText" . }} {{ .Params.version }} {{ i18n "releasedOn" . }}  {{ .Date.Format "January 2, 2006" }}.
