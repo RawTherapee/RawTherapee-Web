@@ -74,6 +74,7 @@
     setInputPlaceholder.removeAttribute("name");
     setSearchForm.removeChild( document.getElementById('searchsite') );
     setSearchForm.action = "#";
+    setSearchForm.removeAttribute("action");
 
 	 var lunrIndex,
 	     $results,
@@ -84,7 +85,8 @@
 	     var request = new XMLHttpRequest();
          request.open('GET', '{{ "index.json" | absURL }}', true);
 
-	     request.onload = function () {
+	     //request.onload = function () {
+	     request.onreadystatechange = function () {
 		 if (request.status >= 200 && request.status < 400) {
 
 		     pagesIndex = JSON.parse(request.responseText);
@@ -110,8 +112,8 @@
 		     });
 		 } else {
 		     //var err = textStatus + ", " + error;
-		     var err = "Oops: " + error;
-		     console.error("Error getting Hugo index flie:", err);
+		     //console.error("Error getting Hugo index file:", err);
+             console.log("request.status: " + request.status);
 		 }
 	     };
 
