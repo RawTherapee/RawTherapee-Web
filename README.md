@@ -7,13 +7,16 @@ This is the repository for the new RawTherapee.com website.
 ## Hugo
 
 ~~Note: As of this writing (2018-08-22), Hugo from the repos on Ubuntu 18.04 is a little outdated and doesn't included the "extended" Sass/SCSS version (0.47.1).
-On these systems, better to use the snap:
+On these systems, better to use the snap:~~
 
-    sudo snap install hugo
-~~  
+    ~~sudo snap install hugo~~
 
 We are using Hugo as built by @darix (https://build.opensuse.org/package/show/home:darix:apps/hugo).
 
+To build the site locally once it's been cloned needs two steps:
+
+1. `cd` into `/themes/rt-hugo/assets/` and run `yarn install` (or `npm install`).
+2. Back at the project root, run the Hugo server `$ hugo server -D --disableFastRender`.
 
 ## GitLab Pages
 
