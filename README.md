@@ -25,8 +25,13 @@ GitLab runs a CI service that builds all commits against the master branch, and 
 
 ## Netlify
 
+**This is still experimental right now.**
 We've also integrated [Netlify][] into the site as a CMS/post-editor while still mainting a GitLab based back-end.
 If you have push permissions on the repo, you can access the editor at `/admin` (so while we're testing here on gitlab pages, it would be: https://patdavid.gitlab.io/rawtherapee-web/admin
 
-
 [Netlify]: https://www.netlify.com/
+
+
+## Front Page Carousel of Images
+
+To add/remove images from the sliding carousel of screenshots on the front page simply add or remove images frmo the directory `/static/images/carousel`.  The template will parse all the images in this directory and automatically add them to the carousel.
