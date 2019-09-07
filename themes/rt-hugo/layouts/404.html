@@ -1,0 +1,30 @@
+{{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{/* $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") */}}
+{{ $dateFormat := default "02 Jan 2006 (Monday)" (index .Site.Params "date_format") }}
+
+
+<article class="post container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <h1 class="post-title">
+                {{ .Title | markdownify }}
+            </h1>
+
+            <div class="post-body">
+                <p>
+                    Well, this isn't great.
+                    You were probably expecting something to be here.
+                </p>
+                <p>
+                    Please let the team know you got this error and provide the URL.<br>
+                    We'll do our best to get it fixed up as soon as possible.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</article>
+
+{{ end }}
