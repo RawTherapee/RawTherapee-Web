@@ -41,6 +41,14 @@ paginatePath = "page"
     url         = "https://github.com/Beep6581/RawTherapee"
     weight      = 3
 
+[related]
+    threshold = 0
+    includeNewer = true
+    toLower = true
+    [[related.indices]]
+      name = "tags"
+      weight = 100
+
 [params]
     # Markdwon ok here?
     brand = "RawTherapee"
