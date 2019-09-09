@@ -7,23 +7,23 @@
 #    GIT_SUBMODULE_STRATEGY: recursive
 
 stages:
-    #- pages
+    - pages
     - deploy
 
-      #pages:
-      #    stage: pages
-      #    image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
-      #    script:
-      #        - hugo version
-      #        - cd themes/rt-hugo/assets; npm install; cd ../../../;
-      #        - hugo -d public_deploy
-      #        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
-      #    artifacts:
-      #        paths:
-      #            - public
-      #            - public_deploy
-      #    only:
-      #        - master
+pages:
+    stage: pages
+    image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
+    script:
+        - hugo version
+        - cd themes/rt-hugo/assets; npm install; cd ../../../;
+        - hugo -d public_deploy
+        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
+    artifacts:
+        paths:
+            - public
+            - public_deploy
+    only:
+        - master
 
 deploy:
     stage: deploy
@@ -35,7 +35,7 @@ deploy:
         - echo "$SSH_RT_PIXLS_B64" | base64 -d | ssh-add -
         - ls
         - echo "Testing" > testfile.txt
-        - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -o LogLevel=error" testfile.txt pixlsus@pixls.us:/home/pixlsus/tmp/
+        - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -o LogLevel=error" public_deploy/ pixlsus@pixls.us:/home/pixlsus/rawtherapee.com/
     script:
         - ls public && ls public_deploy
         - rsync --version
