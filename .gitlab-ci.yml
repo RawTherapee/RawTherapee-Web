@@ -15,7 +15,6 @@ pages:
     stage: pages
     image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
     script:
-        - echo "build"
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
         - hugo -d public_deploy
@@ -33,7 +32,6 @@ deploy:
     before_script:
         - apk update && apk add openssh-client bash rsync
     script:
-        - echo "deploy"
         - ls public && ls public_deploy
         - rsync --version
     only:
