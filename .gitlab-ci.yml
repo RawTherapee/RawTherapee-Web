@@ -15,7 +15,7 @@ build:
     stage: build
     image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
     script:
-        - echo "# build #"
+        - echo "build"
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
         - hugo -d public_deploy
@@ -31,7 +31,7 @@ deploy:
     before_script:
         - apk update && apk add openssh-client bash rsync
     script:
-        - echo "# deploy #"
+        - echo "deploy"
         - ls public_deploy
         - rsync --version
     only:
@@ -42,7 +42,7 @@ pages:
     before_script:
         - zypper refresh && zypper install rsync
     script:
-        - echo "# pages #"
+        - echo "pages"
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
         - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
         #- ls public
