@@ -30,31 +30,12 @@ deploy:
     image: alpine:latest
     before_script:
         - apk update && apk add openssh-client bash rsync
-        - which ssh-agent
+          #- which ssh-agent
         - eval $(ssh-agent -s)
         - echo "$SSH_RT_PIXLS_B64" | base64 -d | ssh-add -
         - ls
         - echo "Testing" > testfile.txt
     script:
-        - ls public && ls public_deploy
-        - rsync --version
-        - which ssh-agent
         - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -o LogLevel=error" public_deploy/ pixlsus@pixls.us:/home/pixlsus/rawtherapee.com/
     only:
         - master
-
-          #pages:
-          #    stage: pages
-          #    script:
-          #        - echo "pages"
-          #        - cd themes/rt-hugo/assets; npm install; cd ../../../;
-          #        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
-          #        #- ls public
-          #        #- hugo -d output
-          #        #- mkdir public
-          #        #- cp -R output/* public/
-          #    artifacts:
-          #        paths:
-          #            - public
-          #    only:
-          #        - master
