@@ -39,7 +39,7 @@ deploy:
         - export
           #- echo "$SSH_RT_PIXLS" | ssh-add -
           #- ssh-add <(echo "$SSH_RT_PIXLS_B64" | base64 --decode)
-        - echo "$SSH_RT_PIXLS_B64" | base64 --decode | ssh-add -
+        - echo "$SSH_RT_PIXLS_B64" | base64 -d | ssh-add -
         - ssh-add ~/.ssh/rt-pixls_rsa
     script:
         - ls public && ls public_deploy
