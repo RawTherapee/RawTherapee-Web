@@ -3,13 +3,42 @@
 #image: mashehu/hugo-extended-npm
 #
 # @darix Hugo (extended) + Node
-image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
-
-
 #variables:
 #    GIT_SUBMODULE_STRATEGY: recursive
 
+stages:
+    - build
+    - deploy
+    - pages
+
+build:
+    stage: build
+    image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
+    script:
+        - hugo version
+        - cd themes/rt-hugo/assets; npm install; cd ../../../;
+        - hugo -d public_deploy
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
+
+deploy:
+    stage: deploy
+    image: alpine:latest
+    tags:
+        - private
+    before_script:
+        - apk update && apk add openssh-client bash rsync
+    script:
+        - ls public_deploy
+        - rsync --version
+    only:
+        - master
+
 pages:
+    stage: pages
     before_script:
         - zypper refresh && zypper install rsync
     script:
