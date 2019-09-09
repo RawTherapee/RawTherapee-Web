@@ -9,7 +9,7 @@
 stages:
     - build
     - deploy
-    - pages
+      #- pages
 
 build:
     stage: build
@@ -19,9 +19,10 @@ build:
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
         - hugo -d public_deploy
+        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
     artifacts:
         paths:
-            - public_deploy
+            - public
     only:
         - master
 
@@ -33,22 +34,23 @@ deploy:
     script:
         - echo "deploy"
         - ls public_deploy
+        - ls public
         - rsync --version
     only:
         - master
 
-pages:
-    stage: pages
-    script:
-        - echo "pages"
-        - cd themes/rt-hugo/assets; npm install; cd ../../../;
-        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
-        #- ls public
-        #- hugo -d output
-        #- mkdir public
-        #- cp -R output/* public/
-    artifacts:
-        paths:
-            - public
-    only:
-        - master
+          #pages:
+          #    stage: pages
+          #    script:
+          #        - echo "pages"
+          #        - cd themes/rt-hugo/assets; npm install; cd ../../../;
+          #        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
+          #        #- ls public
+          #        #- hugo -d output
+          #        #- mkdir public
+          #        #- cp -R output/* public/
+          #    artifacts:
+          #        paths:
+          #            - public
+          #    only:
+          #        - master
