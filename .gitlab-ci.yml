@@ -31,9 +31,11 @@ deploy:
     image: alpine:latest
     #before_script:
     #    - apk update && apk add openssh-client bash rsync
+    #before_script:
     script:
         - ls public && ls public_deploy
         - rsync --version
+        - which ssh-agent
     only:
         - master
 
