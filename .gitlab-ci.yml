@@ -7,7 +7,7 @@
 #    GIT_SUBMODULE_STRATEGY: recursive
 
 stages:
-    - pages
+    #- pages
     - deploy
       #- pages
 
