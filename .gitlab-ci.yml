@@ -34,7 +34,8 @@ deploy:
         - which ssh-agent
         - eval $(ssh-agent -s)
           #- echo "$SSH_RT_PIXLS" | tr -d '\r' | ssh-add -
-        - echo "$SSH_RT_PIXLS" | ssh-add -
+        - echo "${SSH_RT_PIXLS}"
+        - echo "${SSH_RT_PIXLS}" | ssh-add -
     script:
         - ls public && ls public_deploy
         - rsync --version
