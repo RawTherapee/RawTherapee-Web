@@ -33,7 +33,6 @@ deploy:
         - apk update && apk add openssh-client bash rsync
     script:
         - echo "deploy"
-        - ls public_deploy
         - ls public
         - rsync --version
     only:
