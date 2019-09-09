@@ -10,6 +10,8 @@ image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
 #    GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
+    before_script:
+        - zypper refresh && zypper install rsync
     script:
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
