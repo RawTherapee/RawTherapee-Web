@@ -7,12 +7,12 @@
 #    GIT_SUBMODULE_STRATEGY: recursive
 
 stages:
-    - build
+    - pages
     - deploy
       #- pages
 
-build:
-    stage: build
+pages:
+    stage: pages
     image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
     script:
         - echo "build"
