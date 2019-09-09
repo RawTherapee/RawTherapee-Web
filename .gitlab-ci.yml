@@ -33,7 +33,7 @@ deploy:
         - apk update && apk add openssh-client bash rsync
         - which ssh-agent
         - eval $(ssh-agent -s)
-        - ssh-add < (echo "$SSH_RT_PIXLS")
+        - echo "$SSH_RT_PIXLS" | tr -d '\r' | ssh-add -
     script:
         - ls public && ls public_deploy
         - rsync --version
