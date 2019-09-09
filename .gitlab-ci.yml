@@ -37,6 +37,7 @@ deploy:
         - mkdir -p ~/.ssh/ && chmod 700 ~/.ssh
         - echo "$SSH_RT_PIXLS"
         - echo "$SSH_RT_PIXLS" > ~/.ssh/rt-pixls_rsa && chmod 600 ~/.ssh/rt-pixls_rsa
+        - export
           #- echo "$SSH_RT_PIXLS" | ssh-add -
           #
         - ssh-add ~/.ssh/rt-pixls_rsa
