@@ -2,6 +2,7 @@ public/
 .directory
 resources/
 hugo.exe
+rt-website-key*
 
 # Ignore theme asset building errata
 # Mostly for SASS compiling and node
