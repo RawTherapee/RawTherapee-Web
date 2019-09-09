@@ -9,22 +9,21 @@
 stages:
     #- pages
     - deploy
-      #- pages
 
-pages:
-    stage: pages
-    image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
-    script:
-        - hugo version
-        - cd themes/rt-hugo/assets; npm install; cd ../../../;
-        - hugo -d public_deploy
-        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
-    artifacts:
-        paths:
-            - public
-            - public_deploy
-    only:
-        - master
+      #pages:
+      #    stage: pages
+      #    image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
+      #    script:
+      #        - hugo version
+      #        - cd themes/rt-hugo/assets; npm install; cd ../../../;
+      #        - hugo -d public_deploy
+      #        - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
+      #    artifacts:
+      #        paths:
+      #            - public
+      #            - public_deploy
+      #    only:
+      #        - master
 
 deploy:
     stage: deploy
