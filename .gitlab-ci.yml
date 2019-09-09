@@ -13,8 +13,12 @@ pages:
     script:
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
+        - hugo -d public_deploy
         - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
         - ls public
+        - ls public_deploy
+        - rsync --version
+        #- ls public
         #- hugo -d output
         #- mkdir public
         #- cp -R output/* public/
