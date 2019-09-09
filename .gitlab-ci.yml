@@ -23,6 +23,7 @@ build:
     artifacts:
         paths:
             - public
+            - public_deploy
     only:
         - master
 
@@ -33,7 +34,7 @@ deploy:
         - apk update && apk add openssh-client bash rsync
     script:
         - echo "deploy"
-        - ls public
+        - ls public && ls public_deploy
         - rsync --version
     only:
         - master
