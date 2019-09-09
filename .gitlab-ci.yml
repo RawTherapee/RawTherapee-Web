@@ -38,6 +38,7 @@ deploy:
         - echo "$SSH_RT_PIXLS"
         - echo "$SSH_RT_PIXLS" > ~/.ssh/rt-pixls_rsa && chmod 600 ~/.ssh/rt-pixls_rsa
           #- echo "$SSH_RT_PIXLS" | ssh-add -
+          #
         - ssh-add ~/.ssh/rt-pixls_rsa
     script:
         - ls public && ls public_deploy
