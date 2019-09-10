@@ -6,10 +6,13 @@ This is the repository for the new RawTherapee.com website.
 
 ## Hugo
 
-~~Note: As of this writing (2018-08-22), Hugo from the repos on Ubuntu 18.04 is a little outdated and doesn't included the "extended" Sass/SCSS version (0.47.1).
-On these systems, better to use the snap:~~
+We're currently using:
 
-    ~~sudo snap install hugo~~
+```
+Hugo Static Site Generator v0.58.1/extended
+```
+
+Note that you'll need the extended version of Hugo (https://github.com/gohugoio/hugo/releases).
 
 We are using Hugo as built by @darix (https://build.opensuse.org/package/show/home:darix:apps/hugo).
 
@@ -18,9 +21,16 @@ To build the site locally once it's been cloned needs two steps:
 1. `cd` into `/themes/rt-hugo/assets/` and run `yarn install` (or `npm install`).
 2. Back at the project root, run the Hugo server `$ hugo server -D --disableFastRender`.
 
+This will provide the site locally at `http://localhost:1313`.
+It will also monitor the directories and re-build on any changes (and reload the page).o
+
+For further details on writing and publishing content see `/about/meta/`.
+
 ## GitLab Pages
 
 GitLab runs a CI service that builds all commits against the master branch, and publishes them here: https://patdavid.gitlab.io/rawtherapee-web/.
+
+The CI/CD build now also publishes the site to the webhost on any merges/pushes to the `master` branch.
 
 
 ## Netlify
