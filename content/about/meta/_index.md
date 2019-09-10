@@ -143,9 +143,9 @@ title: "RawTherapee version 5.6"
 date: 2019-04-20T22:22:12+02:00
 draft: false
 version: "5.6"
-linux_binary: "https://rawtherapee.com/releases_head/linux/RawTherapee-releases-5.6-20190420.AppImage"
-windows_binary: "https://rawtherapee.com/releases_head/windows/RawTherapee_5.6_WinVista_64.zip"
-mac_binary: "https://rawtherapee.com/releases_head/mac/RawTherapee_OSX_10.9_64_5.6.zip"
+linux_binary: "https://rawtherapee.com/shared/builds/linux/RawTherapee-releases-5.6-20190420.AppImage"
+windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.6_WinVista_64.zip"
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_OSX_10.9_64_5.6.zip"
 source_code: "http://rawtherapee.com/shared/source/"
 ---
 ```

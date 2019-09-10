@@ -19,24 +19,24 @@ ironed out and the next "official" release can be published.
 
 The latest releases are available in this directory and are updated
 regularly:  
-<http://www.rawtherapee.com/releases_head/>
+<http://www.rawtherapee.com/shared/builds/>
 
 The current builds<span id="lead_end"></span> from this directory:
 
   - [Windows 32
-    bit](http://www.rawtherapee.com/releases_head/rawtherapee_win32_std_2010-10-15_release-3.0-a1+292-4e6cdd61de02.7z)
+    bit](http://www.rawtherapee.com/shared/builds/rawtherapee_win32_std_2010-10-15_release-3.0-a1+292-4e6cdd61de02.7z)
     (.7z - you may need [7zip](http://www.7-zip.org/))
   - [Windows 64 bit + SSE
-    support](http://www.rawtherapee.com/releases_head/rawtherapee_win64_corei7sse42_2010-09-17_release-3.0-a1+276-d78bce58e762.7z)
+    support](http://www.rawtherapee.com/shared/builds/rawtherapee_win64_corei7sse42_2010-09-17_release-3.0-a1+276-d78bce58e762.7z)
     (.7z)
   - [Mac OS X 10.5 (32
-    bit)](http://www.rawtherapee.com/releases_head/rawtherapee_osx105_2010-10-06_release-3.0-a1+278-09f6415272e0.dmg)
+    bit)](http://www.rawtherapee.com/shared/builds/rawtherapee_osx105_2010-10-06_release-3.0-a1+278-09f6415272e0.dmg)
     (.dmg)
   - [Linux 32
-    bit](http://www.rawtherapee.com/releases_head/rawtherapee_linux32_2010-10-14_release-3.0-a1+289-48d4cef8f1c5.tar.bz2)
+    bit](http://www.rawtherapee.com/shared/builds/rawtherapee_linux32_2010-10-14_release-3.0-a1+289-48d4cef8f1c5.tar.bz2)
     (.tar.bz2)
   - [Linux 64
-    bit](http://www.rawtherapee.com/releases_head/rawtherapee_linux64_2010-10-15_release-3.0-a1+293-8e7ead3a466b.tar.bz2)
+    bit](http://www.rawtherapee.com/shared/builds/rawtherapee_linux64_2010-10-15_release-3.0-a1+293-8e7ead3a466b.tar.bz2)
     (.tar.bz2)
 
 The source code is also available as always, you can [check out via

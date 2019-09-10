@@ -3,9 +3,9 @@ title: "RawTherapee version 5.7"
 date: 2019-09-10T15:39:50+02:00
 draft: false
 version: "5.7"
-linux_binary: "https://rawtherapee.com/releases_head/linux/RawTherapee-releases-5.7-20190910.AppImage"
-windows_binary: "https://rawtherapee.com/releases_head/windows/RawTherapee_5.7_WinVista_64.zip"
-mac_binary: "https://rawtherapee.com/releases_head/mac/RawTherapee_OSX_10.9_64_5.7.zip"
+linux_binary: "https://rawtherapee.com/shared/builds/linux/RawTherapee-releases-5.7-20190910.AppImage"
+windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.7_WinVista_64.zip"
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_OSX_10.9_64_5.7.zip"
 source_code: "https://rawtherapee.com/shared/source/"
 ---
 

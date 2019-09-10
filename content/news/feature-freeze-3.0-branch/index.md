@@ -42,7 +42,7 @@ issues](http://code.google.com/p/rawtherapee/issues/list?can=2&q=&sort=-id&colsp
 The latest builds are available from the /releases\_head directory as
 always (will be updated with the current 3.0\_branch very soon):
 
-<http://www.rawtherapee.com/releases_head/>
+<http://www.rawtherapee.com/shared/builds/>
 
 Please note that these are alpha builds\! Use them on your own risk.
 
