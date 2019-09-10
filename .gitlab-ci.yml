@@ -33,8 +33,6 @@ deploy:
           #- which ssh-agent
         - eval $(ssh-agent -s)
         - echo "$SSH_RT_PIXLS_B64" | base64 -d | ssh-add -
-        - ls
-        - echo "Testing" > testfile.txt
     script:
         - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -o LogLevel=error" public_deploy/ pixlsus@pixls.us:/home/pixlsus/rawtherapee.com/
     only:
