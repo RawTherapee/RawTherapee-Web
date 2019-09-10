@@ -58,7 +58,15 @@ There are two main areas for creating content: `news` and `downloads`.
 
 `news` items are envisioned to be similar to blog posts - informational and general project posts.
 
-To create a new post, create a directory under `/content/news/`.  
+#### The Hugo shortcut
+You can create a new `news` post with hugo by using the command:
+```
+hugo new news/2019-09-09-a-new-post-example
+```
+This will automatically create the directory `news/2019-09-09-a-new-post-example/` and the `index.md` file in that directory with the frontmatter already included (just update as needed).
+
+#### Manually
+To manually create a new post, create a directory under `/content/news/`.  
 We recommend using a format like: `YYYY-MM-DD-post-title`. (It makes directory listing and finding posts a little easier.)
 
 Inside that directory, create an `index.md` file and any assets you may want to reference (images, etc).  
@@ -106,7 +114,15 @@ Yes, you can use valid HTML in Markdown files - in this case I prefer to use the
 
 The `downloads` content type is intended for release posts.
 
-To create a new `downloads` post, create a new directory under `/content/downloads/`.  
+#### The Hugo shortcut
+You can create a new `downloads` post with hugo by using the command:
+```
+hugo new downloads/5.7
+```
+This will automatically create the directory `downloads/5.7` and the `index.md` file in that directory with the frontmatter already included (just update as needed).
+
+#### Manually
+To manually create a new `downloads` post, create a new directory under `/content/downloads/`.  
 A good practice is to use a name like `5.7.md` or `5.7-RC1`.
 It's up to you how you name it, but the slug will reflect the directory name here, so something like this:
 ```
