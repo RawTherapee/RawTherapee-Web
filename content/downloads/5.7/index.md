@@ -5,7 +5,7 @@ draft: false
 version: "5.7"
 linux_binary: "https://rawtherapee.com/shared/builds/linux/RawTherapee-releases-5.7-20190910.AppImage"
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.7_WinVista_64.zip"
-mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_OSX_10.9_64_5.7.zip"
+mac_binary: ""
 source_code: "https://rawtherapee.com/shared/source/"
 ---
 
