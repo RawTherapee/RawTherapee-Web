@@ -10,10 +10,16 @@
   translation: "Linux"
 - id: appImage
   translation: "AppImage"
+- id: binary
+  translation: "Binary"
+- id: 32bit
+  translation: "32-bit"
 - id: 64bit
   translation: "64-bit"
 - id: windows
   translation: "Windows"
+- id: windowsXp
+  translation: "WinXP"
 - id: mac
   translation: "macOS"
 - id: sourceCode
