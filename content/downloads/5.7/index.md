@@ -8,7 +8,7 @@ linux_binary_32: ""
 linux_binary_64: ""
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.7_WinVista_64.zip"
 windows_xp_binary: ""
-mac_binary: ""
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_OSX_10.9_64_5.7.zip"
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.7.tar.xz"
 ---
 
