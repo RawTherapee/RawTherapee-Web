@@ -22,11 +22,32 @@
     {{ partial "recent-release.html" . }}
 
 
+    <section class='container mt-4'>
+        <div class='row justify-content-center'>
+            <div class='col-10 text-center'>
+                <h5 class='mb-0'>Latest News</h5>
+                <div class='d-flex flex-column flex-lg-row justify-content-center text-lg-left'>
+                    {{ range $key, $entry := first 3 (where site.RegularPages "Type" "news") }}
+                    <span>
+                        {{ if gt $key 0 }}
+                        <span class='mr-1 d-lg-inline text-secondary'>&bull;</span> 
+                        {{ else }}
+                        <span class='mr-1 d-lg-none text-secondary'>&bull;</span>
+                        {{ end }}
+                        <a href="{{ .Permalink }}" title="{{.Title}}" class='mr-2'>{{ .Title }}</a>
+                    </span>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class='container-fluid'>
         <div class='row justify-content-center'>
             <div class='col-xl-10 col-lg-12'>
 
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
 			  <div class="carousel-inner">
                   {{/* Read all files in this directory and add to carousel */}}
                   {{ range $index, $element := readDir "/static/images/carousel" }}
@@ -72,7 +93,7 @@
 
                 <h2 class='border-bottom mb-4 border-secondary'>Latest News</h2>
 
-                {{ range first 5 (where site.RegularPages "Type" "news") }}
+                {{ range first 3 (where site.RegularPages "Type" "news") }}
                 <div class='mb-5'>
                     <h4 class='mb-0'><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                     {{ if not .Date.IsZero }}
@@ -91,7 +112,7 @@
                         {{ if .Truncated }}
                         <br/>
                         <span>
-                            <strong><a href="{{ .Permalink }}">Read more…</a></strong>
+                            <strong><a href="{{ .Permalink }}">[Read&nbsp;more]</a></strong>
                         </span>
                         {{- end }}
                     </p>
