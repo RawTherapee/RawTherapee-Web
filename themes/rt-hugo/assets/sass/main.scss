@@ -103,6 +103,11 @@ figure img {
     text-shadow: 1px 1px 1px #222, -1px 1px 1px #222,1px -1px 1px #222, -1px -1px 1px #222;
 }
 
+/* Shadow on homepage latest news at top */
+.home_news_top {
+    background-color: transparent !important;
+}
+
 /* Footer Styling */
 /* -------------- */
 footer {
@@ -155,6 +160,11 @@ footer {
     /* Home Page */
     section.info {
         margin: 8rem 0;
+    }
+    /* Shadow on homepage latest news at top */
+    .home_news_top {
+        box-shadow: 0 2px 4px -0px rgba(0,0,0,0.25);
+        background-color: #222 !important;
     }
 
 }

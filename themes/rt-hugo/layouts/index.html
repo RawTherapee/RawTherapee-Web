@@ -25,21 +25,22 @@
     <section class='container mt-4'>
         <div class='row justify-content-center'>
             <div class='col-10 text-center'>
-                <h5 class='mb-0'>Latest News</h5>
-                <div class='d-flex flex-column flex-lg-row justify-content-center text-lg-left'>
+                <h5 class='mb-0 d-inline-block border-bottom border-secondary'>Latest News</h5>
+                <div class='d-flex flex-column flex-lg-row flex-wrap justify-content-center mt-1'>
+                    {{/* This gets the most recent N news posts.
+                         Change "first 3" to "first N" to include more/less */}}
                     {{ range $key, $entry := first 3 (where site.RegularPages "Type" "news") }}
-                    <span>
+                    <span class='home_news_top rounded px-2 m-lg-1 my-lg-2 bg-dark' >
                         {{ if gt $key 0 }}
-                        <span class='mr-1 d-lg-inline text-secondary'>&bull;</span> 
                         {{ else }}
-                        <span class='mr-1 d-lg-none text-secondary'>&bull;</span>
                         {{ end }}
-                        <a href="{{ .Permalink }}" title="{{.Title}}" class='mr-2'>{{ .Title }}</a>
+                        <a href="{{ .Permalink }}" title="{{.Title}}" class=''>{{ .Title }}</a>
                     </span>
                     {{ end }}
                 </div>
             </div>
         </div>
+
     </section>
 
 
@@ -108,12 +109,14 @@
                     </time>
                     {{ end }}
                     <p>
-                        {{ .Summary | safeHTML }}
+                        {{/* .Summary | safeHTML */}}
                         {{ if .Truncated }}
-                        <br/>
+                        {{ .Content | safeHTML | truncate 515 -}}
                         <span>
                             <strong><a href="{{ .Permalink }}">[Read&nbsp;more]</a></strong>
                         </span>
+                        {{ else }}
+                        {{ .Content }}
                         {{- end }}
                     </p>
                 </div>
