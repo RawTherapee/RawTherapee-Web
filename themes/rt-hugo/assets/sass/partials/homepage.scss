@@ -40,6 +40,8 @@
 /* ---------------- */
 .dl-buttons {
     margin-top: 2rem;
+    position: relative;
+    z-index: 1;
 }
 .dl-btn {
     text-align: left;
