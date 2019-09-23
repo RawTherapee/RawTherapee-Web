@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.rawtherapee.com"
 languageCode = "en-us"
 title = "RawTherapee"
 theme = "rt-hugo"
