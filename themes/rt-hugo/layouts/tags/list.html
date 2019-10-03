@@ -3,7 +3,7 @@
 <section class="page container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <h1 class="page-title">Pages tagged: {{ .Title }}</h1>
+            <h1 class="page-title">{{ i18n "pagesTagged" }} {{ .Title }}</h1>
             <ul class="posts">
                 {{ range .Data.Pages -}}
                 <li>
