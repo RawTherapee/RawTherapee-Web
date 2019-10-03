@@ -41,7 +41,7 @@
 - id: readMore
   translation: "[Read More]"
 - id: newsArchive
-  translation: "newsArchive"
+  translation: "News Archive"
 - id: rssFeed
   translation: "RSS Feed"
 - id: previousReleases
