@@ -14,7 +14,7 @@ source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.7.tar.xz"
 
 RawTherapee 5.7 has been released\!
 
-{{< figure src="rt57_drosera_rotundifolia.jpg" >}}
+{{< figure src="rt57_drosera_rotundifolia.jpg" link="rt57_drosera_rotundifolia.jpg">}}
 
 ## New Features
 

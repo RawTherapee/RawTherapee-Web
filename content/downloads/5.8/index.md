@@ -14,7 +14,7 @@ source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.8.tar.xz"
 
 RawTherapee 5.8 has been released\!
 
-{{< figure src="rt58_amanita_muscaria_capture_sharpening.jpg" >}}
+{{< figure src="rt58_amanita_muscaria_capture_sharpening.jpg" link="rt58_amanita_muscaria_capture_sharpening.jpg">}}
 
 ## New Features
 
