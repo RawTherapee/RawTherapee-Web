@@ -6,7 +6,7 @@ version: "5.8"
 linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.8.AppImage"
 linux_binary_32: ""
 linux_binary_64: ""
-windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.8_win64.zip"
+windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.8.exe"
 windows_xp_binary: ""
 mac_binary: ""
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.8.tar.xz"
@@ -26,7 +26,7 @@ RawTherapee and other open-source projects require access to sample raw files fr
 
 ## News Relevant to Package Maintainers
 
-New since 5.6:
+New since 5.7:
 
 - Optionally link against `libtcmalloc.so` which comes with Google's perftools, to fix issues where glibc won't give memory back to the OS. Use via the CMake options `ENABLE_TCMALLOC` and `TCMALLOC_LIB_DIR`.
 

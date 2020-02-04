@@ -10,5 +10,5 @@ RawTherapee 5.8 has been released! Head over to the [Downloads](/downloads/5.8/)
 sha256sum:
 
 - `c212b15f39d02bd8f8a54358045116cbac757ea155e5378e09d727a513895928  RawTherapee_5.8.AppImage`
-- `144110678836e47ea02d5ccb302c893e620bf8f581ef85ba25d3a7290fcc0ea2  RawTherapee_5.8_win64.zip`
+- `744fdd89364aac8482c77151ac2922c27e9b7366e78b28448c9523acb1298849  RawTherapee_5.8.exe`
 
