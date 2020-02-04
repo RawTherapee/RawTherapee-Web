@@ -39,7 +39,7 @@
 - id: latestNews
   translation: "Latest News"
 - id: readMore
-  translation: "[Read More]"
+  translation: "Read More"
 - id: newsArchive
   translation: "News Archive"
 - id: rssFeed
