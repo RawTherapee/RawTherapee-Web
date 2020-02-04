@@ -9,7 +9,7 @@ This is the repository for the new RawTherapee.com website.
 We're currently using:
 
 ```
-Hugo Static Site Generator v0.58.1/extended
+Hugo Static Site Generator v0.64.0/extended
 ```
 
 Note that you'll need the extended version of Hugo (https://github.com/gohugoio/hugo/releases).
@@ -22,15 +22,17 @@ To build the site locally once it's been cloned needs two steps:
 2. Back at the project root, run the Hugo server `$ hugo server -D --disableFastRender`.
 
 This will provide the site locally at `http://localhost:1313`.
-It will also monitor the directories and re-build on any changes (and reload the page).o
+It will also monitor the directories and re-build on any changes (and reload the page).
 
 For further details on writing and publishing content see `/about/meta/`.
+
 
 ## GitLab Pages
 
 GitLab runs a CI service that builds all commits against the master branch, and publishes them here: https://patdavid.gitlab.io/rawtherapee-web/.
 
 The CI/CD build now also publishes the site to the webhost on any merges/pushes to the `master` branch.
+
 
 
 ## Netlify
@@ -42,6 +44,7 @@ If you have push permissions on the repo, you can access the editor at `/admin` 
 [Netlify]: https://www.netlify.com/
 
 
+
 ## Front Page Carousel of Images
 
-To add/remove images from the sliding carousel of screenshots on the front page simply add or remove images frmo the directory `/static/images/carousel`.  The template will parse all the images in this directory and automatically add them to the carousel.
+To add/remove images from the sliding carousel of screenshots on the front page simply add or remove images from the directory `/static/images/carousel`.  The template will parse all the images in this directory and automatically add them to the carousel.
