@@ -9,4 +9,4 @@ weight: 1
 
 Download RawTherapee!
 
-For instructions how to build from source or how to obtain nightly builds, check [RawPedia's Download page](http://rawpedia.rawtherapee.com/Download).
+For instructions how to build from source or how to obtain nightly builds, check [RawPedia's Download page](https://rawpedia.rawtherapee.com/Download).
