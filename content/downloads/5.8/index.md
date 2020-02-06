@@ -8,11 +8,38 @@ linux_binary_32: ""
 linux_binary_64: ""
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.8.exe"
 windows_xp_binary: ""
-mac_binary: ""
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_5.8.dmg"
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.8.tar.xz"
 ---
 
 RawTherapee 5.8 has been released\!
+
+## Windows Build Repackaged
+
+We found an issue with the original 5.8 Windows installer, it was missing the Profiled Lens Correction (Lensfun) database, so there is now a new installer from 2020-02-06 which includes this database. If you downloaded RawTherapee 5.8 for Windows previously, please download the new build and re-install.
+
+## macOS Installation Instructions
+
+To install RawTherapee, download the build and open the `.dmg` file, then drag the RawTherapee app onto the Applications folder.
+
+Attention macOS 10.15 Catalina users: RawTherapee needs to be "authorized" to allow it to open photographs on your disk. To authorize it:
+
+1. Click "Go" &gt; "Go to Folder…⇧⌘G" (Command-Shift-G), and go to `/bin`
+1. Drag `sh` into the "Full Disk Access" pane under the "Privacy" tab in the "Security & Privacy" control panel in "Apple menu" &gt; "System Preferences".
+
+## Linux Installation Instructions
+
+Software should be installed through your distribution's package manager.
+
+If RawTherapee&nbsp;5.8 is not yet available in your package manager, you can use the AppImage:
+
+1. Download it.
+1. Make it executable:
+`chmod u+x RawTherapee_5.8.AppImage`
+1. Run it:
+`./RawTherapee_5.8.AppImage`
+
+## Screenshot
 
 {{< figure src="rt58_amanita_muscaria_capture_sharpening.jpg" link="rt58_amanita_muscaria_capture_sharpening.jpg">}}
 
