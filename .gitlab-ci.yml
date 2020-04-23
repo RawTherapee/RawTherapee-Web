@@ -18,7 +18,7 @@ pages:
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
           # This line is ready for when we move webhosts
           #- hugo -d public_deploy
-        - hugo -d public_deploy -b 'https://rawtherapee.pixls.us'
+        - hugo -v -d public_deploy -b 'https://rawtherapee.pixls.us'
         - hugo --config config-gitlabpages.toml -b 'https://patdavid.gitlab.io/rawtherapee-web/'
     artifacts:
         paths:
