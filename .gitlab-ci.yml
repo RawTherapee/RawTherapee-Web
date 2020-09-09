@@ -25,6 +25,8 @@ pages:
 deploy:
     stage: deploy
     script:
+        # Make sure we have strict permissions so ssh actually wants to use the key file
+        - chmod u=rw,go= $SSH_RT_PIXLS
         - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -i $SSH_RT_PIXLS -o LogLevel=error" public_deploy/ pixlsus@pixls.us:/home/pixlsus/rawtherapee.com/
     only:
         - master
