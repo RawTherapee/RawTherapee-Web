@@ -1,10 +1,6 @@
-#image: monachus/hugo
-#image: yitsushi/hugo-extended-builder
-#image: mashehu/hugo-extended-npm
-#
-# @darix Hugo (extended) + Node
-#variables:
-#    GIT_SUBMODULE_STRATEGY: recursive
+# variables used SSH_RT_PIXLS -> needs to be a file field in the settings. that saves us the ssh-agent step and the base64 encode
+
+image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
 
 stages:
     - pages
@@ -12,7 +8,6 @@ stages:
 
 pages:
     stage: pages
-    image: registry.opensuse.org/home/darix/apps/containers/opensuse-hugo:latest
     script:
         - hugo version
         - cd themes/rt-hugo/assets; npm install; cd ../../../;
@@ -29,13 +24,7 @@ pages:
 
 deploy:
     stage: deploy
-    image: alpine:latest
-    before_script:
-        - apk update && apk add openssh-client bash rsync
-          #- which ssh-agent
-        - eval $(ssh-agent -s)
-        - echo "$SSH_RT_PIXLS_B64" | base64 -d | ssh-add -
     script:
-        - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -o LogLevel=error" public_deploy/ pixlsus@pixls.us:/home/pixlsus/rawtherapee.com/
+        - rsync -Pauvhe "ssh -o StrictHostKeyChecking=no -i $SSH_RT_PIXLS -o LogLevel=error" public_deploy/ pixlsus@pixls.us:/home/pixlsus/rawtherapee.com/
     only:
         - master
