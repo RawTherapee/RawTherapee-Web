@@ -1,5 +1,5 @@
 ---
-title: "RawTherapee 5.9 (ish) WIP - We're not dead yet"
+title: "RawTherapee 5.9 (WIP) and Project Updates"
 date: 2022-07-08T18:16:03-0500
 author: patdavid
 draft: true
@@ -15,11 +15,14 @@ There are still plenty of talented folks hacking at the project and moving thing
 Hence this post.
 
 Most of this post is compiled from the community and contributors who have been working on things and tracking progress.
-It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and @Lawrence37 provided me a list of the great work the team has been doing (for over two years now) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where @Thanatomanic compiled many many PRs and work that's been done in greater detail with links.
+It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and [@Lawrence37][] provided me a list of the great work the team has been doing (for over two years now) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where [@Thanatomanic][] compiled many many PRs and work that's been done in greater detail with links.
 
-Speaking of which, here is what @Thanatomanic assembled in that Github discussion:
+Speaking of which, here is what [@Thanatomanic][] assembled in that Github discussion:
 
 Based on the merged PR's, there have been valuable contributions by (in alphabetical order) 
+
+[@Lawrence37]: https://github.com/Lawrence37
+[@Thanatomanic]: https://github.com/Thanatomanic
 
 <ul>
   <li><a href="https://github.com/10110111">@10110111</a> </li>
@@ -57,10 +60,6 @@ and two honorable mentions for
 
 
 
-https://discuss.pixls.us/t/the-problem-with-no-releases/29781
-
-https://discuss.pixls.us/t/rawtherapee-website-release-post-aka-were-not-dead-yet/31565
-
 
 ## Local Adjustments
 
@@ -78,7 +77,4 @@ https://discuss.pixls.us/t/rawtherapee-website-release-post-aka-were-not-dead-ye
 
 ## Dual-Demosaic with Bilinear
 
-
-
-RawTherapee 5.8 has been released! Head over to the [Downloads](/downloads/5.8/) page to read the release notes and to get it.
 
