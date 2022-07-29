@@ -115,16 +115,80 @@ AFO of the displayed image. The shape of the wave in the padlock area is especia
 </figcaption>
 </figure>
 
+There are also _vectorscopes_ in addition to the _waveform_ analyzer.
+There are two types available, **HS Vectorscope** which displays pixel colors according to the [HSL color space](https://en.wikipedia.org/wiki/HSL_and_HSV) and **HC Vectorscope** that uses [Lch color space](https://en.wikipedia.org/wiki/HCL_color_space).
+
+<figure>
+<img src='800px-HSvectorscope.jpg'>
+<figcaption>
+An HS vectorscope where you will see that there are 3 axes that point to the colors red, yellow, green, cyan, blue and magenta.
+</figcaption>
+</figure>
+
+<figure>
+<img src='800px-HCvectorscope_OOG.jpg'>
+<figcaption>
+The HC vectorscope where you see the most saturated colors reaching approximately the value 85. Specifically, they are the red and yellow tones. 
+</figcaption>
+</figure>
+
+
 ## Camera-based Perspective Correction
+The simple manual approach for the perspective tool has now been augmented with a more powerful "camera-based" guided (or automated) perspective correction tool that considers the field-of-view of the image and the offset from the optical center to prodce a physically correct perspective correction.
+
+The focal length and crop factor (and any additional cropping such as a digital zoom) are combined automatically inferred from the image metadata but can be adjusted manually if necessary.  Horizontal and vertical shifts can be adjusted until they align with the optical center of the image.  There is also a rotatino option (different from the *Rotate* tool in that it is applied after the horizontal/vertical shifts.
+
+<figure>
+<img src='800px-Perspective_horizontal.jpg'>
+<figcaption>
+Horizontal perspective correction example.
+</figcaption>
+</figure>
+
+<figure>
+<img src='800px-Perspective_vertical.jpg'>
+<figcaption>
+Vertical perspective correction example.
+</figcaption>
+</figure>
+
 
 ## Full-screen/Detached Inspector
+Directly from [@Lawrence37][] on [the thread in the forums](https://discuss.pixls.us/t/rawtherapee-website-release-post-aka-were-not-dead-yet/31565/30#full-screendetached-inspector-1) about using the new Full-screen/Detached Inspector:
+
+> In the preferences, the full-screen inspector can be activated. When enabled, the inspector tab on the right panel of the file browser no longer appears. Instead, it is invoked by hovering the cursor over an image, then pressing and holding the f key. A new window will appear showing the entire embedded image in full-screen. Letting go of the f key will close the inspector window. Alternatively, pressing and holding Shift-f opens the inspector with the image at 100% zoom.
+>
+> Clicking anywhere inside the inspector window while it is open will pin it. This allows further inspection of the image by panning (click-and-drag) and zooming (scrolling). Pressing f or Shift-f will fit the image to the window and zoom to 100%, respectively. The pinned inspector behaves like a normal window. This means it is possible to toggle the full-screen status, resize it, and move it around. The inspector can even be placed on a different screen for multi-monitor setups.
+>
+> The detached inspector retains the image navigation of the tabbed inspector. By moving the cursor over the thumbnails in the file browser, one can inspect various regions of the image or switch between images.
+
 
 ## Improved Film Negative
+Film Negative was added back in RawTherapee 5.7 to invert raw images of film negatives (while accounting for the light response of properties of film.
+It has now been revamped with quicker updating of previews while making adjustments and it no longer needs to be a raw image being edited. (Note that _Film Negative_ is now in the **Color** tab).
+
+The white balance has now been split into two parts.
+The first stage is for setting the proper white balance for the backlight using the standard White Balance tool and after the inversion the white balance of the scene in the film can be adjusted with thein the **Film Negative** tool.
 
 ## Spot Removal
+The **Spot Removal** tool can be used to sample from other regions of an image to mask areas of interest (blemishes or sensor dust for instance).
+
+<figure>
+<img src='800px-SpotRemoval-Example.jpg'>
+</figure>
+
+A line connects the sample area to the replacement area for reference.  The inner circle represents the area being replaced while the outer circle is the extents of the feathering that is used to blend the replacement into the surrounding area.
 
 ## Color-Correlation Automatic White Balance
+From  (Jacques) [@Desmis](https://github.com/Desmis) and Ingo ([@heckflosse](https://github.com/heckflosse)) comes a brand new algorithm (from scratch!) for white balance, the _Iterative Temperature Correlation White Balance_, itcwb).
+
+This algorithm divides the process into three phases:
+
+1. xyY comparison
+2. spectral data analysis
+3. color histogram analysis
 
 ## Dual-Demosaic with Bilinear
-
+There are already dual-demosaic optiosn in RawTherapee that blends the results from different algorithms together based on the region - the algorithm better suited for fine details is used on high-contrast areas of the image while the algorithm best suited for smooth reginos is used on low-contrast areas.  Bilinear is a fast method well suited for low-contrast, smooth regions.
+Three new dual-demosaic options can combine bilinear with AMaZE, RCD, and DCB.
 
