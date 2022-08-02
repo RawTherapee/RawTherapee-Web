@@ -21,44 +21,45 @@ Speaking of which, here is what [@Thanatomanic][] assembled in that Github discu
 
 Based on the merged PR's, there have been valuable contributions by (in alphabetical order) 
 
-[@Lawrence37]: https://github.com/Lawrence37
-[@Thanatomanic]: https://github.com/Thanatomanic
 
 
-  * [@10110111](https://github.com/10110111)
-  * [@Benitoite](https://github.com/Benitoite)
-  * [@Bezierr](https://github.com/Bezierr)
-  * [@CarVac](https://github.com/CarVac)
-  * [@Desmis](https://github.com/Desmis)
-  * [@EwoutH](https://github.com/EwoutH)
-  * [@Floessie](https://github.com/Floessie)
-  * [@Lawrence37](https://github.com/Lawrence37)
-  * [@Pandagrapher](https://github.com/Pandagrapher)
-  * [@purew](https://github.com/purew)
-  * [@SimonSegerblomRex](https://github.com/SimonSegerblomRex)
-  * [@Thanatomanic](https://github.com/Thanatomanic)
-  * [@adamreichold](https://github.com/adamreichold)
-  * [@dheijl](https://github.com/dheijl)
-  * [@ff2000](https://github.com/ff2000)
-  * [@heckflosse](https://github.com/heckflosse)
-  * [@jonathanBieler](https://github.com/jonathanBieler)
-  * [@kdm9](https://github.com/kdm9)
-  * [@luzpaz](https://github.com/luzpaz)
-  * [@mkyral](https://github.com/mkyral)
-  * [@pinchartl](https://github.com/pinchartl)
-  * [@rfranke](https://github.com/rfranke)
-  * [@rom9](https://github.com/rom9)
-  * [@stwunsch](https://github.com/stwunsch)
-  * [@ya-isakov](https://github.com/ya-isakov)
-  * [@ylep](https://github.com/ylep)
+  * [@10110111][]
+  * [@Benitoite][]
+  * [@Bezierr][]
+  * [@CarVac][]
+  * [@Desmis][]
+  * [@EwoutH][]
+  * [@Floessie][]
+  * [@Lawrence37][]
+  * [@Pandagrapher][]
+  * [@purew][]
+  * [@SimonSegerblomRex][]
+  * [@Thanatomanic][]
+  * [@adamreichold][]
+  * [@dheijl][]
+  * [@ff2000][]
+  * [@heckflosse][]
+  * [@jonathanBieler][]
+  * [@kdm9][]
+  * [@luzpaz][]
+  * [@mkyral][]
+  * [@pinchartl][]
+  * [@rfranke][]
+  * [@rom9][]
+  * [@stwunsch][]
+  * [@ya-isakov][]
+  * [@ylep][]
 
 and two honorable mentions for 
-  * [@freddii](https://github.com/freddii) and
-  * [@shapirus](https://github.com/shapirus) who both added one single line to the codebase.
+  * [@freddii][] and
+  * [@shapirus][] who both added one single line to the codebase.
 
 
 ## Local Adjustments
 Note: [RawPedia](https://rawpedia.rawtherapee.com/Local_Adjustments) has much more detailed explanations and examples of this new feature.
+
+Main developers: Jacques Desmis, Ingo Weirich, Pierre Cabrera  
+Main contributors: Wayne Sutton, Jacques Dekker, Andy Astbury
 
 A *very* exciting addition to the development versions leading up to 5.9 is the inclusion of a _Local Editing_ capability.
 This allows for some complex local masking to be used for application of various tools based on shape detection performed with ΔE, or the change in visual perception between two given colors, using the RT-spots algorithm developed by [Jacques Desmis](https://github.com/Desmis).
@@ -152,6 +153,14 @@ Vertical perspective correction example.
 </figcaption>
 </figure>
 
+[@Lawrence37][] provided this awesome example using control points on the forum:
+
+<figure>
+<img src='lawrence-perspective-1-lines.jpeg'>
+<img src='lawrence-perspective-2-fixed.jpeg'>
+</figure>
+
+While testing this myself I tried the _automatic_ option and the results were perfect in just one click.  Great work from the team!
 
 ## Full-screen/Detached Inspector
 Directly from [@Lawrence37][] on [the thread in the forums](https://discuss.pixls.us/t/rawtherapee-website-release-post-aka-were-not-dead-yet/31565/30#full-screendetached-inspector-1) about using the new Full-screen/Detached Inspector:
@@ -168,7 +177,8 @@ Film Negative was added back in RawTherapee 5.7 to invert raw images of film neg
 It has now been revamped with quicker updating of previews while making adjustments and it no longer needs to be a raw image being edited. (Note that _Film Negative_ is now in the **Color** tab).
 
 The white balance has now been split into two parts.
-The first stage is for setting the proper white balance for the backlight using the standard White Balance tool and after the inversion the white balance of the scene in the film can be adjusted with thein the **Film Negative** tool.
+The first stage is for setting the proper white balance for the backlight using the standard White Balance tool and after the inversion the white balance of the scene in the film can be adjusted within the **Film Negative** tool.
+
 
 ## Spot Removal
 The **Spot Removal** tool can be used to sample from other regions of an image to mask areas of interest (blemishes or sensor dust for instance).
@@ -179,7 +189,10 @@ The **Spot Removal** tool can be used to sample from other regions of an image t
 
 A line connects the sample area to the replacement area for reference.  The inner circle represents the area being replaced while the outer circle is the extents of the feathering that is used to blend the replacement into the surrounding area.
 
+
 ## Color-Correlation Automatic White Balance
+Main developers: Jacques Desmis, Ingo Weirich
+
 From  (Jacques) [@Desmis](https://github.com/Desmis) and Ingo ([@heckflosse](https://github.com/heckflosse)) comes a brand new algorithm (from scratch!) for white balance, the _Iterative Temperature Correlation White Balance_, itcwb).
 
 This algorithm divides the process into three phases:
@@ -188,7 +201,55 @@ This algorithm divides the process into three phases:
 2. spectral data analysis
 3. color histogram analysis
 
-## Dual-Demosaic with Bilinear
-There are already dual-demosaic optiosn in RawTherapee that blends the results from different algorithms together based on the region - the algorithm better suited for fine details is used on high-contrast areas of the image while the algorithm best suited for smooth reginos is used on low-contrast areas.  Bilinear is a fast method well suited for low-contrast, smooth regions.
-Three new dual-demosaic options can combine bilinear with AMaZE, RCD, and DCB.
 
+## Dual-Demosaic with Bilinear
+There are already dual-demosaic options in RawTherapee that blends the results from different algorithms together based on the region - the algorithm better suited for fine details is used on high-contrast areas of the image while the algorithm best suited for smooth regions is used on low-contrast areas.  Bilinear is a fast method well suited for low-contrast, smooth regions so there are three new dual-demosaic options that can combine Bilinear with AMaZE, RCD, and DCB.
+
+
+## Wavelet Improvements
+Main developers: jacques Desmis, Ingo Weirich  
+Main contributors: Wayne Sutton, Andy Astbury, Javier Bartol
+
+TODO
+
+## Abstract Profiles
+Main developers: Jacques Desmis, Ingo Weirich
+Main contributors: Wayne Sutton, Andy Astbury
+
+TODO
+
+## macOS app
+[@Benitoite][] also added an update to the macOS app for users of macOS 10.15+ that encountered stronger integrity protections for apps.  The RawTherapee app for macOS now uses the standard Apple LaunchServices bundle structure (instead of a shell script) and the app is now hardened, sandboxed, signed by [@Benitoite][] and notarized by Apple.
+
+
+
+[@Lawrence37]: https://github.com/Lawrence37
+[@Thanatomanic]: https://github.com/Thanatomanic
+[@10110111]: https://github.com/10110111
+[@Benitoite]: https://github.com/Benitoite
+[@Bezierr]: https://github.com/Bezierr
+[@CarVac]: https://github.com/CarVac
+[@Desmis]: https://github.com/Desmis
+[@EwoutH]: https://github.com/EwoutH
+[@Floessie]: https://github.com/Floessie
+[@Lawrence37]: https://github.com/Lawrence37
+[@Pandagrapher]: https://github.com/Pandagrapher
+[@purew]: https://github.com/purew
+[@SimonSegerblomRex]: https://github.com/SimonSegerblomRex
+[@Thanatomanic]: https://github.com/Thanatomanic
+[@adamreichold]: https://github.com/adamreichold
+[@dheijl]: https://github.com/dheijl
+[@ff2000]: https://github.com/ff2000
+[@heckflosse]: https://github.com/heckflosse
+[@jonathanBieler]: https://github.com/jonathanBieler
+[@kdm9]: https://github.com/kdm9
+[@luzpaz]: https://github.com/luzpaz
+[@mkyral]: https://github.com/mkyral
+[@pinchartl]: https://github.com/pinchartl
+[@rfranke]: https://github.com/rfranke
+[@rom9]: https://github.com/rom9
+[@stwunsch]: https://github.com/stwunsch
+[@ya-isakov]: https://github.com/ya-isakov
+[@ylep]: https://github.com/ylep
+[@freddii]: https://github.com/freddii
+[@shapirus]: https://github.com/shapirus
