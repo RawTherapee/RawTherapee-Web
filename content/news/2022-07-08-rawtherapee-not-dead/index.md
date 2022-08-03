@@ -15,11 +15,11 @@ There are still plenty of talented folks working on the project and moving thing
 Hence this post.
 
 Most of this post is compiled from the community and contributors who have been working on RawTherapee and tracking progress.
-It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and [@Lawrence37][] provided me a list of the great work the team has been doing (for over two years now) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where [@Thanatomanic][] compiled many many PRs and work that's been done in greater detail with links.
+It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and [@Lawrence37][], [@Desmis][], and many others provided me a list of the great work the team has been doing (for **over two years now**) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where [@Thanatomanic][] compiled many many PRs and work that's been done in greater detail with links.
 
 Speaking of which, here is what [@Thanatomanic][] assembled in that Github discussion:
 
-Based on the merged PR's, there have been valuable contributions by (in alphabetical order) 
+Based on the merged PRs, there have been valuable contributions by (in alphabetical order) 
 
 
 
@@ -55,11 +55,13 @@ and two honorable mentions for
   * [@shapirus][] who both added one single line to the codebase.
 
 
+Let's have a look at some of the awesome new features coming (and actually available in [nightly builds](https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions)).
+
 ## Local Adjustments
 Note: [RawPedia](https://rawpedia.rawtherapee.com/Local_Adjustments) has much more detailed explanations and examples of this new feature.
 
-Main developers: Jacques Desmis, Ingo Weirich, Pierre Cabrera  
-Main contributors: Wayne Sutton, Jacques Dekker, Andy Astbury
+**Main developers:** Jacques Desmis, Ingo Weyrich, Pierre Cabrera  
+**Main contributors:** Wayne Sutton, Jacques Dekker, Andy Astbury
 
 A *very* exciting addition to the development versions leading up to 5.9 is the inclusion of a _Local Editing_ capability.
 This allows for some complex local masking to be used for application of various tools based on shape detection performed with ΔE, or the change in visual perception between two given colors, using the RT-spots algorithm developed by [Jacques Desmis](https://github.com/Desmis).
@@ -191,9 +193,13 @@ A line connects the sample area to the replacement area for reference.  The inne
 
 
 ## Color-Correlation Automatic White Balance
-Main developers: Jacques Desmis, Ingo Weirich
+**Main developers:** Jacques Desmis, Ingo Weyrich
 
 From  (Jacques) [@Desmis](https://github.com/Desmis) and Ingo ([@heckflosse](https://github.com/heckflosse)) comes a brand new algorithm (from scratch!) for white balance, the _Iterative Temperature Correlation White Balance_, itcwb).
+
+Note: I am borrowing heavily from the [RawPedia page describing this algorithm](http://rawpedia.rawtherapee.com/White_Balance#Simplified_.22Itcwb.22algorithm:).
+
+> Put simply, the algorithm compares a large number of sample colors in the image with a set of reference colors and their associated spectral data.
 
 This algorithm divides the process into three phases:
 
@@ -201,26 +207,55 @@ This algorithm divides the process into three phases:
 2. spectral data analysis
 3. color histogram analysis
 
+Simplified:
+
+### Step One
+
+ * Calculate the RGB multipliers for each temperature between 2000K and 12000K and for the tint.
+ * Calculate the XY values from the 200 spectral-data values for each temperature.
+ * Select a temperature data range relative to the reference.
+ * Calculate the xy values in the form of a histogram and select from among the 158 possible values, the most commonly used colors (skin, sky, etc.) for each temperature.
+ * Sort the data in ascending numerical order.
+ * For the most frequently occurring data values, calculate the chromatic values of the image.
+ * Use the deltaE chroma values to select the reference colors from the 200 available possibilities.
+ * Calculate the reference RGB values as a function of the reference temperature.
+
+### Step Two
+
+ * Calculate the XY values for each selected reference color as a function of temperature and tint.
+ * Calculate the RGB values of the image from the XY values using the RGB multipliers.
+ * First calculation of the Student correlation.
+ * For each tint and temperature range, calculate the channel multipliers and the XY values from the corresponding spectral data.
+ * Calculate the correlation coefficient as a function of the color green.
+ * Sort these values.
+ * Optimize the values to determine the correct temperature and tint values.
+ * Send these parameters to "wbauto”.
+ * Display the results and update Improccoordinator.cc.
+
 
 ## Dual-Demosaic with Bilinear
+**Main developer:** Ingo Weyrich
 There are already dual-demosaic options in RawTherapee that blends the results from different algorithms together based on the region - the algorithm better suited for fine details is used on high-contrast areas of the image while the algorithm best suited for smooth regions is used on low-contrast areas.  Bilinear is a fast method well suited for low-contrast, smooth regions so there are three new dual-demosaic options that can combine Bilinear with AMaZE, RCD, and DCB.
 
 
 ## Wavelet Improvements
-Main developers: jacques Desmis, Ingo Weirich  
+Main developers: jacques Desmis, Ingo Weyrich  
 Main contributors: Wayne Sutton, Andy Astbury, Javier Bartol
 
 TODO
 
-## Abstract Profiles
-Main developers: Jacques Desmis, Ingo Weirich
-Main contributors: Wayne Sutton, Andy Astbury
-
-TODO
 
 ## macOS app
 [@Benitoite][] also added an update to the macOS app for users of macOS 10.15+ that encountered stronger integrity protections for apps.  The RawTherapee app for macOS now uses the standard Apple LaunchServices bundle structure (instead of a shell script) and the app is now hardened, sandboxed, signed by [@Benitoite][] and notarized by Apple.
 
+
+## And More!
+
+There's been a fix for the case where RawTherapee would start off-screen.  
+
+Support for several cameras/file-formats have been added or improved including: ProRaw, EOS R5, EOS R6, EOS RP, GFX 100, Z5, Z50, and more.
+
+In addition to all of these updates bear in mind that there is still quite a bit more work that will be completed and coming in a following release!
 
 
 [@Lawrence37]: https://github.com/Lawrence37
