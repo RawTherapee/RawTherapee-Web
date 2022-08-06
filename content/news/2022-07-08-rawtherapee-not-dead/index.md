@@ -14,14 +14,14 @@ The important thing is that it was mainly the _communications_ channels that wer
 There are still plenty of talented folks working on the project and moving things forward (we'll get to that in a minute) but without access to DrSlony for the moment we can't really push full releases the way it's been done in the past.
 Hence this post.
 
+**Note:** Many of these features are available from the Automated Nightly builds (official) available on Github: https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions (or if you're more of a fruit-loving computer user, from [@Benitoite][]: https://keybase.pub/kd6kxr/).
+
 Most of this post is compiled from the community and contributors who have been working on RawTherapee and tracking progress.
 It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and [@Lawrence37][], [@Desmis][], and many others provided me a list of the great work the team has been doing (for **over two years now**) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where [@Thanatomanic][] compiled many many PRs and work that's been done in greater detail with links.
 
 Speaking of which, here is what [@Thanatomanic][] assembled in that Github discussion:
 
-Based on the merged PRs, there have been valuable contributions by (in alphabetical order) 
-
-
+Based on the merged Pull Requests (PRs - code submitted by developers to the project), there have been valuable contributions by (in alphabetical order): 
 
   * [@10110111][]
   * [@Benitoite][]
@@ -54,8 +54,10 @@ and two honorable mentions for
   * [@freddii][] and
   * [@shapirus][] who both added one single line to the codebase.
 
+(If I missed someone it is purely unintentional and a mistake on my part - just reach out to me and let me know and I'll amend this list!)
 
 Let's have a look at some of the awesome new features coming (and actually available in [nightly builds](https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions)).
+
 
 ## Local Adjustments
 Note: [RawPedia](https://rawpedia.rawtherapee.com/Local_Adjustments) has much more detailed explanations and examples of this new feature.
@@ -69,6 +71,17 @@ This allows for some complex local masking to be used for application of various
 This is similar in principle to the U-Point concept originally used in Nikon Capture N2 and subsequently in Nik Collection, DxO Photolab, and Capture NXD.
 The approach is very different from other tools (GIMP, Photoshop) such as a _lasso_ or _magic wand_ approach to selecting regions in an image where selections are coupled with masks and blending to produce a desired effect.
 The creation of these selections can be time-consuming and tedious depending on how complex they should be.
+
+The tool allows users to work within the **full image** in addition to **local spots**.
+
+<figure>
+<img src='Colorleav1.jpg'>
+<figcaption>
+Example of working on the full image (changing color of the leaves).
+</figcaption>
+</figure>
+
+The tool provides users the ability to choose the level of complexity they want when working as _Basic_, _Standard_, or _Advanced_.
 
 RT-spots uses either an ellipse or rectangle for a base area of consideration and then uses reference values inside that shape to provide an average of hue, chroma, and luminance values to the shape detection algorithm.
 The modifications that can be done include most of the functions available in RawTherapee's global adjustment tools along with some additional tools available only for Local Adjustments.
@@ -101,7 +114,37 @@ There's a number of great examples available on the [RawPedia page](https://rawp
 This new feature brings a very quick and intuitive way to mask and edit local areas in images and is well worth grabbing a copy of the development version to try out!
 
 
+## Abstract Profiles
+**Main developers:** Jacques Desmis, Ingo Weirich  
+**Main contributors:** Wayne Sutton, Andy Astbury
+
+(Color is a complex topic that I (Pat) am not even remotely qualified to speak with any authority on.	@Desmis has explained a summary of the main features of this feature and the explanations are available in-depth [on the RawPedia Color Management page](https://rawpedia.rawtherapee.com/Color_Management#Abstract_Profiles).
+Any errors or mistakes in describing this feature are my own.)
+
+Abstract profiles allow you to perform custom image effects to your image (such as applying a particular "look" or "style"). This profile will allow you to define CIELAB or CIEXYZ values as both _Input_ and _Output_ - you can algorithmically define what color changes you like and produce a corresponding Look Up Table (LUT).
+This is accomplished using Virtual profiles in Little Color Management System, [LCMS][].
+
+[LCMS]: https://www.littlecms.com/
+
+This means you can adjust:
+
+ * **Tone Response Curve, TRC:**  
+   You can adjust the gamma and slope to modify the image rendering (by default it's gamma = 2.4 and slope = 12.92).  It allows raising the shadows and modifying the lighter tones in an image while preserving the colorimetry and gamut.
+ * **Illuminant (white point):**  
+   Adjust the gamut of the working profile to adapt it to the shooting conditions while taking into account the colorimetry.  
+	 If an image is taken at 4000K in sRGB (which is D65), the gamut may not be suitable.  The joint action of the illuminant and CIECAM (symmetrical mode) allows you to ensure a good chromatic adaptation.  
+	 It can be used in conjunction with the modification of the Primaries as well (below).
+ * **Primaries:**  
+   This is where the notion of Abstract profiles shines.
+	 Several possibilities are available:
+	 1. Using this module as a Channel Mixer to create special effects similar to Color Toning (with or without CIECAM).
+	 2. Modify or refine the result of the Input Profile to improve the colorimetry (calibration).
+
+Abstract profiles do not modify the Working profile, Input profile, or the Output profile.  They _do_ modify data in the same way as other RawTherapee algorithms.  It works as a patch at the end of the pipeline (just before CIECAM and just before conversion to a screen profile or an Output profile) that acts on the 3 components of the ICC profile (Tone Response Curve, Illuminant (white point), and Primaries).
+
+
 ## Waveform and Vectorscope
+
 There are also new ways to inspect what the colors in an image are doing beyond a 'classic' histogram view.
 Most users would probably be familiar with a histogram that shows the distribution of the Red, Green, and Blue pixels of the image (usually along with the luminosity):
 
@@ -137,9 +180,11 @@ The HC vectorscope where you see the most saturated colors reaching approximatel
 
 
 ## Camera-based Perspective Correction
-The simple manual approach for the perspective tool has now been augmented with a more powerful "camera-based" guided (or automated) perspective correction tool that considers the field-of-view of the image and the offset from the optical center to prodce a physically correct perspective correction.
+**Main developers:** [@Lawrence37][]
 
-The focal length and crop factor (and any additional cropping such as a digital zoom) are combined automatically inferred from the image metadata but can be adjusted manually if necessary.  Horizontal and vertical shifts can be adjusted until they align with the optical center of the image.  There is also a rotatino option (different from the *Rotate* tool in that it is applied after the horizontal/vertical shifts.
+The simple manual approach for the perspective tool has now been augmented with a more powerful "camera-based" guided (or automated) perspective correction tool that considers the field-of-view of the image and the offset from the optical center to produce a physically correct perspective correction.
+
+The focal length and crop factor (and any additional cropping such as a digital zoom) are combined automatically inferred from the image metadata but can be adjusted manually if necessary.  Horizontal and vertical shifts can be adjusted until they align with the optical center of the image.  There is also a rotation option (different from the *Rotate* tool in that it is applied after the horizontal/vertical shifts.
 
 <figure>
 <img src='800px-Perspective_horizontal.jpg'>
@@ -175,7 +220,7 @@ Directly from [@Lawrence37][] on [the thread in the forums](https://discuss.pixl
 
 
 ## Improved Film Negative
-Film Negative was added back in RawTherapee 5.7 to invert raw images of film negatives (while accounting for the light response of properties of film.
+Film Negative was added back in RawTherapee 5.7 to invert raw images of film negatives (while accounting for the light response of properties of film).
 It has now been revamped with quicker updating of previews while making adjustments and it no longer needs to be a raw image being edited. (Note that _Film Negative_ is now in the **Color** tab).
 
 The white balance has now been split into two parts.
@@ -235,11 +280,12 @@ Simplified:
 
 ## Dual-Demosaic with Bilinear
 **Main developer:** Ingo Weyrich
-There are already dual-demosaic options in RawTherapee that blends the results from different algorithms together based on the region - the algorithm better suited for fine details is used on high-contrast areas of the image while the algorithm best suited for smooth regions is used on low-contrast areas.  Bilinear is a fast method well suited for low-contrast, smooth regions so there are three new dual-demosaic options that can combine Bilinear with AMaZE, RCD, and DCB.
+
+There are already dual-demosaic options in RawTherapee that blend the results from different algorithms together based on the region - the algorithm better suited for fine details is used on high-contrast areas of the image while the algorithm best suited for smooth regions is used on low-contrast areas.  Bilinear is a fast method well suited for low-contrast, smooth regions so there are three new dual-demosaic options that can combine Bilinear with AMaZE, RCD, and DCB.
 
 
 ## Wavelet Improvements
-Main developers: jacques Desmis, Ingo Weyrich  
+Main developers: Jacques Desmis, Ingo Weyrich  
 Main contributors: Wayne Sutton, Andy Astbury, Javier Bartol
 
 TODO
@@ -256,6 +302,8 @@ There's been a fix for the case where RawTherapee would start off-screen.
 Support for several cameras/file-formats have been added or improved including: ProRaw, EOS R5, EOS R6, EOS RP, GFX 100, Z5, Z50, and more.
 
 In addition to all of these updates bear in mind that there is still quite a bit more work that will be completed and coming in a following release!
+The team is still working hard on many features and fixes so expect more to be coming soon.
+
 
 
 [@Lawrence37]: https://github.com/Lawrence37
@@ -267,7 +315,6 @@ In addition to all of these updates bear in mind that there is still quite a bit
 [@Desmis]: https://github.com/Desmis
 [@EwoutH]: https://github.com/EwoutH
 [@Floessie]: https://github.com/Floessie
-[@Lawrence37]: https://github.com/Lawrence37
 [@Pandagrapher]: https://github.com/Pandagrapher
 [@purew]: https://github.com/purew
 [@SimonSegerblomRex]: https://github.com/SimonSegerblomRex
