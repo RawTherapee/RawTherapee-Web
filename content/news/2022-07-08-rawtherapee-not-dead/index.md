@@ -182,7 +182,7 @@ The HC vectorscope where you see the most saturated colors reaching approximatel
 
 
 ## Camera-based Perspective Correction
-**Main developers:** Lawrence Lee, Flössie
+**Main developers:** Lawrence Lee, Flössie  
 **Main contributors:** Roel Baars, Ingo Weyrich, Maciek Dworak
 
 The simple manual approach for the perspective tool has now been augmented with a more powerful "camera-based" guided (or automated) perspective correction tool that considers the field-of-view of the image and the offset from the optical center to produce a physically correct perspective correction.
@@ -332,10 +332,29 @@ There are already dual-demosaic options in RawTherapee that blend the results fr
 
 
 ## Wavelet Improvements
-Main developers: Jacques Desmis, Ingo Weyrich  
-Main contributors: Wayne Sutton, Andy Astbury, Javier Bartol
+**Main developers:** Jacques Desmis, Ingo Weyrich  
+**Main contributors:** Wayne Sutton, Andy Astbury, Javier Bartol
 
-TODO
+Wavelets have been greatly improved and now include an "Attenuation Response" for control.
+
+Attenuation Response now makes wavelets usable in most cases without adding artifacts.
+As [@Desmis][] [describes](https://discuss.pixls.us/t/rawtherapee-website-release-post-aka-were-not-dead-yet/31565/55?u=patdavid), it looks for the maximum of a signal (for each level, dimension), calculates a standard deviation, and from these two values it concentrates the actions on the most pronounced "central" part of the signal.  Attenuation Response allows us to reduce or increase this "central" part as well as offset/move it.
+
+Several modules have had big changes by the addition of this function such as _Constrast_, _Chroma_, and other modules.
+
+ * The _Toning_ module has been upgraded with the ability to graphically visualize changes.
+
+ * The _Denoise_ module is clearly improved but is limited in the number of levels of decomposition (memory and processing time). It includes and Advanced mode with complex optimization functions to improve the results.  It also now includes a _Chroma_ module.
+
+ * _Edge Sharpness_, which increases the contrast on edges, is also improved.
+
+ * There is a new _Blur Levels_ module.
+
+ * _Residual Image_ has also been improved, in particular with the "Blur" function and a new "Clarity" module.
+
+ * _Final Touchup_ has also been significantly improved, in particular by the "Directional contrast" function which acts to differentiate the response of the 3 wavelet decompositions (horizontal, vertical, diagonal) and _Final smoothing_ which allows you to attenuate images that are too "hard".
+
+Compared to **Local Adjustments** many modules seem similar, but because of the number of levels and ΔE [@Desmis][] feels the performances of Local Adjustments are superior.  Functions have been added in Local Adjustments such as "Graduated Filter" that acts on the contrast (in the wavelet sense), "Tone mapping" - another approach to the usual algorithms which with negative values allows you to simulate a "dodge & burn" and of course masks and functions related to the masks such as "Recovery base on luminance" mask.
 
 
 ## macOS app
