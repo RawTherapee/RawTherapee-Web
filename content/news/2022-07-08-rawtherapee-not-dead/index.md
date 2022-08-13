@@ -14,7 +14,7 @@ The important thing is that it was mainly the _communications_ channels that wer
 There are still plenty of talented folks working on the project and moving things forward (we'll get to that in a minute) but without access to DrSlony for the moment we can't really push full releases the way it's been done in the past.
 Hence this post.
 
-**Note:** Many of these features are available from the Automated Nightly builds (official) available on Github: https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions (or if you're more of a fruit-loving computer user, from [@Benitoite][]: https://keybase.pub/kd6kxr/).
+**Note:** All of these features are available from the Automated Nightly builds (official) available on Github: https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions (or if you're more of a fruit-loving computer user, from [@Benitoite][]: https://keybase.pub/kd6kxr/).
 
 Most of this post is compiled from the community and contributors who have been working on RawTherapee and tracking progress.
 It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and [@Lawrence37][], [@Desmis][], and many others provided me a list of the great work the team has been doing (for **over two years now**) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where [@Thanatomanic][] compiled many many PRs and work that's been done in greater detail with links.
@@ -108,7 +108,7 @@ There's a number of great examples available on the [RawPedia page](https://rawp
  * [Dodging and Burning](https://rawpedia.rawtherapee.com/Local_Adjustments#Dodging_and_Burning)
  * [Making a graduated filter based on luminance, chrominance and hue (gradient filter)](https://rawpedia.rawtherapee.com/Local_Adjustments#Making_a_graduated_filter_based_on_luminance.2C_chrominance_and_hue_.28gradient_filter.29)
  * [Five ways to change the exposure and lift the shadows](https://rawpedia.rawtherapee.com/Local_Adjustments#Five_ways_to_change_the_exposure_and_lift_the_shadows)
- * [High dynamic range images - use Log Encoding or the "PDE" algorithms in the "Dynamic Range & Exposure" tool](https://rawpedia.rawtherapee.com/Local_Adjustments#High_dynamic_range_images_-_use_Log_Encoding_or_the_.22PDE.22_algorithms_in_the_.22Dynamic_Range_.26_Exposure.22_tool)
+ * [HDR to SDR: A first Approach (Log Encoding - Cam16 - JzCzHz - Sigmoid)](https://rawpedia.rawtherapee.com/Local_Adjustments#HDR_to_SDR:_A_First_Approach_.28Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid.29)
  * and many more!
 
 This new feature brings a very quick and intuitive way to mask and edit local areas in images and is well worth grabbing a copy of the development version to try out!
@@ -118,7 +118,7 @@ This new feature brings a very quick and intuitive way to mask and edit local ar
 **Main developers:** Jacques Desmis, Ingo Weirich  
 **Main contributors:** Wayne Sutton, Andy Astbury
 
-(Color is a complex topic that I (Pat) am not even remotely qualified to speak with any authority on.	@Desmis has explained a summary of the main features of this feature and the explanations are available in-depth [on the RawPedia Color Management page](https://rawpedia.rawtherapee.com/Color_Management#Abstract_Profiles).
+(Color is a complex topic that I (Pat) am not even remotely qualified to speak with any authority on.	[@Desmis][] has explained a summary of the main features of this feature and the explanations are available in-depth [on the RawPedia Color Management page](https://rawpedia.rawtherapee.com/Color_Management#Abstract_Profiles).
 Any errors or mistakes in describing this feature are my own.)
 
 Abstract profiles allow you to perform custom image effects to your image (such as applying a particular "look" or "style"). This profile will allow you to define CIELAB or CIEXYZ values as both _Input_ and _Output_ - you can algorithmically define what color changes you like and produce a corresponding Look Up Table (LUT).
@@ -144,6 +144,8 @@ Abstract profiles do not modify the Working profile, Input profile, or the Outpu
 
 
 ## Waveform and Vectorscope
+**Main developers:** Lawrence Lee, Ingo Weyrich  
+**Main contributors:** Javier Bartol, Paco Lorés, Andy Astbury
 
 There are also new ways to inspect what the colors in an image are doing beyond a 'classic' histogram view.
 Most users would probably be familiar with a histogram that shows the distribution of the Red, Green, and Blue pixels of the image (usually along with the luminosity):
@@ -152,12 +154,12 @@ Most users would probably be familiar with a histogram that shows the distributi
 <img src="Navigator-panel-histogram.jpg">
 </figure>
 
-There is now also available the _Waveform Analyzer_ (AFO, waveform) to inspect the distribution of colors in an image.  This is a special representation of the RGB channels which shows the position of the pixels horizontally and the value of each pixel vertically and through a more vivid or duller tone the number of pixels with each value.
+There is now also available the _Waveform Analyzer_ (waveform) to inspect the distribution of colors in an image.  This is a special representation of the RGB channels which shows the position of the pixels horizontally and the value of each pixel vertically and through a more vivid or duller tone the number of pixels with each value.
 
 <figure>
 <img src='Waveform.jpg'>
 <figcaption>
-AFO of the displayed image. The shape of the wave in the padlock area is especially descriptive, in contrast to the right half, which corresponds to gray wood. 
+Waveform of the displayed image. The shape of the wave in the padlock area is especially descriptive, in contrast to the right half, which corresponds to gray wood. 
 </figcaption>
 </figure>
 
@@ -180,11 +182,12 @@ The HC vectorscope where you see the most saturated colors reaching approximatel
 
 
 ## Camera-based Perspective Correction
-**Main developers:** [@Lawrence37][]
+**Main developers:** Lawrence Lee, Flössie
+**Main contributors:** Roel Baars, Ingo Weyrich, Maciek Dworak
 
 The simple manual approach for the perspective tool has now been augmented with a more powerful "camera-based" guided (or automated) perspective correction tool that considers the field-of-view of the image and the offset from the optical center to produce a physically correct perspective correction.
 
-The focal length and crop factor (and any additional cropping such as a digital zoom) are combined automatically inferred from the image metadata but can be adjusted manually if necessary.  Horizontal and vertical shifts can be adjusted until they align with the optical center of the image.  There is also a rotation option (different from the *Rotate* tool in that it is applied after the horizontal/vertical shifts.
+The focal length and crop factor are combined, automatically inferred from the image metadata, but can be adjusted manually if necessary. (The user is still needs to account for any cropping not already factored into the focal length and crop factor metadata - by increasing the crop factor and using horizontal/vertical shift to re-align the image center with the optical center).  There is also a rotation option (different from the *Rotate* tool in that it is applied after the horizontal/vertical shifts.
 
 <figure>
 <img src='800px-Perspective_horizontal.jpg'>
@@ -204,12 +207,35 @@ Vertical perspective correction example.
 
 <figure>
 <img src='lawrence-perspective-1-lines.jpeg'>
+<figcaption>
+Drawing control lines on the image to correct perspective in both directions.
+</figcaption>
+
+<br/>
+
 <img src='lawrence-perspective-2-fixed.jpeg'>
+<figcaption>
+The result of applying the correction (with some recovery).
+</figcaption>
 </figure>
+
+As [@Lawrence37][] describes in the forum:
+
+ * There are three buttons for automatically detecting lines in the image and correcting the perspective in the vertical direction, horizontal direction, or both. Automatic correction works well in most cases where the image has visible horizontal and/or vertical lines.
+
+ * In case the automatic option fails to find lines or gets confused by irrelevant lines, the user can opt for the control lines option. The user draws lines over the image. When complete, RawTherapee will use those lines to calculate the correction. As long as there are at least two lines in the same direction as the correction direction, correction will be applied. This means it is possible to control which direction(s) get automatically adjusted by drawing the appropriate number of lines in the corresponding direction.
+
+ * After correcting the perspective, users can make some final adjustments to the rotation, shift, and perspective recovery. The recovery option is particularly useful if a perfect correction is not desirable. For example, an image of a building may look strange if the building does not “lean back” slightly. One possible remedy is to reduce the amount of correction. This technique leads to a problem if perspective correction is applied in both directions or if post-correction rotation/shift are used; The lean will be tilted to one side. The solution is to use recovery, which ensures the lean is always centered.
+
 
 While testing this myself I tried the _automatic_ option and the results were perfect in just one click.  Great work from the team!
 
+
 ## Full-screen/Detached Inspector
+
+**Main developers:** Rüdiger Franke, Lawrence Lee, Ingo Weyrich  
+**Main contributors:** Roel Baars, Javier Bartol
+
 Directly from [@Lawrence37][] on [the thread in the forums](https://discuss.pixls.us/t/rawtherapee-website-release-post-aka-were-not-dead-yet/31565/30#full-screendetached-inspector-1) about using the new Full-screen/Detached Inspector:
 
 > In the preferences, the full-screen inspector can be activated. When enabled, the inspector tab on the right panel of the file browser no longer appears. Instead, it is invoked by hovering the cursor over an image, then pressing and holding the f key. A new window will appear showing the entire embedded image in full-screen. Letting go of the f key will close the inspector window. Alternatively, pressing and holding Shift-f opens the inspector with the image at 100% zoom.
@@ -220,7 +246,11 @@ Directly from [@Lawrence37][] on [the thread in the forums](https://discuss.pixl
 
 
 ## Improved Film Negative
-Film Negative was added back in RawTherapee 5.7 to invert raw images of film negatives (while accounting for the light response of properties of film).
+
+**Main developers:** Alberto Romei, Flössie  
+**Main contributors:** Roel Baars
+
+Film Negative was added back in RawTherapee 5.7 to invert raw images of film negatives (while accounting for the light response properties of film).
 It has now been revamped with quicker updating of previews while making adjustments and it no longer needs to be a raw image being edited. (Note that _Film Negative_ is now in the **Color** tab).
 
 The white balance has now been split into two parts.
@@ -228,10 +258,17 @@ The first stage is for setting the proper white balance for the backlight using 
 
 
 ## Spot Removal
+
+**Main developers:** Jean-Christophe Frisch, Ingo Weyrich, Lawrence Lee  
+**Main contributors:** Roel Baars, Andy Astbury
+
 The **Spot Removal** tool can be used to sample from other regions of an image to mask areas of interest (blemishes or sensor dust for instance).
 
 <figure>
 <img src='800px-SpotRemoval-Example.jpg'>
+<figcaption>
+Removing the bird (after on right).
+</figcaption>
 </figure>
 
 A line connects the sample area to the replacement area for reference.  The inner circle represents the area being replaced while the outer circle is the extents of the feathering that is used to blend the replacement into the surrounding area.
@@ -240,12 +277,22 @@ A line connects the sample area to the replacement area for reference.  The inne
 ## Color-Correlation Automatic White Balance
 **Main developers:** Jacques Desmis, Ingo Weyrich
 
-From  (Jacques) [@Desmis](https://github.com/Desmis) and Ingo ([@heckflosse](https://github.com/heckflosse)) comes a brand new algorithm (from scratch!) for white balance, the _Iterative Temperature Correlation White Balance_, itcwb).
+From  Jacques ([@Desmis](https://github.com/Desmis)) and Ingo ([@heckflosse](https://github.com/heckflosse)) comes a brand new algorithm (from scratch!) for white balance, the _Iterative Temperature Correlation White Balance_, itcwb).
 
 Note: I am borrowing heavily from the [RawPedia page describing this algorithm](http://rawpedia.rawtherapee.com/White_Balance#Simplified_.22Itcwb.22algorithm:).
 
 > Put simply, the algorithm compares a large number of sample colors in the image with a set of reference colors and their associated spectral data.
 
+The algorithm "Iterative Temperature Correlation WB" is based on a comparison of the raw data of the image and a base of 200 colors representative of the visible colors in spectral data.
+Through several iterative steps it uses the correlation of this data to:
+
+ * search for the best Temperature
+ * search for the best green point (tint)
+
+The system gives good (or _very_ good) results when the illuminant of the scene, during shooting, is either "Daylight" (between 4100K and 12000K) or "Blackbody" (between 2000K and 4100K).
+
+
+### A More Detailed Explanation (for the curious)
 This algorithm divides the process into three phases:
 
 1. xyY comparison
@@ -254,7 +301,7 @@ This algorithm divides the process into three phases:
 
 Simplified:
 
-### Step One
+#### Step One
 
  * Calculate the RGB multipliers for each temperature between 2000K and 12000K and for the tint.
  * Calculate the XY values from the 200 spectral-data values for each temperature.
@@ -265,7 +312,7 @@ Simplified:
  * Use the deltaE chroma values to select the reference colors from the 200 available possibilities.
  * Calculate the reference RGB values as a function of the reference temperature.
 
-### Step Two
+#### Step Two
 
  * Calculate the XY values for each selected reference color as a function of temperature and tint.
  * Calculate the RGB values of the image from the XY values using the RGB multipliers.
