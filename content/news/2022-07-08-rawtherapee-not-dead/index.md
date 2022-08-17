@@ -5,58 +5,19 @@ author: patdavid
 draft: true
 ---
 
-Hi all!  Pat David here with an update for everyone.
+Hi all! This is [Pat David](https://patdavid.net/about/) from [Pixls.us](https://pixls.us/), on behalf of the RawTherapee team with an update.
 
-Ok, let's be honest: COVID sucks.
-The same things that have disrupted the _entire planet_ have similarly disrupted communications channels for the RawTherapee team.
+As you may have noticed, the usual updates of RawTherapee seem to have stalled after version 5.8 was released in February 2020. This feels like _ages_ ago. Normally, the team would release at least two updates per year with new features and many bugfixes. If you have wondered when a new version will arrive, I can tell you: soon! In this post, I will provide a little backstory to the current situation and preview a lot of the upcoming features.
 
-The important thing is that it was mainly the _communications_ channels that were disrupted and **not the development and hacking**.
-There are still plenty of talented folks working on the project and moving things forward (we'll get to that in a minute) but without access to DrSlony for the moment we can't really push full releases the way it's been done in the past.
-Hence this post.
+First of all, let's be honest: COVID sucks. The same things that have disrupted the _entire planet_ have similarly disrupted the RawTherapee team. The good thing is, **development has always continued**. Anyone can verify this on [GitHub](https://github.com/Beep6581/RawTherapee) where a number of talented folks  are still gradually moving things forward. Unfortunately, the project maintainer became unavailable and getting a new release out has therefore been nearly impossible. People are doing everything they can to get everything ready to release version 5.9 as soon as possible.
 
-**Note:** All of these features are available from the Automated Nightly builds (official) available on Github: https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions (or if you're more of a fruit-loving computer user, from [@Benitoite][]: https://keybase.pub/kd6kxr/).
+There are plenty of new things to look forward to as I will show you in the rest of this post. Most importantly, **all these features are already avaiable** for you to use in the [official nightly builds on GitHub](https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions) (Linux and Windows). This is the _de facto_ new version of the software, until 5.9 comes out. Please read that page for further instructions. The [macOS builds](https://keybase.pub/kd6kxr/) are freely provided by [@Benitoite][].
 
-Most of this post is compiled from the community and contributors who have been working on RawTherapee and tracking progress.
-It was brought up recently in the forum thread ["The Problem with No Releases"](https://discuss.pixls.us/t/the-problem-with-no-releases/29781) and [@Lawrence37][], [@Desmis][], and many others provided me a list of the great work the team has been doing (for **over two years now**) along with the ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) discussion where [@Thanatomanic][] compiled many many PRs and work that's been done in greater detail with links.
+_Note:_ There is an active community of RawTherapee users and developers on the [Pixls Forum](https://discuss.pixls.us). Most of this post is compiled from community contributions as discussed in more detail [here](https://discuss.pixls.us/t/the-problem-with-no-releases/29781). Thank you to [@Lawrence37][], [@Desmis][], and many others for providing me a list of the great work the team has been doing along with the extensive ["WIP Release notes (v5.9)"](https://github.com/Beep6581/RawTherapee/discussions/6331) compiled by [@Thanatomanic][].
 
-Speaking of which, here is what [@Thanatomanic][] assembled in that Github discussion:
+Speaking of which, [@Thanatomanic][] listed _28_ distinct developers that have contributed (some or a lot of) code to the project in the last two years. Credit, where credit is due, to (in alphabetical order): [@10110111][], [@adamreichold][], [@Benitoite][], [@Bezierr][], [@CarVac][], [@Desmis][], [@dheijl][], [@EwoutH][], [@ff2000][], [@Floessie][], [@freddii][], [@heckflosse][], [@jonathanBieler][], [@kdm9][], [@Lawrence37][], [@luzpaz][], [@mkyral][], [@Pandagrapher][], [@pinchartl][], [@purew][], [@rfranke][], [@rom9][], [@shapirus][], [@SimonSegerblomRex][], [@stwunsch][], [@Thanatomanic][], [@ya-isakov][], [@ylep][].
 
-Based on the merged Pull Requests (PRs - code submitted by developers to the project), there have been valuable contributions by (in alphabetical order): 
-
-  * [@10110111][]
-  * [@Benitoite][]
-  * [@Bezierr][]
-  * [@CarVac][]
-  * [@Desmis][]
-  * [@EwoutH][]
-  * [@Floessie][]
-  * [@Lawrence37][]
-  * [@Pandagrapher][]
-  * [@purew][]
-  * [@SimonSegerblomRex][]
-  * [@Thanatomanic][]
-  * [@adamreichold][]
-  * [@dheijl][]
-  * [@ff2000][]
-  * [@heckflosse][]
-  * [@jonathanBieler][]
-  * [@kdm9][]
-  * [@luzpaz][]
-  * [@mkyral][]
-  * [@pinchartl][]
-  * [@rfranke][]
-  * [@rom9][]
-  * [@stwunsch][]
-  * [@ya-isakov][]
-  * [@ylep][]
-
-and two honorable mentions for 
-  * [@freddii][] and
-  * [@shapirus][] who both added one single line to the codebase.
-
-(If I missed someone it is purely unintentional and a mistake on my part - just reach out to me and let me know and I'll amend this list!)
-
-Let's have a look at some of the awesome new features coming (and actually available in [nightly builds](https://github.com/Beep6581/RawTherapee/releases/tag/nightly-github-actions)).
+Now let's have a look at some of the awesome new features coming!
 
 
 ## Local Adjustments
@@ -66,13 +27,9 @@ Note: [RawPedia](https://rawpedia.rawtherapee.com/Local_Adjustments) has much mo
 **Main contributors:** Wayne Sutton, Jacques Dekker, Andy Astbury
 
 A *very* exciting addition to the development versions leading up to 5.9 is the inclusion of a _Local Editing_ capability.
-This allows for some complex local masking to be used for application of various tools based on shape detection performed with ΔE, or the change in visual perception between two given colors, using the RT-spots algorithm developed by [Jacques Desmis](https://github.com/Desmis).
+This allows for some complex local masking to be used for application of various tools based on shape detection performed with ΔE (color differences) using the RT-spots algorithm developed by [Jacques Desmis](https://github.com/Desmis).
 
-This is similar in principle to the U-Point concept originally used in Nikon Capture N2 and subsequently in Nik Collection, DxO Photolab, and Capture NXD.
-The approach is very different from other tools (GIMP, Photoshop) such as a _lasso_ or _magic wand_ approach to selecting regions in an image where selections are coupled with masks and blending to produce a desired effect.
-The creation of these selections can be time-consuming and tedious depending on how complex they should be.
-
-The tool allows users to work within the **full image** in addition to **local spots**.
+This is similar to the U-Point concept originally used in Nikon Capture N2 and subsequently in Nik Collection, DxO Photolab, and Capture NXD. The approach is very different from other tools (GIMP, Photoshop) such as a _lasso_ or _magic wand_ approach to selecting regions in an image where selections are coupled with masks and blending to produce a desired effect. The creation of these selections can be time-consuming and tedious depending on how complex they should be.
 
 <figure>
 <img src='Colorleav1.jpg'>
@@ -83,9 +40,7 @@ Example of working on the full image (changing color of the leaves).
 
 The tool provides users the ability to choose the level of complexity they want when working as _Basic_, _Standard_, or _Advanced_.
 
-RT-spots uses either an ellipse or rectangle for a base area of consideration and then uses reference values inside that shape to provide an average of hue, chroma, and luminance values to the shape detection algorithm.
-The modifications that can be done include most of the functions available in RawTherapee's global adjustment tools along with some additional tools available only for Local Adjustments.
-RT-spots can also be used in exclusion mode to _prevent_ the algorithm from influencing certain parts of the image.
+RT-spots considers either an ellipse or rectangle as a base area and then uses reference values within to provide an average of hue, chroma, and luminance values to the shape detection algorithm. The modifications that can be made include most of the functions available in RawTherapee's global adjustment tools along with some additional tools available only for Local Adjustments. RT-spots can also be used in exclusion mode to _prevent_ the algorithm from influencing certain parts of the image. Furthermore, all adjustments can also be applied to the _full image_ instead of a _spot_.
 
 <figure>
 <img src='Prepare1.jpg'>
@@ -344,7 +299,7 @@ Several modules have had big changes by the addition of this function such as _C
 
  * The _Toning_ module has been upgraded with the ability to graphically visualize changes.
 
- * The _Denoise_ module is clearly improved but is limited in the number of levels of decomposition (memory and processing time). It includes and Advanced mode with complex optimization functions to improve the results.  It also now includes a _Chroma_ module.
+ * The _Denoise_ module is clearly improved but is limited in the number of levels of decomposition (memory and processing time). It includes an Advanced mode with complex optimization functions to improve the results.  It also now includes a _Chroma_ module.
 
  * _Edge Sharpness_, which increases the contrast on edges, is also improved.
 
@@ -362,13 +317,9 @@ Compared to **Local Adjustments** many modules seem similar, but because of the 
 
 
 ## And More!
+As usual, there have been countless bugfixes and smaller improvements to the software. Importantly, camera support has increased to include the processing of files from ProRaw, EOS R5, EOS R6, EOS RP, GFX 100, Z5, Z50, and others.
 
-There's been a fix for the case where RawTherapee would start off-screen.  
-
-Support for several cameras/file-formats have been added or improved including: ProRaw, EOS R5, EOS R6, EOS RP, GFX 100, Z5, Z50, and more.
-
-In addition to all of these updates bear in mind that there is still quite a bit more work that will be completed and coming in a following release!
-The team is still working hard on many features and fixes so expect more to be coming soon.
+For everything else, please stay tuned for version 5.9. It is coming!
 
 
 
