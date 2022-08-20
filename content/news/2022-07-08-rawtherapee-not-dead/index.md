@@ -2,7 +2,7 @@
 title: "RawTherapee 5.9 (WIP) and Project Updates"
 date: 2022-07-08T18:16:03-0500
 author: patdavid
-draft: true
+draft: false
 ---
 
 Hi all! This is [Pat David](https://patdavid.net/about/) from [Pixls.us](https://pixls.us/), on behalf of the RawTherapee team with an update.
