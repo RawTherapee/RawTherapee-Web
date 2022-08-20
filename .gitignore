@@ -5,6 +5,8 @@ hugo.exe
 rt-website-key*
 .hugo_build.lock
 
+.hugo_build.lock
+
 # Ignore theme asset building errata
 # Mostly for SASS compiling and node
 
