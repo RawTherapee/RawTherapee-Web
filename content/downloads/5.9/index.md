@@ -1,7 +1,7 @@
 ---
 title: "RawTherapee v5.9"
 date: 2022-11-27T22:00:00+01:00
-draft: true
+draft: false
 version: "5.9"
 linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.9.AppImage"
 linux_binary_32: ""
