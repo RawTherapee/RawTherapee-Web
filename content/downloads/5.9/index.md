@@ -8,15 +8,21 @@ linux_binary_32: ""
 linux_binary_64: ""
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.9_win64.zip"
 windows_xp_binary: ""
-mac_binary: "https://rawtherapee.com/shared/builds/mac/"
+mac_binary: ""
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.9.tar.xz"
 ---
 
-RawTherapee 5.9 has been released\!
+## Screenshot
+
+{{< figure src="rt59_provence_local_mask.jpg" link="rt59_provence_local_mask.jpg">}}
+
+
 
 ## Windows Installation Instructions
 
 Just open the zip file and run the executable installer.
+
+
 
 ## Linux Installation Instructions
 
@@ -30,7 +36,13 @@ If RawTherapee&nbsp;5.9 is not yet available in your package manager, you can us
 1. Run it:
 `./RawTherapee_5.9.AppImage`
 
+
+
 ## macOS Installation Instructions
+
+We don't have a macOS build available just yet. One will be uploaded once available.
+<!--
+The macOS build requires macOS Big Sur (version 11) or newer.
 
 To install the RawTherapee application, open the `.dmg` file and drag the RawTherapee app onto the `/Applications` folder.
 
@@ -39,15 +51,9 @@ To use the optional `rawtherapee-cli` command line interface, move `rawtherapee-
 If the workspace is too small to read, you must change the HiDPI settings in RawTherapee: go to Preferences &gt; General, and enable "[Pseudo-HiDPI mode](https://rawpedia.rawtherapee.com/Preferences#Appearance)". Restart RawTherapee for the changes to take effect.
 
 There is [a known issue](https://gitlab.gnome.org/GNOME/gtk/-/issues/5305) concerning macOS Ventura (version 13) wherein it may be impossible to click on some GUI elements, specifically drop-down menus. The source of this problem lies in macOS/GTK+ and is unrelated to RawTherapee. We will update you once a fix is available.
+-->
 
-## SHA-256
 
-- `463f838981a1f11dff37160b1dc5c67a13d27066b869d8dea301db416871eb67  RawTherapee_5.9.AppImage`
-- `dcc02ad33588a509da73e4a093508d795bda42dc5ece66cb6a564979bb204cc5  RawTherapee_5.9_win64.zip`
-
-## Screenshot
-
-{{< figure src="rt59_provence_local_mask.jpg" link="rt59_provence_local_mask.jpg">}}
 
 ## New Features
 
@@ -204,9 +210,18 @@ There is [a known issue](https://gitlab.gnome.org/GNOME/gtk/-/issues/5305) conce
     - Sony NEX-F3
     - Sony SLT-A99V
 
+
+
 ## More Information
 
 A few months ago [Pat David](https://patdavid.net/about/) wrote the article [RawTherapee 5.9 (WIP) and Project Updates]({{< relref "2022-07-08-rawtherapee-not-dead" >}} "RawTherapee 5.9 WIP and Project Updates") which explained all the major new features and changes in RawTherapee since the release of version 5.8 in 2020. The work since then focused only on stabilization and polish to bring you this release. Read that article for more information.
+
+
+
+## SHA-256
+
+- `463f838981a1f11dff37160b1dc5c67a13d27066b869d8dea301db416871eb67  RawTherapee_5.9.AppImage`
+- `dcc02ad33588a509da73e4a093508d795bda42dc5ece66cb6a564979bb204cc5  RawTherapee_5.9_win64.zip`
 
 
 
@@ -227,13 +242,15 @@ In general:
 - For development builds and release-candidates use `-DCACHE_NAME_SUFFIX="5-dev"`
 
 
+
 ## News Relevant to Developers
 
 See [CONTRIBUTING.md](https://github.com/Beep6581/RawTherapee/blob/dev/CONTRIBUTING.md).
 
 Complete revision history [available on GitHub](https://github.com/Beep6581/RawTherapee/commits/5.9).
 
+
+
 ## Reporting Bugs
 
 If you found a problem, don't keep it to yourself. Read the article "[How to Write Useful Bug Reports](https://rawpedia.rawtherapee.com/How_to_write_useful_bug_reports)" to get the problem fixed.
-
