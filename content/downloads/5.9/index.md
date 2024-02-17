@@ -8,7 +8,7 @@ linux_binary_32: ""
 linux_binary_64: ""
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.9_win64.zip"
 windows_xp_binary: ""
-mac_binary: ""
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_11.7_Universal_5.9.zip"
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.9.tar.xz"
 ---
 
@@ -40,8 +40,6 @@ If RawTherapee&nbsp;5.9 is not yet available in your package manager, you can us
 
 ## macOS Installation Instructions
 
-We don't have a macOS build available just yet. One will be uploaded once available.
-<!--
 The macOS build requires macOS Big Sur (version 11) or newer.
 
 To install the RawTherapee application, open the `.dmg` file and drag the RawTherapee app onto the `/Applications` folder.
@@ -51,7 +49,6 @@ To use the optional `rawtherapee-cli` command line interface, move `rawtherapee-
 If the workspace is too small to read, you must change the HiDPI settings in RawTherapee: go to Preferences &gt; General, and enable "[Pseudo-HiDPI mode](https://rawpedia.rawtherapee.com/Preferences#Appearance)". Restart RawTherapee for the changes to take effect.
 
 There is [a known issue](https://gitlab.gnome.org/GNOME/gtk/-/issues/5305) concerning macOS Ventura (version 13) wherein it may be impossible to click on some GUI elements, specifically drop-down menus. The source of this problem lies in macOS/GTK+ and is unrelated to RawTherapee. We will update you once a fix is available.
--->
 
 
 
