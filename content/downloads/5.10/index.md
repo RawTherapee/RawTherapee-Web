@@ -1,14 +1,14 @@
 ---
 title: "RawTherapee v5.10"
-date: 2024-02-16T00:00:00+00:00
-draft: true
+date: 2024-02-16T06:19:00+00:00
+draft: false
 version: "5.10"
 linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.10.AppImage"
 linux_binary_32: ""
 linux_binary_64: ""
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.10_win64.zip"
 windows_xp_binary: ""
-mac_binary: ""
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_13.3_Universal_5.10.zip"
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.10.tar.xz"
 ---
 
@@ -40,18 +40,13 @@ If RawTherapee&nbsp;5.10 is not yet available in your package manager, you can u
 
 ## macOS Installation Instructions
 
-We don't have a macOS build available just yet. One will be uploaded once available.
-<!--
-The macOS build requires macOS Big Sur (version 11) or newer.
+The macOS build requires macOS Big Sur 11.7 or newer on Intel (x86_64), or macOS Ventura 13.3 or newer on Apple Silicon.
 
 To install the RawTherapee application, open the `.dmg` file and drag the RawTherapee app onto the `/Applications` folder.
 
 To use the optional `rawtherapee-cli` command line interface, move `rawtherapee-cli` into a folder in your `$PATH` and install the RawTherapee app as above.
 
 If the workspace is too small to read, you must change the HiDPI settings in RawTherapee: go to Preferences &gt; General, and enable "[Pseudo-HiDPI mode](https://rawpedia.rawtherapee.com/Preferences#Appearance)". Restart RawTherapee for the changes to take effect.
-
-There is [a known issue](https://gitlab.gnome.org/GNOME/gtk/-/issues/5305) concerning macOS Ventura (version 13) wherein it may be impossible to click on some GUI elements, specifically drop-down menus. The source of this problem lies in macOS/GTK+ and is unrelated to RawTherapee. We will update you once a fix is available.
--->
 
 
 
@@ -148,6 +143,7 @@ There is [a known issue](https://gitlab.gnome.org/GNOME/gtk/-/issues/5305) conce
 
 - fb7ce66ba8ac23fa429b7342f2fb06ef166707ea827f822180a3f1bb945f205c  RawTherapee_5.10_win64.zip
 - d42a9ee5588694d0b23dd5869b08a8cd82cca88f15e020e34aaeefee7a032a57  RawTherapee_5.10.AppImage
+- f5c9034774dfab681069fd48a1cffafafe61eafc19fb6214d9605a4e13004811  RawTherapee_macOS_13.3_Universal_5.10_folder/RawTherapee_macOS_13.3_Universal_5.10.dmg
 
 
 
