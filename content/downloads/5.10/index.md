@@ -141,9 +141,9 @@ If the workspace is too small to read, you must change the HiDPI settings in Raw
 
 ## SHA-256
 
-- fb7ce66ba8ac23fa429b7342f2fb06ef166707ea827f822180a3f1bb945f205c  RawTherapee_5.10_win64.zip
-- d42a9ee5588694d0b23dd5869b08a8cd82cca88f15e020e34aaeefee7a032a57  RawTherapee_5.10.AppImage
-- f5c9034774dfab681069fd48a1cffafafe61eafc19fb6214d9605a4e13004811  RawTherapee_macOS_13.3_Universal_5.10_folder/RawTherapee_macOS_13.3_Universal_5.10.dmg
+- `fb7ce66ba8ac23fa429b7342f2fb06ef166707ea827f822180a3f1bb945f205c  RawTherapee_5.10_win64.zip`
+- `d42a9ee5588694d0b23dd5869b08a8cd82cca88f15e020e34aaeefee7a032a57  RawTherapee_5.10.AppImage`
+- `7208691efbaa077d5512cc9a54897a6bb80c999e942b77b8fdf8872f519ed5ea  RawTherapee_macOS_13.3_Universal_5.10_folder/RawTherapee_macOS_13.3_Universal_5.10.dmg`
 
 
 
@@ -157,10 +157,10 @@ In general:
 - Requires GTK+ version >=3.22.24 in Windows, else >=3.16 (though >=3.22.24 is recommended).
 - GTK+ versions 3.24.2 - 3.24.6 have an issue where combobox menu scroll-arrows are missing when the combobox list does not fit vertically on the screen. As a result, users would not be able to scroll in the following comboboxes: Processing Profiles, Film Simulation, and the camera and lens profiles in Profiled Lens Correction.
 - RawTherapee 5 requires GCC-4.9 or higher, or Clang.
-- Do not use -ffast-math, it will not make RawTherapee faster but will introduce artifacts.
-- Use -O3, it will make RawTherapee faster with no known side-effects.
-- For stable releases use -DCACHE_NAME_SUFFIX=""
-- For development builds and release-candidates use -DCACHE_NAME_SUFFIX="5-dev"
+- Do not use `-ffast-math`, it will not make RawTherapee faster but will introduce artifacts.
+- Use `-O3`, it will make RawTherapee faster with no known side-effects.
+- For stable releases use `-DCACHE_NAME_SUFFIX=""`
+- For development builds and release-candidates use `-DCACHE_NAME_SUFFIX="5-dev"`
 
 
 
