@@ -24,7 +24,7 @@ To build the site locally once it's been cloned needs two steps:
 This will provide the site locally at `http://localhost:1313`.
 It will also monitor the directories and re-build on any changes (and reload the page).
 
-For further details on writing and publishing content see `/about/meta/`.
+For further details on writing and publishing content see `/content/about/meta/`.
 
 
 ## GitLab Pages
