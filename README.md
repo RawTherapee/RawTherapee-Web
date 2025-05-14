@@ -29,9 +29,12 @@ For further details on writing and publishing content see `/about/meta/`.
 
 ## GitLab Pages
 
+Below is deprecated:
+~~
 GitLab runs a CI service that builds all commits against the master branch, and publishes them here: https://patdavid.gitlab.io/rawtherapee-web/.
 
 The CI/CD build now also publishes the site to the webhost on any merges/pushes to the `master` branch.
+~~
 
 
 
