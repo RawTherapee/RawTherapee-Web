@@ -5,8 +5,8 @@ theme = "rt-hugo"
 
 metaDataFormat = "yaml"
 
-paginate = 10
-paginatePath = "page"
+pagination.pagerSize = 10
+pagination.path = "page"
 
 [permalinks]
     post = "/:year/:month/:slug/"
