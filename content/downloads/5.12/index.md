@@ -1,14 +1,14 @@
 ---
 title: "RawTherapee v5.12"
-date: 2025-05-04T00:00:00+00:00
-draft: true
+date: 2025-05-28T00:07:00+00:00
+draft: false
 version: "5.12"
-linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.12.AppImage"
+linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.12_release.AppImage"
 linux_binary_32: ""
 linux_binary_64: ""
-windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.12_win64.zip"
+windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.12_win64_release.exe"
 windows_xp_binary: ""
-mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_TODO_Universal_5.12.zip"
+mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_15.4_Universal_5.12.zip"
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.12.tar.xz"
 ---
 
@@ -61,15 +61,15 @@ If RawTherapee&nbsp;5.12 is not yet available in your package manager, you can u
 
 1. Download it.
 1. Make it executable:
-`chmod u+x RawTherapee_5.12.AppImage`
+`chmod u+x RawTherapee_5.12_release.AppImage`
 1. Run it:
-`./RawTherapee_5.12.AppImage`
+`./RawTherapee_5.12_release.AppImage`
 
 
 
 ### macOS
 
-The macOS build requires macOS TODO (version TODO) or newer.
+The macOS build requires macOS Sequoia 15.4 or newer on Apple Silicon or macOS Monterey 12.3 or newer for Intel (x86_64).
 
 To install the RawTherapee application, unzip the `.zip` file, open the `.dmg` file, and drag the RawTherapee app onto the `/Applications` folder. For security reasons, RawTherapee MUST be installed in `/Applications`. RawTherapee will refuse to start if installed elsewhere. Do not move or rename RawTherapee.app.
 
@@ -79,10 +79,10 @@ To use the optional `rawtherapee-cli` command line interface, move `rawtherapee-
 
 ## SHA-256
 
-- `TODO  RawTherapee_5.12_release.AppImage`
-- `TODO  RawTherapee_5.12_win64_release.exe`
-- `TODO  RawTherapee_macOS_TODO_Universal_5.12.zip`
-- `TODO  rawtherapee-5.12.tar.xz`
+- `95d0db7b9c6af85209af66b10b31ac47270e39d937763ac919f826586ea49f08  RawTherapee_5.12_release.AppImage`
+- `fe0ab7e0e647130641a13cfaf54543c63efcc62a8da97acb9cde92c1bc255b8c  RawTherapee_5.12_win64_release.exe`
+- `2f284d1c023f53f0c492aecc3f7635d6b7807ef22d5413ee55715d81e81fe688  RawTherapee_macOS_15.4_Universal_5.12.zip`
+- `d9a6c10537d64a285bc465675fe59aaa94ce3223823dfbecf0ae2c9599082d57  rawtherapee-5.12.tar.xz`
 
 
 
