@@ -9,7 +9,9 @@
 - id: linux
   translation: "Linux"
 - id: appImage
-  translation: "AppImage"
+  translation: "AppImage (x86_64)"
+- id: appImageArm64
+  translation: "AppImage (ARM64)"
 - id: binary
   translation: "Binary"
 - id: 32bit
@@ -22,6 +24,10 @@
   translation: "WinXP"
 - id: mac
   translation: "macOS"
+- id: x86_64
+  translation: "x86_64"
+- id: arm64
+  translation: "ARM64"
 - id: sourceCode
   translation: "Source Code"
 - id: copyright
