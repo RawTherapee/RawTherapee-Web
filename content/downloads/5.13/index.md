@@ -1,7 +1,7 @@
 ---
 title: "RawTherapee v5.13"
-date: 2026-06-28T00:07:00+00:00
-draft: true
+date: 2026-07-26T00:07:00+00:00
+draft: false
 version: "5.13"
 linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.13_release.AppImage"
 linux_arm_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.13_arm_release.AppImage"
@@ -10,7 +10,7 @@ linux_binary_64: ""
 windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.13_win64_release.exe"
 windows_arm_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.13_win64_arm_release.exe"
 windows_xp_binary: ""
-mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_15.4_Universal_5.13.zip"
+mac_binary: ""
 source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.13.tar.xz"
 ---
 
@@ -52,7 +52,7 @@ available which expands to the file extension of the output file (for example, "
 - All preferences can now be easily reset in Preferences.
 - Adapted Olympus lens name detection is improved.
 - Added new translations for Hebrew and Korean.
-- Updated translations for Simplified Chinese and Dutch.
+- Updated translations for Simplified Chinese, Dutch, and German.
 - Added or improved support for cameras, raw formats, and color profiles (not an exhaustive list because unconfirmed support is excluded):
     - Canon EOS M50 (white level)
     - Canon EOS R5m2
@@ -137,24 +137,13 @@ For ARM CPUs:
 
 
 
-### macOS
-
-The macOS build requires macOS Sequoia 15.4 or newer on Apple Silicon or macOS Monterey 12.3 or newer for Intel (x86_64).
-
-To install the RawTherapee application, unzip the `.zip` file, open the `.dmg` file, and drag the RawTherapee app onto the `/Applications` folder. For security reasons, RawTherapee MUST be installed in `/Applications`. RawTherapee will refuse to start if installed elsewhere. Do not move or rename RawTherapee.app.
-
-To use the optional `rawtherapee-cli` command line interface, move `rawtherapee-cli` into a folder in your `$PATH` and install the RawTherapee app as above.
-
-
-
 ## SHA-256
 
-- `RawTherapee_5.13_release.AppImage`
-- `RawTherapee_5.13_arm_release.AppImage`
-- `RawTherapee_5.13_win64_release.exe`
-- `RawTherapee_5.13_win64_arm_release.exe`
-- `RawTherapee_macOS_15.4_Universal_5.13.zip`
-- `rawtherapee-5.13.tar.xz`
+- `746a3509a234804c3a5f66649006ac29ac67f193a8559d2297357949a890b097 RawTherapee_5.13_release.AppImage`
+- `9e424633272a49bb47afe4bf065604858acf9de77c4d80e0f6557024492e2b55 RawTherapee_5.13_arm_release.AppImage`
+- `d27df7ebde717c5efa114338a4b1cf1c426a439e5a1a92e142e87868cbe45383 RawTherapee_5.13_win64_release.exe`
+- `967fc854266a1ab3629e2c23ddbfcd193cb71d996ffe16fe2a542d3610701cd2 RawTherapee_5.13_win64_arm_release.exe`
+- `23bdff4b1817e1274c11a94b11d21cac59e9c1b1d209795d3194710ee73e77bf rawtherapee-5.13.tar.xz`
 
 
 
@@ -169,6 +158,8 @@ If you found a problem, don't keep it to yourself. Read the article "[How to Wri
 New since 5.12:
 - RawTherapee may be built to use LunaSVG instead of librsvg.
 - RawTherapee may be compiled with SIMDe to improve performance on ARM architectures.
+- The `USE_OLD_CXX_ABI` option has been removed.
+- RawTherapee depends on the fmt library. By default, it will download the source code and build it. To use the system fmt library, use `-DWITH_SYSTEM_FMT="ON"`.
 
 In general:
 - To get the source code, either clone from git or use the tarball from https://rawtherapee.com/shared/source/. Do not use the auto-generated GitHub release tarballs.
