@@ -3,15 +3,15 @@ title: "RawTherapee v5.13"
 date: 2026-07-26T00:07:00+00:00
 draft: false
 version: "5.13"
-linux_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.13_release.AppImage"
-linux_arm_appimage: "https://rawtherapee.com/shared/builds/linux/RawTherapee_5.13_arm_release.AppImage"
+linux_appimage: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_x86_64_release.AppImage"
+linux_arm_appimage: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_arm64_release.AppImage"
 linux_binary_32: ""
 linux_binary_64: ""
-windows_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.13_win64_release.exe"
-windows_arm_binary: "https://rawtherapee.com/shared/builds/windows/RawTherapee_5.13_win64_arm_release.exe"
+windows_binary: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_x86_64_release.exe"
+windows_arm_binary: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_arm64_release.zip"
 windows_xp_binary: ""
 mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_MacOS_26.0_Universal_5.13.zip"
-source_code: "https://rawtherapee.com/shared/source/rawtherapee-5.13.tar.xz"
+source_code: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/rawtherapee-5.13.tar.xz"
 ---
 
 {{< figure src="splash.svg" >}}
