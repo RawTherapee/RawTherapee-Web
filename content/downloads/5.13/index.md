@@ -8,7 +8,7 @@ linux_arm_appimage: "https://github.com/RawTherapee/RawTherapee/releases/downloa
 linux_binary_32: ""
 linux_binary_64: ""
 windows_binary: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_x86_64_release.exe"
-windows_arm_binary: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_arm64_release.zip"
+windows_arm_binary: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_arm64_release.exe"
 windows_xp_binary: ""
 mac_binary: "https://rawtherapee.com/shared/builds/mac/RawTherapee_MacOS_26.0_Universal_5.13.zip"
 source_code: "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/rawtherapee-5.13.tar.xz"
@@ -149,10 +149,10 @@ To use the optional `rawtherapee-cli` command line interface, move `rawtherapee-
 
 ## SHA-256
 
-- `746a3509a234804c3a5f66649006ac29ac67f193a8559d2297357949a890b097 RawTherapee_5.13_release.AppImage`
-- `9e424633272a49bb47afe4bf065604858acf9de77c4d80e0f6557024492e2b55 RawTherapee_5.13_arm_release.AppImage`
-- `d27df7ebde717c5efa114338a4b1cf1c426a439e5a1a92e142e87868cbe45383 RawTherapee_5.13_win64_release.exe`
-- `967fc854266a1ab3629e2c23ddbfcd193cb71d996ffe16fe2a542d3610701cd2 RawTherapee_5.13_win64_arm_release.exe`
+- `746a3509a234804c3a5f66649006ac29ac67f193a8559d2297357949a890b097 RawTherapee_5.13_x86_64_release.AppImage`
+- `9e424633272a49bb47afe4bf065604858acf9de77c4d80e0f6557024492e2b55 RawTherapee_5.13_arm64_release.AppImage`
+- `d27df7ebde717c5efa114338a4b1cf1c426a439e5a1a92e142e87868cbe45383 RawTherapee_5.13_win64_x86_64_release.exe`
+- `967fc854266a1ab3629e2c23ddbfcd193cb71d996ffe16fe2a542d3610701cd2 RawTherapee_5.13_win64_arm64_release.exe`
 - `795a32a688afa5b127dfd768c25c77649859ababa206352e865f6587c66c45a7 RawTherapee_MacOS_26.0_Universal_5.13.zip`
 - `23bdff4b1817e1274c11a94b11d21cac59e9c1b1d209795d3194710ee73e77bf rawtherapee-5.13.tar.xz`
 
