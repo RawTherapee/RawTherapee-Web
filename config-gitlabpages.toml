@@ -8,6 +8,9 @@ metaDataFormat = "yaml"
 paginate = 10
 paginatePath = "page"
 
+[security]
+allowContent = [".*"]
+
 [permalinks]
     # post = "/:year/:month/:day/:slug/"
     post = "/:year/:month/:slug/"
